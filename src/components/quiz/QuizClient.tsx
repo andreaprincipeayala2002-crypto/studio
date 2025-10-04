@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { topics, Question } from '@/lib/quiz-data';
 import QuestionCard from './QuestionCard';
@@ -22,6 +22,9 @@ export default function QuizClient() {
   
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState<number | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+
+  const [nextQuestionTimer, setNextQuestionTimer] = useState<number | null>(null);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const topic = useMemo(() => topics.find(t => t.slug === topicSlug), [topicSlug]);
 
@@ -64,7 +67,16 @@ export default function QuizClient() {
     }
   }, [topic]);
 
+  const clearTimer = () => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+    setNextQuestionTimer(null);
+  };
+
   const goToNextQuestion = () => {
+    clearTimer();
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
       setSelectedAnswerIndex(null);
@@ -96,8 +108,25 @@ export default function QuizClient() {
         if (topic) {
             localStorage.setItem(`quiz-score-${topic.slug}`, JSON.stringify({ score: score, total: questions.length }));
         }
+        // Start timer for incorrect answer
+        setNextQuestionTimer(5);
+        timerRef.current = setInterval(() => {
+            setNextQuestionTimer(prev => {
+                if(prev === null) return null;
+                if (prev <= 1) {
+                    goToNextQuestion();
+                    return null;
+                }
+                return prev - 1;
+            });
+        }, 1000);
     }
   };
+
+  // Cleanup timer on component unmount
+  useEffect(() => {
+    return () => clearTimer();
+  }, []);
   
   const handleRestart = () => {
     if (!topic) return;
@@ -116,6 +145,7 @@ export default function QuizClient() {
     router.push('/');
   };
 
+a
   const currentQuestion = useMemo(() => questions[currentQuestionIndex], [questions, currentQuestionIndex]);
 
   if (!topic || questions.length === 0) {
@@ -147,6 +177,7 @@ export default function QuizClient() {
               selectedAnswerIndex={selectedAnswerIndex}
               isCorrect={isCorrect}
               topicSlug={topic.slug}
+              nextQuestionTimer={nextQuestionTimer}
             />
           </motion.div>
         ) : (

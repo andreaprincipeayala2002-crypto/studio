@@ -13,6 +13,7 @@ interface QuestionCardProps {
   selectedAnswerIndex: number | null;
   isCorrect: boolean | null;
   topicSlug: string;
+  nextQuestionTimer: number | null;
 }
 
 export default function QuestionCard({
@@ -24,6 +25,7 @@ export default function QuestionCard({
   selectedAnswerIndex,
   isCorrect,
   topicSlug,
+  nextQuestionTimer,
 }: QuestionCardProps) {
 
   const getTopicColorClass = () => {
@@ -101,7 +103,7 @@ export default function QuestionCard({
             )}
              {isCorrect === false && (
               <Button onClick={onNext} className="w-full" size="lg">
-                Siguiente Pregunta <ArrowRight className="ml-2 h-5 w-5" />
+                Siguiente Pregunta {nextQuestionTimer !== null ? `(${nextQuestionTimer})` : ''} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             )}
           </div>

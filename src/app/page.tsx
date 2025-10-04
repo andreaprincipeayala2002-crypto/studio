@@ -19,6 +19,16 @@ const specialMissions = [
         description: 'A rocky exoplanet',
         imageHint: 'rocky exoplanet'
     }
+  },
+  {
+    slug: '/mission/trappist-1e',
+    title: 'Misión: TRAPPIST-1e',
+    description: 'Usa el espectrógrafo del JWST para encontrar signos de vida.',
+    image: {
+        imageUrl: 'https://images.unsplash.com/photo-1632429649633-16a307038e68?w=1080',
+        description: 'The TRAPPIST-1 system of exoplanets',
+        imageHint: 'exoplanet system'
+    }
   }
 ];
 

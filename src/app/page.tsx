@@ -4,30 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Star } from 'lucide-react';
+import { ArrowRight, Star, CheckCircle, HelpCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-
-const topics = [
-  {
-    slug: 'human-biology',
-    title: 'Human Biology',
-    description: 'Explore the effects of space on the human body.',
-    image: PlaceHolderImages.find(img => img.id === 'human-bio-planet'),
-  },
-  {
-    slug: 'plant-science',
-    title: 'Plant Science',
-    description: 'Learn how plants adapt and grow in microgravity.',
-    image: PlaceHolderImages.find(img => img.id === 'plant-sci-planet'),
-  },
-  {
-    slug: 'microbiology',
-    title: 'Microbiology',
-    description: 'Discover the world of microorganisms in space.',
-    image: PlaceHolderImages.find(img => img.id === 'micro-bio-planet'),
-  },
-];
+import { topics } from '@/lib/quiz-data';
+import { useState, useEffect } from 'react';
 
 const specialMissions = [
   {
@@ -65,6 +46,22 @@ const itemVariants = {
 };
 
 export default function GalacticMap() {
+  const [scores, setScores] = useState<Record<string, number | null>>({});
+
+  useEffect(() => {
+    const loadedScores: Record<string, number | null> = {};
+    topics.forEach(topic => {
+      const scoreData = localStorage.getItem(`quiz-score-${topic.slug}`);
+      if (scoreData) {
+        const { score } = JSON.parse(scoreData);
+        loadedScores[topic.slug] = score;
+      } else {
+        loadedScores[topic.slug] = null;
+      }
+    });
+    setScores(loadedScores);
+  }, []);
+
   return (
     <div className="container mx-auto px-4 py-16">
       <motion.div
@@ -107,10 +104,23 @@ export default function GalacticMap() {
               <div className="p-6 flex flex-col flex-grow">
                 <CardTitle className="text-2xl font-bold text-primary-foreground">{topic.title}</CardTitle>
                 <CardDescription className="mt-2 flex-grow">{topic.description}</CardDescription>
+                <div className="mt-4">
+                  {scores[topic.slug] !== null && scores[topic.slug] !== undefined ? (
+                    <div className="flex items-center gap-2 text-green-400">
+                      <CheckCircle className="h-5 w-5" />
+                      <span className="font-bold">Puntaje: {scores[topic.slug]} / {topic.questions.length}</span>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-2 text-muted-foreground">
+                       <HelpCircle className="h-5 w-5" />
+                      <span>Cuestionario no realizado</span>
+                    </div>
+                  )}
+                </div>
               </div>
               <CardFooter>
                 <Button asChild className="w-full bg-primary/80 hover:bg-primary text-primary-foreground font-bold group-hover:shadow-[0_0_20px_hsl(var(--primary))] transition-shadow duration-300">
-                  <Link href={`/quiz?topic=${topic.slug}`}>
+                  <Link href={`/article/${topic.slug}`}>
                     Start Mission <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>

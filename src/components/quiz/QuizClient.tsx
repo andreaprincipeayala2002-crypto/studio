@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { quizData, Question } from '@/lib/quiz-data';
+import { topics, Question } from '@/lib/quiz-data';
 import QuestionCard from './QuestionCard';
 import ScoreModal from './ScoreModal';
 import RocketAnimation from './RocketAnimation';
@@ -11,7 +11,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function QuizClient() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const topic = searchParams.get('topic');
+  const topicSlug = searchParams.get('topic');
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -23,21 +23,19 @@ export default function QuizClient() {
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState<number | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
+  const topic = useMemo(() => topics.find(t => t.slug === topicSlug), [topicSlug]);
+
   useEffect(() => {
-    if (topic && quizData[topic]) {
-      // Shuffle questions for variety on retry
-      const shuffledQuestions = [...quizData[topic]].sort(() => Math.random() - 0.5);
+    if (topic) {
+      const shuffledQuestions = [...topic.questions].sort(() => Math.random() - 0.5);
       setQuestions(shuffledQuestions);
     } else {
-      // Default to a topic or handle error if no topic is found
-      const defaultTopic = 'human-biology';
-      const shuffledQuestions = [...quizData[defaultTopic]].sort(() => Math.random() - 0.5);
-      setQuestions(shuffledQuestions);
+      router.push('/');
     }
-  }, [topic]);
+  }, [topic, router]);
 
   const handleAnswer = (answerIndex: number) => {
-    if (selectedAnswerIndex !== null) return; // Prevent multiple answers
+    if (selectedAnswerIndex !== null) return; 
 
     const question = questions[currentQuestionIndex];
     const correct = answerIndex === question.correctAnswerIndex;
@@ -57,6 +55,10 @@ export default function QuizClient() {
       } else {
         setQuizFinished(true);
         setShowRocket(true);
+        // Save score to localStorage
+        if (topic) {
+          localStorage.setItem(`quiz-score-${topic.slug}`, JSON.stringify({ score: correct ? score + 1 : score, total: questions.length }));
+        }
       }
     }, 1500);
   };
@@ -79,7 +81,7 @@ export default function QuizClient() {
 
   const currentQuestion = useMemo(() => questions[currentQuestionIndex], [questions, currentQuestionIndex]);
 
-  if (questions.length === 0) {
+  if (!topic || questions.length === 0) {
     return (
       <div className="flex items-center justify-center min-h-[calc(100vh-4rem)]">
         <p className="text-xl text-muted-foreground">Loading questions...</p>
@@ -97,7 +99,7 @@ export default function QuizClient() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
             transition={{ duration: 0.5 }}
-            className="w-full max-w-2xl"
+            className="w-full max-w-3xl"
           >
             <QuestionCard
               question={currentQuestion}

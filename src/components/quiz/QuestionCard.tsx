@@ -70,7 +70,7 @@ export default function QuestionCard({
             </Button>
           ))}
         </div>
-        {selectedAnswerIndex !== null && (
+        {selectedAnswerIndex !== null && question.explanation && (
             <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-border">
                 <h4 className="font-bold text-lg">Explanation</h4>
                 <p className="text-muted-foreground mt-2">{question.explanation}</p>

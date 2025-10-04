@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "astronaut",
+      "description": "An astronaut floating in space, ready for a mission.",
+      "imageUrl": "https://images.unsplash.com/photo-1643658771492-6cfd5413455c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhc3Ryb25hdXQlMjBzcGFjZXxlbnwwfHx8fDE3NTk1NTE2Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "astronaut space"
+    },
+    {
+      "id": "human-bio-planet",
+      "description": "A vibrant planet representing human biology studies in space.",
+      "imageUrl": "https://images.unsplash.com/photo-1727363456036-ecc24d117fb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWQlMjBwbGFuZXR8ZW58MHx8fHwxNzU5NjEwNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "red planet"
+    },
+    {
+      "id": "plant-sci-planet",
+      "description": "A lush, green planet symbolizing plant science in microgravity.",
+      "imageUrl": "https://images.unsplash.com/photo-1568832359672-e36cf5d74f54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxncmVlbiUyMHBsYW5ldHxlbnwwfHx8fDE3NTk1MDcwNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green planet"
+    },
+    {
+      "id": "micro-bio-planet",
+      "description": "A mysterious planet teeming with microscopic life, for microbiology.",
+      "imageUrl": "https://images.unsplash.com/photo-1643330683233-ff2ac89b002c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibHVlJTIwcGxhbmV0fGVufDB8fHx8MTc1OTUzMDczN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blue planet"
+    }
+  ]
 }

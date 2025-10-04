@@ -4,76 +4,82 @@
 
 @layer base {
   :root {
-    --background: 224 71% 4%; /* #050E17 */
-    --foreground: 210 40% 98%;
+    --background-start-rgb: 10, 10, 20;
+    --background-end-rgb: 25, 25, 40;
+    --background: 224 71% 4%; /* Fallback */
+
+    --foreground: 210 20% 98%;
 
     --card: 220 15% 15%;
-    --card-foreground: 210 40% 98%;
+    --card-foreground: 210 20% 98%;
 
     --popover: 224 71% 4%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 217 91% 60%; /* Bright Blue */
-    --primary-foreground: 210 40% 98%;
+    --popover-foreground: 210 20% 98%;
+    
+    --primary: 260 100% 70%; /* Vibrant Purple */
+    --primary-foreground: 210 20% 98%;
 
     --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 210 20% 98%;
 
     --muted: 217 33% 25%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 190 81% 59%; /* Bright Cyan */
-    --accent-foreground: 224 71% 4%;
+    --accent: 330 100% 60%; /* Bright Magenta */
+    --accent-foreground: 210 20% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 217 33% 25%;
     --input: 217 33% 25%;
-    --ring: 217 91% 70%;
+    --ring: 260 100% 75%;
     
-    --radius: 1rem; /* Increased border radius */
+    --radius: 1.5rem; /* Increased for Apple's aesthetic */
     
-    --chart-1: 217 91% 60%;
-    --chart-2: 190 81% 59%;
-    --chart-3: 267 100% 50%;
-    --chart-4: 315 100% 50%;
+    --chart-1: 260 100% 70%;
+    --chart-2: 330 100% 60%;
+    --chart-3: 190 81% 59%;
+    --chart-4: 217 91% 60%;
     --chart-5: 43 74% 66%;
   }
 
   .dark {
-     --background: 224 71% 4%; /* #050E17 */
-    --foreground: 210 40% 98%;
+    --background-start-rgb: 10, 10, 20;
+    --background-end-rgb: 25, 25, 40;
+    --background: 224 71% 4%; /* Fallback */
+
+    --foreground: 210 20% 98%;
 
     --card: 220 15% 15%;
-    --card-foreground: 210 40% 98%;
+    --card-foreground: 210 20% 98%;
 
     --popover: 224 71% 4%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 217 91% 60%; /* Bright Blue */
-    --primary-foreground: 210 40% 98%;
+    --popover-foreground: 210 20% 98%;
+    
+    --primary: 260 100% 70%; /* Vibrant Purple */
+    --primary-foreground: 210 20% 98%;
 
     --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 210 20% 98%;
 
     --muted: 217 33% 25%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 190 81% 59%; /* Bright Cyan */
-    --accent-foreground: 224 71% 4%;
+    --accent: 330 100% 60%; /* Bright Magenta */
+    --accent-foreground: 210 20% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 217 33% 25%;
     --input: 217 33% 25%;
-    --ring: 217 91% 70%;
+    --ring: 260 100% 75%;
     
-    --chart-1: 217 91% 60%;
-    --chart-2: 190 81% 59%;
-    --chart-3: 267 100% 50%;
-    --chart-4: 315 100% 50%;
+    --chart-1: 260 100% 70%;
+    --chart-2: 330 100% 60%;
+    --chart-3: 190 81% 59%;
+    --chart-4: 217 91% 60%;
     --chart-5: 43 74% 66%;
   }
 }
@@ -84,18 +90,20 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: linear-gradient(to bottom, #050e17, #0b1424), 
-                      radial-gradient(ellipse 80% 80% at 50% -20%,rgba(120,119,198,0.3),hsla(0,0%,100%,0));
+    background: linear-gradient(170deg, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
     background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+  }
+}
+
+@layer components {
+  .apple-glass {
+    background-color: rgba(30, 30, 45, 0.5);
+    backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
 }
 
 .glow {
-  text-shadow: 0 0 8px hsl(var(--primary) / 0.7);
-}
-
-.glass-card {
-  @apply bg-white/10 backdrop-blur-xl border border-white/10 shadow-2xl shadow-black/20;
+  text-shadow: 0 0 12px hsl(var(--primary) / 0.8);
 }

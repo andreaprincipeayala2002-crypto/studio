@@ -54,68 +54,74 @@ export default function AiTools() {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-      <Card className="glass-card">
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2"><Wand2 className="text-accent" /> Resumidor de Publicaciones por IA</CardTitle>
-          <CardDescription>Pega texto de una publicación de la NASA para obtener un resumen conciso.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Textarea
-            placeholder="Pega el texto aquí..."
-            value={textToSummarize}
-            onChange={(e) => setTextToSummarize(e.target.value)}
-            rows={8}
-            className="mb-4 bg-black/20"
-          />
-          <Button onClick={handleSummarize} disabled={isSummarizing}>
-            {isSummarizing ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Wand2 className="mr-2 h-4 w-4" />}
-            Resumir
-          </Button>
-          {summary && (
-            <div className="mt-4 p-4 bg-black/20 rounded-lg border border-white/10">
-              <h4 className="font-bold text-lg">Resumen:</h4>
-              <p className="text-muted-foreground mt-2 whitespace-pre-wrap">{summary}</p>
-            </div>
-          )}
-        </CardContent>
-      </Card>
-      
-      <Card className="glass-card">
-        <CardHeader>
-            <CardTitle className="flex items-center gap-2"><BrainCircuit className="text-accent"/> Generador de Cuestionarios por IA</CardTitle>
-            <CardDescription>Genera preguntas de cuestionario a partir de un tema y un texto de contexto.</CardDescription>
-        </CardHeader>
-        <CardContent>
-            <div className="space-y-4">
-                <Input placeholder="Tema del Cuestionario" value={quizTopic} onChange={e => setQuizTopic(e.target.value)} className="bg-black/20" />
-                <Textarea placeholder="Contexto para el cuestionario..." value={quizContext} onChange={e => setQuizContext(e.target.value)} rows={5} className="bg-black/20" />
-                <Button onClick={handleGenerateQuiz} disabled={isGenerating}>
-                    {isGenerating ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <BrainCircuit className="mr-2 h-4 w-4" />}
-                    Generar Cuestionario
-                </Button>
-            </div>
-            {generatedQuiz && (
-                <div className="mt-4 p-4 bg-black/20 rounded-lg border border-white/10">
-                    <h4 className="font-bold text-lg">Preguntas Generadas:</h4>
-                    <ul className="space-y-4 mt-2">
-                        {generatedQuiz.map((q: any, i: number) => (
-                            <li key={i}>
-                                <p className="font-semibold">{i+1}. {q.question}</p>
-                                <ul className="list-disc pl-5 text-muted-foreground">
-                                    {q.options.map((opt: string, j: number) => (
-                                        <li key={j} className={cn(j === q.correctAnswerIndex && 'text-green-400 font-bold')}>
-                                            {opt}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+    <>
+      <div className="text-center mb-12 mt-16">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-white to-stone-400">Herramientas de IA</h2>
+        <p className="text-lg text-stone-300 mt-3 max-w-2xl mx-auto">Utiliza la IA para generar resúmenes y cuestionarios personalizados.</p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <Card className="apple-glass">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3"><Wand2 className="text-fuchsia-400" /> Resumidor de Publicaciones</CardTitle>
+            <CardDescription>Pega texto de una publicación de la NASA para obtener un resumen conciso.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Textarea
+              placeholder="Pega el texto aquí..."
+              value={textToSummarize}
+              onChange={(e) => setTextToSummarize(e.target.value)}
+              rows={8}
+              className="bg-stone-900/80 border-stone-700"
+            />
+            <Button onClick={handleSummarize} disabled={isSummarizing} className="mt-4 w-full">
+              {isSummarizing ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Wand2 className="mr-2 h-4 w-4" />}
+              Resumir
+            </Button>
+            {summary && (
+              <div className="mt-4 p-4 bg-black/30 rounded-xl border border-white/10">
+                <h4 className="font-bold text-lg">Resumen Generado:</h4>
+                <p className="text-stone-300 mt-2 whitespace-pre-wrap">{summary}</p>
+              </div>
             )}
-        </CardContent>
-      </Card>
-    </div>
+          </CardContent>
+        </Card>
+        
+        <Card className="apple-glass">
+          <CardHeader>
+              <CardTitle className="flex items-center gap-3"><BrainCircuit className="text-sky-400"/> Generador de Cuestionarios</CardTitle>
+              <CardDescription>Genera preguntas de cuestionario a partir de un tema y un texto de contexto.</CardDescription>
+          </CardHeader>
+          <CardContent>
+              <div className="space-y-4">
+                  <Input placeholder="Tema del Cuestionario" value={quizTopic} onChange={e => setQuizTopic(e.target.value)} className="bg-stone-900/80 border-stone-700" />
+                  <Textarea placeholder="Contexto para el cuestionario..." value={quizContext} onChange={e => setQuizContext(e.target.value)} rows={5} className="bg-stone-900/80 border-stone-700" />
+                  <Button onClick={handleGenerateQuiz} disabled={isGenerating} className="w-full">
+                      {isGenerating ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <BrainCircuit className="mr-2 h-4 w-4" />}
+                      Generar Cuestionario
+                  </Button>
+              </div>
+              {generatedQuiz && (
+                  <div className="mt-4 p-4 bg-black/30 rounded-xl border border-white/10">
+                      <h4 className="font-bold text-lg">Preguntas Generadas:</h4>
+                      <ul className="space-y-4 mt-2">
+                          {generatedQuiz.map((q: any, i: number) => (
+                              <li key={i}>
+                                  <p className="font-semibold">{i+1}. {q.question}</p>
+                                  <ul className="list-disc pl-5 text-stone-300">
+                                      {q.options.map((opt: string, j: number) => (
+                                          <li key={j} className={cn(j === q.correctAnswerIndex && 'text-green-400 font-bold')}>
+                                              {opt}
+                                          </li>
+                                      ))}
+                                  </ul>
+                              </li>
+                          ))}
+                      </ul>
+                  </div>
+              )}
+          </CardContent>
+        </Card>
+      </div>
+    </>
   );
 }

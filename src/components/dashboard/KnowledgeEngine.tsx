@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
-import DataCharts from './DataCharts';
 import AiTools from './AiTools';
+import UserPerformanceCharts from './UserPerformanceCharts';
 
 const containerVariants = {
   hidden: { opacity: 1 },
@@ -26,15 +26,15 @@ const itemVariants = {
 export default function KnowledgeEngine() {
   return (
     <motion.div 
-      className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+      className="space-y-8"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
-      <motion.div className="lg:col-span-3" variants={itemVariants}>
-        <DataCharts />
+      <motion.div variants={itemVariants}>
+        <UserPerformanceCharts />
       </motion.div>
-      <motion.div className="lg:col-span-3" variants={itemVariants}>
+      <motion.div variants={itemVariants}>
         <AiTools />
       </motion.div>
     </motion.div>

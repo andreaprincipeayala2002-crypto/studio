@@ -47,7 +47,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           </div>
         )}
 
-        <div className="prose prose-invert prose-lg max-w-none mx-auto text-foreground/90">
+        <div className="prose prose-invert prose-lg max-w-none mx-auto text-foreground/90 whitespace-pre-wrap">
             <p className="lead text-xl text-muted-foreground">{topic.longDescription}</p>
         </div>
         

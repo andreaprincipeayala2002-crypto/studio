@@ -2,7 +2,7 @@
   "topics": [
     {
       "slug": "human-biology-space",
-      "title": "Biología Humana en el Espacio",
+      "title": "Los vuelos espaciales modulan la expresión de genes clave relacionados con el estrés oxidativo y el ciclo celular en el corazón",
       "description": "Explora cómo la microgravedad afecta el cuerpo humano durante los vuelos espaciales.",
       "longDescription": "Los astronautas experimentan numerosos cambios fisiológicos en el espacio debido a la ausencia de gravedad. Entre los efectos más significativos se encuentran la atrofia muscular, la pérdida de densidad ósea, cambios en el sistema cardiovascular y desplazamientos de fluidos hacia la cabeza. Los programas de la NASA desarrollan contramedidas como rutinas de ejercicio especializadas, nutrición adecuada y monitoreo constante para garantizar la salud de la tripulación durante misiones prolongadas a la Estación Espacial Internacional y futuras misiones a Marte.",
       "publicationDate": "01 de Enero, 2025",
@@ -201,7 +201,7 @@
             "La radiación ultravioleta",
             "La falta de CO2"
           ],
-          "correctAnswerIndex": 1,
+          "correctAnswerIndex":1,
           "explanation": "La microgravedad afecta la dirección del crecimiento, absorción de agua y nutrientes, lo que requiere sistemas de cultivo especiales."
         },
         {

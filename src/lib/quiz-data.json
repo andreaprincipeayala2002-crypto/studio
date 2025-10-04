@@ -10,109 +10,114 @@
       "imageId": "human-bio-planet-1",
       "relatedTopics": ["plant-science-space", "microbiology-space"],
       "reflectionQuestions": [
-        "¿Qué estrategias crees que serían más efectivas para prevenir la pérdida ósea en el espacio?",
-        "Si tuvieras que diseñar un gimnasio para astronautas en Marte, ¿qué incluirías?"
+        "¿Qué estrategias crees que serían más efectivas para prevenir la disfunción cardíaca en el espacio?",
+        "Si pudieras diseñar un nuevo estudio genético para astronautas, ¿en qué órgano o sistema te centrarías y por qué?"
       ],
       "questions": [
         {
-          "question": "¿Qué es la 'anemia espacial'?",
+          "question": "¿Cuál fue el objetivo principal del estudio mencionado en el artículo?",
           "options": [
-            "Aumento de glóbulos rojos",
-            "Pérdida de glóbulos rojos por desplazamiento de fluidos",
-            "Reacción alérgica a materiales de la nave",
-            "Deficiencia de vitamina D"
+            "Analizar la pérdida de masa muscular en ratones.",
+            "Estudiar cómo el vuelo espacial afecta la expresión génica en el tejido cardíaco.",
+            "Medir los efectos de la radiación cósmica en el cerebro.",
+            "Probar nuevos alimentos para astronautas."
           ],
           "correctAnswerIndex": 1,
-          "explanation": "La anemia espacial ocurre cuando los astronautas pierden glóbulos rojos debido a la adaptación del cuerpo a los desplazamientos de fluidos en microgravedad."
+          "explanation": "El estudio se centró específicamente en cómo el vuelo espacial modula los genes en el corazón relacionados con el estrés oxidativo y el ciclo celular."
         },
         {
-          "question": "¿Cuál hueso se ve más afectado por la pérdida de densidad ósea en el espacio?",
-          "options": ["Cráneo", "Costillas", "Huesos que soportan peso (cadera y columna)", "Manos y pies"],
+          "question": "¿Qué modelo animal se utilizó en este estudio de vuelo espacial?",
+          "options": ["Monos", "Peces cebra", "Ratones", "Moscas de la fruta"],
           "correctAnswerIndex": 2,
-          "explanation": "Los huesos que soportan peso como caderas, piernas y columna pierden densidad rápidamente en microgravedad al dejar de soportar el peso corporal."
+          "explanation": "La metodología del estudio indica claramente que se utilizaron ratones como modelo animal para la investigación."
         },
         {
-          "question": "¿Qué contramedida clave usan los astronautas para combatir la atrofia muscular?",
+          "question": "Según los resultados, el gen Nox1 aumentó 6.6 veces. ¿Qué indica este cambio?",
           "options": [
-            "Comer más proteínas",
-            "Ejercicio de resistencia y aeróbico regular",
-            "Tomar pastillas para dormir",
-            "Usar calcetines de compresión"
-          ],
-          "correctAnswerIndex": 1,
-          "explanation": "El ejercicio diario, incluyendo el uso de dispositivos como ARED, proporciona carga mecánica necesaria para mantener músculos y huesos."
-        },
-        {
-          "question": "¿Qué efecto tiene la microgravedad en el sistema cardiovascular?",
-          "options": [
-            "Aumento de presión arterial",
-            "Disminución de volumen sanguíneo y redistribución hacia la cabeza",
-            "Fortalecimiento del corazón",
-            "No tiene efecto"
-          ],
-          "correctAnswerIndex": 1,
-          "explanation": "En microgravedad, los fluidos corporales se desplazan hacia la cabeza, lo que puede causar hinchazón facial, visión borrosa y cambios en la presión arterial."
-        },
-        {
-          "question": "¿Cuál es un riesgo visual asociado a los vuelos espaciales prolongados?",
-          "options": [
-            "Miopía temporal",
-            "Aumento de visión nocturna",
-            "Síndrome visual de la microgravedad",
-            "Desarrollo de cataratas instantáneo"
+            "Una mejora en las defensas antioxidantes.",
+            "Una reducción de la inflamación.",
+            "Un aumento en la producción de especies reactivas de oxígeno.",
+            "Una disminución del ritmo cardíaco."
           ],
           "correctAnswerIndex": 2,
-          "explanation": "El síndrome visual de la microgravedad se debe a la presión intracraneal causada por el desplazamiento de fluidos hacia la cabeza, afectando la visión de algunos astronautas."
+          "explanation": "El aumento del gen Nox1 está directamente relacionado con un incremento en la producción de especies reactivas de oxígeno (ROS), lo que indica mayor estrés oxidativo."
         },
         {
-          "question": "¿Por qué los músculos se atrofian en el espacio?",
+          "question": "¿Qué gen, relacionado con las defensas antioxidantes, mostró una disminución significativa?",
           "options": [
-            "Por dieta deficiente",
-            "Por la falta de gravedad que reduce el uso de los músculos",
-            "Por exceso de ejercicio",
-            "Por radiación cósmica"
+            "Cdkn1a (p21)",
+            "Myc",
+            "Nox1",
+            "Nfe2l2 (Nrf2)"
           ],
-          "correctAnswerIndex": 1,
-          "explanation": "Sin gravedad, los músculos que normalmente soportan peso se usan menos, causando pérdida de fuerza y masa muscular."
+          "correctAnswerIndex": 3,
+          "explanation": "El gen Nfe2l2 (también conocido como Nrf2), que es crucial para las defensas antioxidantes, disminuyó 2.4 veces, debilitando la capacidad del corazón para combatir el estrés oxidativo."
         },
         {
-          "question": "¿Qué sistema corporal sufre alteraciones en la regulación de líquidos?",
-          "options": ["Digestivo", "Renal", "Circulatorio", "Respiratorio"],
+          "question": "El aumento de 6.8 veces en el gen Cdkn1a (p21) sugiere una alteración en...",
+          "options": [
+            "La respuesta inflamatoria.",
+            "El control de la proliferación celular.",
+            "La regulación del ciclo celular.",
+            "La producción de energía."
+          ],
           "correctAnswerIndex": 2,
-          "explanation": "El sistema circulatorio se ve afectado por el desplazamiento de fluidos hacia la cabeza y la redistribución del volumen sanguíneo."
+          "explanation": "Cdkn1a (p21) es un regulador clave del ciclo celular. Un aumento tan significativo apunta a cambios importantes en cómo las células del corazón gestionan su crecimiento y división."
         },
         {
-          "question": "¿Qué medida ayuda a contrarrestar la pérdida ósea en el espacio?",
+          "question": "¿Cuál de las siguientes es una conclusión clave del estudio?",
           "options": [
-            "Suplementos de calcio y vitamina D",
-            "Dormir más horas",
-            "Evitar el ejercicio",
-            "Uso de trajes de presión"
+            "El corazón se fortalece en el espacio.",
+            "El vuelo espacial no tiene efectos a nivel genético.",
+            "El vuelo espacial genera un ambiente pro-oxidante en el corazón.",
+            "Los ratones son inmunes a los efectos de la microgravedad."
           ],
-          "correctAnswerIndex": 0,
-          "explanation": "La suplementación con calcio y vitamina D junto con el ejercicio resistido ayuda a mantener la densidad ósea."
+          "correctAnswerIndex": 2,
+          "explanation": "Una de las conclusiones principales es que el entorno espacial induce un estrés oxidativo persistente en el tejido cardíaco."
         },
         {
-          "question": "¿Qué sucede con la postura de los astronautas en microgravedad?",
+          "question": "La disminución drástica del gen Tnf (9.9 veces) afecta principalmente a:",
           "options": [
-            "Se encorvan constantemente",
-            "Pierden la percepción de la orientación vertical",
-            "Se vuelven más altos permanentemente",
-            "No hay cambios"
-          ],
-          "correctAnswerIndex": 1,
-          "explanation": "Sin gravedad, la referencia hacia abajo desaparece, alterando la percepción de la postura y el equilibrio."
-        },
-        {
-          "question": "¿Qué rol tiene la nutrición en vuelos espaciales largos?",
-          "options": [
-            "Solo mantiene el hambre bajo control",
-            "Previene la pérdida muscular y ósea y mantiene el sistema inmune",
-            "Es irrelevante si se hace ejercicio",
-            "Solo afecta la energía mental"
+            "La estructura ósea",
+            "La respuesta inflamatoria",
+            "La visión del astronauta",
+            "La digestión"
           ],
           "correctAnswerIndex": 1,
-          "explanation": "Una dieta balanceada con proteínas, vitaminas y minerales es crucial para prevenir atrofia muscular, pérdida ósea y mantener la salud general."
+          "explanation": "El gen Tnf (Factor de Necrosis Tumoral) es un actor central en la respuesta inflamatoria del cuerpo. Su gran disminución indica una alteración severa de este proceso."
+        },
+        {
+          "question": "¿Durante cuánto tiempo estuvieron los ratones en el espacio para este estudio?",
+          "options": [
+            "Una semana",
+            "15 días",
+            "Un mes",
+            "Seis meses"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "La metodología especifica que la duración del vuelo espacial en el transbordador STS-131 fue de 15 días."
+        },
+        {
+          "question": "¿Por qué son relevantes estos hallazgos para futuras misiones a Marte?",
+          "options": [
+            "Ayudan a diseñar trajes espaciales más cómodos.",
+            "Son cruciales para desarrollar contramedidas que protejan la salud cardiovascular de los astronautas.",
+            "Permiten seleccionar ratones más resistentes para futuros experimentos.",
+            "No tienen ninguna relevancia para las misiones a Marte."
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "Comprender los riesgos a nivel molecular, como la disfunción cardíaca, es fundamental para crear estrategias preventivas que aseguren la salud de los astronautas en misiones de larga duración."
+        },
+        {
+          "question": "¿Qué técnica de análisis se utilizó para medir la expresión de los 168 genes seleccionados?",
+          "options": [
+            "Secuenciación de ARN (RNA-Seq)",
+            "Microscopía electrónica",
+            "PCR cuantitativa (qPCR)",
+            "Western Blot"
+          ],
+          "correctAnswerIndex": 2,
+          "explanation": "El estudio utilizó PCR cuantitativa para analizar los niveles de expresión de un conjunto específico de 168 genes en los ventrículos cardíacos de los ratones."
         }
       ]
     },

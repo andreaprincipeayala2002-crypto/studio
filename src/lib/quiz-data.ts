@@ -24,7 +24,7 @@ export interface Topic {
 }
 
 
-const topicData: Omit<Topic, 'image'>[] = data.topics;
+const topicData: Omit<Topic, 'image'>[] = data.topics.map(t => ({...t, image: undefined}));
 
 export const topics: Topic[] = topicData.map(topic => ({
   ...topic,

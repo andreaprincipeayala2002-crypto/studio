@@ -6,8 +6,8 @@
       "description": "Explora cómo la microgravedad afecta el cuerpo humano durante los vuelos espaciales.",
       "longDescription": "Investigadores estudiaron cómo el vuelo espacial afecta la expresión génica en el tejido cardíaco, enfocándose en genes relacionados con el estrés oxidativo y la regulación del ciclo celular.\n\n🎯 Objetivo del Estudio\nInvestigaron cómo el vuelo espacial afecta la expresión génica en el tejido cardíaco, específicamente enfocándose en genes relacionados con el estrés oxidativo y la regulación del ciclo celular.\n\n🔬 Metodología\n- Modelo Animal: Ratones\n- Duración del Vuelo Espacial: 15 días en el transbordador STS-131\n- Análisis Realizado: PCR cuantitativa de 168 genes seleccionados\n- Tejido Analizado: Ventrículos cardíacos\n\n📊 Resultados Principales\nSe observaron alteraciones significativas en genes clave.\n\nAlteraciones en el Estrés Oxidativo:\n- Nox1: Aumentó 6.6 veces, indicando un incremento en la producción de especies reactivas de oxígeno.\n- Nfe2l2 (Nrf2): Disminuyó 2.4 veces, lo que sugiere una reducción de las defensas antioxidantes.\n- Ptgs2: Disminuyó 3.4 veces, mostrando una alteración en la respuesta inflamatoria.\n\nCambios en el Ciclo Celular:\n- Cdkn1a (p21): Aumentó 6.8 veces, un regulador clave del ciclo celular.\n- Myc: Aumentó 3.9 veces, relacionado con el control de la proliferación celular.\n- Tnf: Disminuyó 9.9 veces, afectando la respuesta inflamatoria.\n\n💡 Conclusiones Clave\n- Estrés Oxidativo Persistente: El vuelo espacial genera un ambiente pro-oxidante en el corazón.\n- Alteración del Ciclo Celular: Los genes reguladores del ciclo celular muestran cambios significativos.\n- Implicaciones para la Salud: Estos cambios podrían explicar la disfunción cardíaca observada en astronautas.\n- Importancia para Misiones Futuras: Crucial para desarrollar contramedidas en misiones espaciales prolongadas.\n\n🚀 Relevancia\nEstos hallazgos son esenciales para proteger la salud cardiovascular de los astronautas, desarrollar estrategias preventivas para misiones a la Luna y Marte, y comprender mejor los mecanismos moleculares de la adaptación cardíaca al entorno espacial.",
       "publicationDate": "01 de Enero, 2025",
-      "sourceUrl": "https://www.nasa.gov/hrp/elements/human-factors-and-behavioral-performance/",
-      "imageId": "human-bio-planet-1",
+      "sourceUrl": "https://www.shutterstock.com/image-photo/tropical-leaves-banner-isolated-on-260nw-2521669583.jpg",
+      "imageId": "human-bio-planet",
       "relatedTopics": ["plant-science-space", "microbiology-space"],
       "reflectionQuestions": [
         "¿Qué estrategias crees que serían más efectivas para prevenir la disfunción cardíaca en el espacio?",
@@ -128,7 +128,7 @@
       "longDescription": "Cultivar plantas en el espacio es vital para futuras misiones de larga duración. Las plantas proporcionan alimentos frescos, oxígeno y beneficios psicológicos para los astronautas. En microgravedad, los sistemas de orientación gravitacional desaparecen, lo que afecta el crecimiento de raíces y tallos. Los científicos utilizan señales de luz y sistemas de riego especializados para estudiar cómo las plantas se desarrollan en la Estación Espacial Internacional, usando sistemas como 'Veggie' para cultivar lechuga, rábanos y otras plantas comestibles.",
       "publicationDate": "15 de Enero, 2025",
       "sourceUrl": "https://www.nasa.gov/mission/space-station/research-explorer/search-results/?topic=20",
-      "imageId": "plant-sci-planet-1",
+      "imageId": "plant-sci-planet",
       "relatedTopics": ["human-biology-space", "microbiology-space"],
       "reflectionQuestions": [
         "Además de la comida, ¿qué otros beneficios pueden aportar las plantas en una misión espacial?",
@@ -214,6 +214,107 @@
           "options": ["Veggie", "GrowBox", "SpaceFarm", "AgriLab"],
           "correctAnswerIndex": 0,
           "explanation": "El sistema Veggie ha permitido cultivar lechuga, rábanos y otros vegetales comestibles en la EEI."
+        }
+      ]
+    },
+    {
+      "slug": "microbiology-space",
+      "title": "Microbiología en el Espacio",
+      "description": "Descubre el mundo invisible de los microbios en la EEI.",
+      "longDescription": "Los microbios están por todas partes, incluso en la Estación Espacial Internacional. Estudiar cómo se comportan los microbios en microgravedad es crucial para la salud de los astronautas y la seguridad de la nave. La NASA monitoriza las poblaciones microbianas en la estación, estudiando cómo las bacterias y los hongos se adaptan al entorno espacial. Algunos microbios pueden volverse más resistentes o virulentos en el espacio, mientras que otros podrían usarse para procesos de biomineralización o reciclaje de residuos en futuras colonias espaciales.",
+      "publicationDate": "30 de Enero, 2025",
+      "sourceUrl": "https://www.nasa.gov/mission/space-station/research-explorer/search-results/?topic=14",
+      "imageId": "micro-bio-planet",
+      "relatedTopics": ["human-biology-space", "plant-science-space"],
+      "reflectionQuestions": [
+        "¿Cuáles son los mayores riesgos de una contaminación microbiana en una nave espacial?",
+        "¿Cómo podrían los microbios ayudarnos a establecer una base en Marte?"
+      ],
+      "questions": [
+        {
+          "question": "¿Por qué es importante estudiar microbios en la EEI?",
+          "options": ["Para la salud de los astronautas", "Para la seguridad de la nave", "Ambas son correctas", "No es importante"],
+          "correctAnswerIndex": 2,
+          "explanation": "Estudiar microbios es crucial tanto para la salud de la tripulación (evitando infecciones) como para la integridad de la estación (evitando la corrosión de materiales)."
+        },
+        {
+          "question": "¿Qué es un biofilm?",
+          "options": [
+            "Una película protectora para trajes espaciales",
+            "Una comunidad de microbios adheridos a una superficie",
+            "Un tipo de combustible para cohetes",
+            "Una capa delgada de polvo lunar"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "Los biofilms son comunidades de microorganismos que pueden formarse en superficies y son más difíciles de eliminar. En el espacio, pueden ser un riesgo."
+        },
+        {
+          "question": "Algunas bacterias han mostrado mayor resistencia a antibióticos en el espacio. ¿Verdadero o falso?",
+          "options": ["Verdadero", "Falso"],
+          "correctAnswerIndex": 0,
+          "explanation": "Verdadero. Algunos estudios han demostrado que bacterias como E. coli pueden desarrollar mayor resistencia a los antibióticos en condiciones de microgravedad."
+        },
+        {
+          "question": "¿Qué es la biomineralización?",
+          "options": [
+            "Un proceso donde los microbios extraen minerales útiles de las rocas",
+            "La fosilización de microbios",
+            "La creación de minerales artificiales",
+            "La destrucción de minerales por microbios"
+          ],
+          "correctAnswerIndex": 0,
+          "explanation": "La biomineralización es un proceso en el que los microbios pueden precipitar minerales, lo que podría ser útil en el futuro para la minería en asteroides o planetas."
+        },
+        {
+          "question": "¿De dónde provienen la mayoría de los microbios en la EEI?",
+          "options": ["Del espacio exterior", "De los propios astronautas y de la carga", "Se generan espontáneamente", "De la comida liofilizada"],
+          "correctAnswerIndex": 1,
+          "explanation": "La principal fuente de microbios en un entorno cerrado como la EEI son sus ocupantes humanos y los suministros que se envían desde la Tierra."
+        },
+        {
+          "question": "¿Qué efecto puede tener la microgravedad en la virulencia de algunas bacterias?",
+          "options": ["Disminuirla siempre", "No tiene ningún efecto", "Puede aumentarla", "Solo afecta a los hongos"],
+          "correctAnswerIndex": 2,
+          "explanation": "Se ha observado en estudios que algunas bacterias, como Salmonella, pueden volverse más virulentas (más capaces de causar enfermedades) en el espacio."
+        },
+        {
+          "question": "El proyecto MERCCURI estudió miles de muestras de microbios recogidas por ciudadanos en la Tierra y las envió a la EEI. ¿Cuál era su objetivo?",
+          "options": [
+            "Encontrar vida extraterrestre",
+            "Ver cuáles crecían más rápido en el espacio",
+            "Probar un nuevo sistema de limpieza",
+            "Alimentar a los astronautas con bacterias"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "El proyecto MERCCURI (Microbial Ecology Research Combining Citizen and University Researchers on the ISS) buscaba comparar el crecimiento de diferentes microbios en la Tierra y en el espacio."
+        },
+        {
+          "question": "¿Cómo se limpian las superficies de la EEI para controlar los microbios?",
+          "options": ["Se exponen al vacío del espacio", "Con toallitas desinfectantes y aspiradoras con filtros HEPA", "Nunca se limpian", "Con robots de limpieza autónomos"],
+          "correctAnswerIndex": 1,
+          "explanation": "La tripulación de la EEI realiza limpiezas regulares utilizando toallitas desinfectantes especiales y aspiradoras para mantener el entorno lo más limpio posible."
+        },
+        {
+          "question": "Además de los riesgos, ¿cómo podrían los microbios ser útiles en futuras misiones a Marte?",
+          "options": [
+            "Ayudando a terraformar el planeta",
+            "Reciclando residuos y produciendo nutrientes",
+            "Creando un campo magnético",
+            "Todas las anteriores"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "Los microbios tienen un gran potencial para sistemas de soporte vital bioregenerativos, ayudando a reciclar agua, descomponer residuos e incluso producir compuestos útiles."
+        },
+        {
+          "question": "La bacteria 'Bacillus subtilis' ha sido estudiada en el espacio por su capacidad para formar esporas resistentes. ¿Por qué es esto interesante para los científicos?",
+          "options": [
+            "Porque sus esporas podrían sobrevivir a viajes interplanetarios (Panspermia)",
+            "Porque brilla en la oscuridad",
+            "Porque puede reparar el metal",
+            "Porque produce oxígeno"
+          ],
+          "correctAnswerIndex": 0,
+          "explanation": "La increíble resistencia de las esporas de Bacillus subtilis a la radiación y al vacío las convierte en un modelo perfecto para estudiar la hipótesis de la panspermia, que sugiere que la vida podría viajar entre planetas."
         }
       ]
     }

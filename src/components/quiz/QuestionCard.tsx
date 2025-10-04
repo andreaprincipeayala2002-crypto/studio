@@ -2,25 +2,42 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Question } from '@/lib/quiz-data';
 import { cn } from '@/lib/utils';
-import { CheckCircle, XCircle } from 'lucide-react';
+import { CheckCircle, XCircle, ArrowRight } from 'lucide-react';
 
 interface QuestionCardProps {
   question: Question;
   onAnswer: (answerIndex: number) => void;
+  onNext: () => void;
   questionNumber: number;
   totalQuestions: number;
   selectedAnswerIndex: number | null;
   isCorrect: boolean | null;
+  topicSlug: string;
 }
 
 export default function QuestionCard({
   question,
   onAnswer,
+  onNext,
   questionNumber,
   totalQuestions,
   selectedAnswerIndex,
-  isCorrect
+  isCorrect,
+  topicSlug,
 }: QuestionCardProps) {
+
+  const getTopicColorClass = () => {
+    switch (topicSlug) {
+      case 'human-biology':
+        return 'border-red-500/30 shadow-red-500/10';
+      case 'plant-science':
+        return 'border-green-500/30 shadow-green-500/10';
+      case 'microbiology':
+        return 'border-blue-500/30 shadow-blue-500/10';
+      default:
+        return 'border-primary/20 shadow-primary/10';
+    }
+  };
 
   const getButtonClass = (index: number) => {
     if (selectedAnswerIndex === null) {
@@ -43,7 +60,10 @@ export default function QuestionCard({
   }
 
   return (
-    <Card className="w-full max-w-3xl bg-card/60 backdrop-blur-lg border-primary/20 shadow-2xl shadow-primary/10">
+    <Card className={cn(
+        "w-full max-w-3xl bg-card/60 backdrop-blur-lg shadow-2xl transition-all",
+        getTopicColorClass()
+      )}>
       <CardHeader>
         <CardDescription className="text-primary font-bold">
           Pregunta {questionNumber} / {totalQuestions}
@@ -70,11 +90,21 @@ export default function QuestionCard({
             </Button>
           ))}
         </div>
-        {selectedAnswerIndex !== null && question.explanation && (
-            <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-border">
-                <h4 className="font-bold text-lg">Explicación</h4>
-                <p className="text-muted-foreground mt-2">{question.explanation}</p>
-            </div>
+        
+        {selectedAnswerIndex !== null && (
+          <div className="mt-6 space-y-4">
+            {question.explanation && (
+                <div className="p-4 bg-muted/50 rounded-lg border border-border">
+                    <h4 className="font-bold text-lg">Explicación</h4>
+                    <p className="text-muted-foreground mt-2">{question.explanation}</p>
+                </div>
+            )}
+             {isCorrect === false && (
+              <Button onClick={onNext} className="w-full" size="lg">
+                Siguiente Pregunta <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            )}
+          </div>
         )}
       </CardContent>
     </Card>

@@ -36,19 +36,36 @@ export default function QuizClient() {
 
   useEffect(() => {
     const body = document.body;
+    let originalBgImage = body.style.backgroundImage;
+
     if (topic?.image?.imageUrl) {
-      body.style.backgroundImage = `url('${topic.image.imageUrl}')`;
-      body.style.backgroundSize = 'cover';
-      body.style.backgroundPosition = 'center';
-      body.style.backgroundAttachment = 'fixed';
+        body.style.backgroundImage = `
+            radial-gradient(circle at 10% 20%, hsl(var(--primary) / 0.1), transparent 40%),
+            radial-gradient(circle at 90% 80%, hsl(var(--accent) / 0.1), transparent 40%),
+            url('${topic.image.imageUrl}')
+        `;
+        body.style.backgroundSize = 'cover';
+        body.style.backgroundPosition = 'center';
+        body.style.backgroundAttachment = 'fixed';
     }
     return () => {
-        body.style.backgroundImage = '';
-        body.style.backgroundSize = '';
-        body.style.backgroundPosition = '';
-        body.style.backgroundAttachment = '';
+        body.style.backgroundImage = originalBgImage;
     }
   }, [topic]);
+
+  const goToNextQuestion = () => {
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
+      setSelectedAnswerIndex(null);
+      setIsCorrect(null);
+    } else {
+      setQuizFinished(true);
+      setShowRocket(true);
+      if (topic) {
+        localStorage.setItem(`quiz-score-${topic.slug}`, JSON.stringify({ score: score, total: questions.length }));
+      }
+    }
+  };
 
   const handleAnswer = (answerIndex: number) => {
     if (selectedAnswerIndex !== null) return; 
@@ -61,25 +78,19 @@ export default function QuizClient() {
 
     if (correct) {
       setScore((prevScore) => prevScore + 1);
-    }
-
-    setTimeout(() => {
-      if (currentQuestionIndex < questions.length - 1) {
-        setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-        setSelectedAnswerIndex(null);
-        setIsCorrect(null);
-      } else {
-        setQuizFinished(true);
-        setShowRocket(true);
+       setTimeout(() => {
+        goToNextQuestion();
+      }, 2000); 
+    } else {
         if (topic) {
-          localStorage.setItem(`quiz-score-${topic.slug}`, JSON.stringify({ score: correct ? score + 1 : score, total: questions.length }));
+            localStorage.setItem(`quiz-score-${topic.slug}`, JSON.stringify({ score: score, total: questions.length }));
         }
-      }
-    }, 1500);
+    }
   };
   
   const handleRestart = () => {
-    const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
+    if (!topic) return;
+    const shuffledQuestions = [...topic.questions].sort(() => Math.random() - 0.5);
     setQuestions(shuffledQuestions);
     setCurrentQuestionIndex(0);
     setScore(0);
@@ -119,10 +130,12 @@ export default function QuizClient() {
             <QuestionCard
               question={currentQuestion}
               onAnswer={handleAnswer}
+              onNext={goToNextQuestion}
               questionNumber={currentQuestionIndex + 1}
               totalQuestions={questions.length}
               selectedAnswerIndex={selectedAnswerIndex}
               isCorrect={isCorrect}
+              topicSlug={topic.slug}
             />
           </motion.div>
         ) : (

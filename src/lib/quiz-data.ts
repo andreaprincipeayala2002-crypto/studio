@@ -1,5 +1,6 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
+import data from './quiz-data.json';
 
 export interface Question {
   question: string;
@@ -19,141 +20,13 @@ export interface Topic {
   questions: Question[];
   relatedTopics: string[];
   reflectionQuestions: string[];
+  imageId: string;
 }
 
-const humanBioQuestions: Question[] = [
-  {
-    question: '¿Qué es la "anemia espacial", una condición observada en los astronautas?',
-    options: [
-      'Un aumento rápido de glóbulos rojos',
-      'Una pérdida de glóbulos rojos debido a los desplazamientos de fluidos',
-      'Una reacción alérgica a los materiales de la nave espacial',
-      'Una deficiencia de vitamina D',
-    ],
-    correctAnswerIndex: 1,
-    explanation: 'La anemia espacial es la pérdida de glóbulos rojos que ocurre cuando los astronautas están en el espacio, principalmente debido a que el cuerpo se adapta a los desplazamientos de fluidos en microgravedad.',
-  },
-  {
-    question: '¿Qué parte del cuerpo humano se ve más afectada por la pérdida de densidad ósea durante los vuelos espaciales de larga duración?',
-    options: ['Cráneo', 'Costillas', 'Huesos que soportan peso como las caderas y la columna vertebral', 'Manos y pies'],
-    correctAnswerIndex: 2,
-    explanation: 'En microgravedad, los huesos que soportan peso como las caderas, las piernas y la columna vertebral pierden densidad a un ritmo mucho mayor que otras partes del esqueleto porque ya no soportan el peso del cuerpo.',
-  },
-  {
-    question: '¿Cuál es una contramedida clave utilizada por los astronautas en la EEI para combatir la atrofia muscular?',
-    options: ['Comer alimentos ricos en proteínas', 'Realizar regularmente ejercicios de resistencia y aeróbicos', 'Tomar pastillas para dormir', 'Usar calcetines de compresión'],
-    correctAnswerIndex: 1,
-    explanation: 'Los astronautas pasan aproximadamente dos horas al día haciendo ejercicio en dispositivos como el ARED (Dispositivo de Ejercicio Resistivo Avanzado) para proporcionar carga mecánica a sus músculos y huesos, lo que ayuda a mitigar la pérdida muscular y ósea.',
-  },
-];
 
-const plantScienceQuestions: Question[] = [
-  {
-    question: '¿Cuál fue una de las primeras plantas cultivadas y consumidas con éxito por los astronautas en el espacio?',
-    options: ['Patatas', 'Tomates', 'Lechuga romana roja', 'Maíz'],
-    correctAnswerIndex: 2,
-    explanation: 'En 2015, los astronautas de la EEI cosecharon y comieron lechuga romana roja "Outredgeous" cultivada en el sistema de crecimiento de plantas Veggie, un paso importante para la agricultura en el espacio.',
-  },
-  {
-    question: '¿Qué es el "gravitropismo" en las plantas y cómo se ve afectado por el espacio?',
-    options: [
-      'El crecimiento de las plantas hacia el agua, que se ve reforzado en el espacio',
-      'El crecimiento de las plantas en respuesta a la gravedad (raíces hacia abajo, brotes hacia arriba), que se interrumpe en el espacio',
-      'Una enfermedad de las plantas común en las naves espaciales',
-      'El proceso de fotosíntesis en microgravedad',
-    ],
-    correctAnswerIndex: 1,
-    explanation: 'El gravitropismo es el crecimiento direccional de una planta en respuesta a la gravedad. En la microgravedad del espacio, esta señal está ausente y los investigadores estudian cómo las plantas se orientan utilizando otras señales como la luz.',
-  },
-   {
-    question: '¿Qué fuente de luz se utiliza más comúnmente para cultivar plantas en la EEI?',
-    options: ['Luz solar de las ventanas', 'Bombillas incandescentes', 'LED (Diodos Emisores de Luz)', 'Velas'],
-    correctAnswerIndex: 2,
-    explanation: 'Los LED se utilizan porque son eficientes en energía, duraderos y se pueden ajustar a longitudes de onda de luz específicas (como el rojo y el azul) que son óptimas para la fotosíntesis y el crecimiento de las plantas.',
-  },
-];
+const topicData: Omit<Topic, 'image'>[] = data.topics;
 
-const microbiologyQuestions: Question[] = [
-  {
-    question: '¿Por qué es importante estudiar los microbios en la EEI para las misiones de larga duración?',
-    options: [
-      'Para ver si se pueden utilizar como fuente de alimento',
-      'Porque algunos microbios pueden volverse más virulentos o resistentes a los antibióticos en el espacio',
-      'Solo se estudian por entretenimiento',
-      'Para crear nuevos tipos de combustible',
-    ],
-    correctAnswerIndex: 1,
-    explanation: 'Comprender cómo se comportan los microbios en un entorno cerrado como la EEI es fundamental para la salud de los astronautas. La investigación ha demostrado que algunas bacterias pueden volverse más agresivas o resistentes a los antibióticos en el espacio.',
-  },
-  {
-    question: '¿Qué es una "biopelícula" y por qué es una preocupación en una nave espacial?',
-    options: [
-      'Un tipo de película delgada y protectora utilizada en los trajes espaciales',
-      'Una comunidad de microorganismos que puede adherirse a las superficies y potencialmente dañar el equipo o suponer un riesgo para la salud',
-      'Una película sobre biología en el espacio',
-      'Una solución nutritiva para el cultivo de microbios',
-    ],
-    correctAnswerIndex: 1,
-    explanation: 'Las biopelículas son comunidades estructuradas de microbios que pueden formarse en las superficies. En la EEI, pueden corroer equipos, obstruir filtros de agua y presentar un riesgo potencial para la salud de la tripulación, lo que las convierte en un área clave de estudio.',
-  },
-  {
-    question: '¿Cómo podrían ser útiles los extremófilos (microbios que prosperan en condiciones extremas) para la exploración espacial?',
-    options: [
-      'Se pueden usar para hacer café',
-      'No tienen ninguna utilidad en la exploración espacial',
-      'Pueden ser entrenados como mascotas',
-      'Sus procesos biológicos únicos podrían aprovecharse para sistemas de soporte vital, biominería o producción de materiales',
-    ],
-    correctAnswerIndex: 3,
-    explanation: 'Los extremófilos son maestros de la supervivencia. Los científicos los están estudiando para aplicaciones como la descomposición de residuos, la extracción de minerales útiles de asteroides (biominería) y la creación de sistemas de soporte vital de circuito cerrado.',
-  },
-];
-
-
-export const topics: Topic[] = [
-  {
-    slug: 'human-biology',
-    title: 'Biología Humana en el Espacio',
-    description: 'Explora los efectos del espacio en el cuerpo humano.',
-    longDescription: "Los vuelos espaciales de larga duración tienen efectos profundos en el cuerpo humano. Sin la atracción constante de la gravedad de la Tierra, los astronautas experimentan una serie de cambios fisiológicos. Los músculos se atrofian, la densidad ósea disminuye y los fluidos se desplazan hacia la cabeza, lo que puede afectar la visión y la función cardiovascular. El Programa de Investigación Humana de la NASA se dedica a estudiar estos desafíos y a desarrollar contramedidas, como regímenes de ejercicio especializados y estrategias nutricionales, para garantizar que los astronautas se mantengan saludables en misiones a la Luna, Marte y más allá.",
-    publicationDate: '26 de Octubre, 2023',
-    sourceUrl: 'https://www.nasa.gov/hrp/elements/human-factors-and-behavioral-performance/',
-    image: PlaceHolderImages.find(img => img.id === 'human-bio-planet'),
-    questions: humanBioQuestions,
-    relatedTopics: ['plant-science', 'microbiology'],
-    reflectionQuestions: [
-      '¿Cuál crees que es el mayor desafío para el cuerpo humano en el espacio?',
-      'Si estuvieras diseñando un hábitat para Marte, ¿qué características incluirías para apoyar la salud humana?',
-    ],
-  },
-  {
-    slug: 'plant-science',
-    title: 'Ciencia de las Plantas en Microgravedad',
-    description: 'Aprende cómo las plantas se adaptan y crecen en microgravedad.',
-    longDescription: "Cultivar plantas en el espacio es crucial para futuras misiones de larga duración, ya que proporciona una fuente de alimentos frescos, oxígeno y consuelo psicológico para los astronautas. Sin embargo, las plantas evolucionaron en la gravedad de la Tierra, que utilizan como señal para el crecimiento. En el espacio, los científicos estudian cómo las plantas se adaptan a la microgravedad, cómo responden a otras señales como la luz y cómo administrar eficazmente agua y nutrientes a sus raíces. Experimentos en la EEI, utilizando sistemas como 'Veggie', han cultivado con éxito lechuga, rábanos e incluso chiles.",
-    publicationDate: '15 de Septiembre, 2023',
-    sourceUrl: 'https://www.nasa.gov/mission/space-station/research-explorer/search-results/?topic=20',
-    image: PlaceHolderImages.find(img => img.id === 'plant-sci-planet'),
-    questions: plantScienceQuestions,
-    relatedTopics: ['human-biology', 'microbiology'],
-    reflectionQuestions: [
-      'Además de la comida, ¿qué otros roles podrían desempeñar las plantas en una misión larga a Marte?',
-      '¿Qué tipo de plantas elegirías para cultivar en una estación espacial y por qué?',
-    ],
-  },
-  {
-    slug: 'microbiology',
-    title: 'Microbiología en el Espacio',
-    description: 'Descubre el mundo de los microorganismos en el espacio.',
-    longDescription: "Los microbios están en todas partes, incluso en la Estación Espacial Internacional. Comprender cómo se comportan estos diminutos organismos en un entorno cerrado y de microgravedad es vital para la salud de la tripulación y el mantenimiento de los equipos. Algunos microbios pueden volverse más resistentes o agresivos en el espacio, formando biopelículas que pueden dañar los sistemas. Los científicos de la NASA catalogan el microbioma de la estación, estudian cómo los microbios se adaptan a los vuelos espaciales y desarrollan estrategias para mitigar cualquier riesgo potencial, asegurando que la EEI siga siendo un hogar y laboratorio seguro en órbita.",
-    publicationDate: '08 de Agosto, 2023',
-    sourceUrl: 'https://www.nasa.gov/mission/space-station/research-explorer/search-results/?topic=14',
-    image: PlaceHolderImages.find(img => img.id === 'micro-bio-planet'),
-    questions: microbiologyQuestions,
-    relatedTopics: ['human-biology', 'plant-science'],
-    reflectionQuestions: [
-      '¿Cómo podría ayudarnos a diseñar mejores hospitales en la Tierra el entender los microbios en la EEI?',
-      '¿Podrían los microbios de la Tierra ser útiles para terraformar otro planeta? ¿Cuáles son los riesgos?',
-    ],
-  },
-];
+export const topics: Topic[] = topicData.map(topic => ({
+  ...topic,
+  image: PlaceHolderImages.find(img => img.id === topic.imageId),
+}));

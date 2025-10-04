@@ -26,6 +26,17 @@ export default function QuizClient() {
   const topic = useMemo(() => topics.find(t => t.slug === topicSlug), [topicSlug]);
 
   useEffect(() => {
+    if (isCorrect === false) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: 'smooth',
+        });
+      }, 100);
+    }
+  }, [isCorrect]);
+
+  useEffect(() => {
     if (topic) {
       const shuffledQuestions = [...topic.questions].sort(() => Math.random() - 0.5);
       setQuestions(shuffledQuestions);

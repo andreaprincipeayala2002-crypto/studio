@@ -79,7 +79,7 @@ export default function QuestionCard({
               key={index}
               onClick={() => onAnswer(index)}
               className={cn(
-                'justify-start text-left h-auto py-3 px-4 rounded-lg transition-all duration-300 text-base flex items-center gap-4',
+                'justify-start text-left h-auto py-3 px-4 rounded-lg transition-all duration-300 text-base flex items-center gap-4 whitespace-normal',
                 getButtonClass(index)
               )}
               disabled={selectedAnswerIndex !== null}

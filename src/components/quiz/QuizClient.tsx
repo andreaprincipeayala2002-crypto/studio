@@ -145,7 +145,6 @@ export default function QuizClient() {
     router.push('/');
   };
 
-a
   const currentQuestion = useMemo(() => questions[currentQuestionIndex], [questions, currentQuestionIndex]);
 
   if (!topic || questions.length === 0) {

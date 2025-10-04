@@ -50,7 +50,7 @@ export default function QuestionCard({
 
   return (
     <Card className={cn(
-        "w-full max-w-3xl glass-card transition-all"
+        "w-full max-w-3xl apple-glass transition-all"
       )}>
       <CardHeader>
         <CardDescription className="text-primary font-bold">

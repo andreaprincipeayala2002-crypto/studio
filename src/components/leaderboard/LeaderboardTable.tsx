@@ -25,7 +25,7 @@ const getRankColor = (rank: number) => {
 
 export default function LeaderboardTable({ data }: LeaderboardTableProps) {
   return (
-    <div className="max-w-4xl mx-auto glass-card overflow-hidden">
+    <div className="max-w-4xl mx-auto apple-glass overflow-hidden">
       <Table>
         <TableHeader>
           <TableRow className="hover:bg-transparent border-b-white/10">

@@ -5,7 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/Header';
 import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: 'BioQuest: Space Biology Explorer',
@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={cn(
           'min-h-screen bg-background antialiased',
-          inter.className
+          inter.variable
         )}
       >
         <div className="relative flex min-h-screen flex-col">

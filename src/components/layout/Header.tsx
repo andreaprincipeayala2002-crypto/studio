@@ -15,7 +15,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/30 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 apple-glass">
       <div className="container flex h-16 items-center">
         <div className="mr-8 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">

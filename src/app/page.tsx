@@ -85,7 +85,7 @@ export default function GalacticMap() {
       >
         {topics.map((topic) => (
           <motion.div key={topic.slug} variants={itemVariants}>
-            <Card className="glass-card hover:border-primary/50 transition-all duration-300 h-full flex flex-col overflow-hidden group">
+            <Card className="apple-glass hover:border-primary/50 transition-all duration-300 h-full flex flex-col overflow-hidden group">
               <CardHeader className="p-0">
                 {topic.image && (
                    <div className="aspect-video overflow-hidden">
@@ -129,7 +129,7 @@ export default function GalacticMap() {
         ))}
          {specialMissions.map((mission) => (
           <motion.div key={mission.slug} variants={itemVariants}>
-            <Card className="glass-card border-accent/20 hover:border-accent/50 transition-all duration-300 h-full flex flex-col overflow-hidden group">
+            <Card className="apple-glass border-accent/20 hover:border-accent/50 transition-all duration-300 h-full flex flex-col overflow-hidden group">
               <CardHeader className="p-0">
                 {mission.image && (
                    <div className="aspect-video overflow-hidden">

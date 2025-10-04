@@ -60,7 +60,7 @@ export default function ScoreModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={onGoHome}>
-      <DialogContent className="sm:max-w-2xl glass-card">
+      <DialogContent className="sm:max-w-2xl apple-glass">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-3 text-3xl">
             {missionSuccess ? (

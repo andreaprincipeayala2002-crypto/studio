@@ -147,7 +147,7 @@ export default function QuizClient() {
 
   const currentQuestion = useMemo(() => questions[currentQuestionIndex], [questions, currentQuestionIndex]);
 
-  if (!topic || questions.length === 0) {
+  if (!topic || !currentQuestion) {
     return (
       <div className="flex items-center justify-center min-h-[calc(100vh-4rem)]">
         <p className="text-xl text-muted-foreground">Cargando preguntas...</p>

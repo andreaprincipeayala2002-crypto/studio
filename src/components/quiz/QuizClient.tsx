@@ -6,7 +6,14 @@ import { topics, Question } from '@/lib/quiz-data';
 import QuestionCard from './QuestionCard';
 import ScoreModal from './ScoreModal';
 import RocketAnimation from './RocketAnimation';
+import AsteroidAnimation from './AsteroidAnimation';
 import { motion, AnimatePresence } from 'framer-motion';
+
+export interface AnswerRecord {
+  question: Question;
+  selectedAnswerIndex: number;
+  isCorrect: boolean;
+}
 
 export default function QuizClient() {
   const router = useRouter();
@@ -17,11 +24,12 @@ export default function QuizClient() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [quizFinished, setQuizFinished] = useState(false);
-  const [showRocket, setShowRocket] = useState(false);
+  const [showAnimation, setShowAnimation] = useState(false);
   const [showScore, setShowScore] = useState(false);
   
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState<number | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  const [answerHistory, setAnswerHistory] = useState<AnswerRecord[]>([]);
 
   const [nextQuestionTimer, setNextQuestionTimer] = useState<number | null>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
@@ -83,7 +91,7 @@ export default function QuizClient() {
       setIsCorrect(null);
     } else {
       setQuizFinished(true);
-      setShowRocket(true);
+      setShowAnimation(true);
       if (topic) {
         localStorage.setItem(`quiz-score-${topic.slug}`, JSON.stringify({ score: score, total: questions.length }));
       }
@@ -98,6 +106,8 @@ export default function QuizClient() {
 
     setSelectedAnswerIndex(answerIndex);
     setIsCorrect(correct);
+    
+    setAnswerHistory(prev => [...prev, { question, selectedAnswerIndex: answerIndex, isCorrect: correct }]);
 
     if (correct) {
       setScore((prevScore) => prevScore + 1);
@@ -108,7 +118,6 @@ export default function QuizClient() {
         if (topic) {
             localStorage.setItem(`quiz-score-${topic.slug}`, JSON.stringify({ score: score, total: questions.length }));
         }
-        // Start timer for incorrect answer
         setNextQuestionTimer(5);
         timerRef.current = setInterval(() => {
             setNextQuestionTimer(prev => {
@@ -123,7 +132,6 @@ export default function QuizClient() {
     }
   };
 
-  // Cleanup timer on component unmount
   useEffect(() => {
     return () => clearTimer();
   }, []);
@@ -135,10 +143,11 @@ export default function QuizClient() {
     setCurrentQuestionIndex(0);
     setScore(0);
     setQuizFinished(false);
-    setShowRocket(false);
+    setShowAnimation(false);
     setShowScore(false);
     setSelectedAnswerIndex(null);
     setIsCorrect(null);
+    setAnswerHistory([]);
   };
 
   const handleGoHome = () => {
@@ -154,6 +163,9 @@ export default function QuizClient() {
       </div>
     );
   }
+
+  const scorePercentage = questions.length > 0 ? (score / questions.length) * 100 : 0;
+  const missionSuccess = scorePercentage >= 50;
 
   return (
     <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] relative z-10">
@@ -180,17 +192,24 @@ export default function QuizClient() {
             />
           </motion.div>
         ) : (
-          showRocket && (
+          showAnimation && (
             <motion.div
-              key="rocket"
+              key="animation"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
+              {missionSuccess ? (
                 <RocketAnimation onAnimationComplete={() => {
-                    setShowRocket(false);
+                    setShowAnimation(false);
                     setShowScore(true);
                 }} />
+              ) : (
+                <AsteroidAnimation onAnimationComplete={() => {
+                  setShowAnimation(false);
+                  setShowScore(true);
+                }} />
+              )}
             </motion.div>
           )
         )}
@@ -201,6 +220,8 @@ export default function QuizClient() {
         totalQuestions={questions.length}
         onRestart={handleRestart}
         onGoHome={handleGoHome}
+        answerHistory={answerHistory}
+        missionSuccess={missionSuccess}
       />
     </div>
   );

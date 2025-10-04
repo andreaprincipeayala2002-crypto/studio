@@ -60,7 +60,7 @@ export default function ScoreModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={onGoHome}>
-      <DialogContent className="sm:max-w-2xl bg-card/80 backdrop-blur-lg border-primary/30">
+      <DialogContent className="sm:max-w-2xl glass-card">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-3 text-3xl">
             {missionSuccess ? (
@@ -80,7 +80,7 @@ export default function ScoreModal({
                 <Award />
                 Resumen de la Misión
             </h3>
-            <ScrollArea className="h-60 w-full rounded-md border border-border p-4 bg-muted/30">
+            <ScrollArea className="h-60 w-full rounded-md border border-white/10 p-4 bg-black/20">
                 <ul className="space-y-4">
                     {answerHistory.map((record, index) => (
                         <li key={index} className="flex items-start gap-3">

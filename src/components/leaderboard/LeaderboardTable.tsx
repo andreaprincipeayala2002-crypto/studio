@@ -17,7 +17,7 @@ interface LeaderboardTableProps {
 const getRankColor = (rank: number) => {
     switch (rank) {
         case 1: return "text-yellow-400";
-        case 2: return "text-gray-400";
+        case 2: return "text-gray-300";
         case 3: return "text-yellow-600";
         default: return "text-muted-foreground";
     }
@@ -25,10 +25,10 @@ const getRankColor = (rank: number) => {
 
 export default function LeaderboardTable({ data }: LeaderboardTableProps) {
   return (
-    <div className="max-w-4xl mx-auto bg-card/60 backdrop-blur-lg border border-primary/20 rounded-lg overflow-hidden">
+    <div className="max-w-4xl mx-auto glass-card overflow-hidden">
       <Table>
         <TableHeader>
-          <TableRow className="hover:bg-transparent">
+          <TableRow className="hover:bg-transparent border-b-white/10">
             <TableHead className="w-[80px] text-center">Rango</TableHead>
             <TableHead>Explorador</TableHead>
             <TableHead className="text-center">Cuestionarios</TableHead>
@@ -37,7 +37,7 @@ export default function LeaderboardTable({ data }: LeaderboardTableProps) {
         </TableHeader>
         <TableBody>
           {data.map((entry) => (
-            <TableRow key={entry.rank} className="border-border/50">
+            <TableRow key={entry.rank} className="border-white/10">
               <TableCell className="font-bold text-xl text-center">
                 <div className={`flex items-center justify-center gap-2 ${getRankColor(entry.rank)}`}>
                     {entry.rank <= 3 && <Award />}

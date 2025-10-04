@@ -28,22 +28,9 @@ export default function QuestionCard({
   nextQuestionTimer,
 }: QuestionCardProps) {
 
-  const getTopicColorClass = () => {
-    switch (topicSlug) {
-      case 'human-biology':
-        return 'border-red-500/30 shadow-red-500/10';
-      case 'plant-science':
-        return 'border-green-500/30 shadow-green-500/10';
-      case 'microbiology':
-        return 'border-blue-500/30 shadow-blue-500/10';
-      default:
-        return 'border-primary/20 shadow-primary/10';
-    }
-  };
-
   const getButtonClass = (index: number) => {
     if (selectedAnswerIndex === null) {
-      return 'bg-secondary/20 border-secondary/30 hover:bg-secondary/40 text-secondary-foreground';
+      return 'bg-white/5 border-white/10 hover:bg-white/20 text-foreground';
     }
     if (index === question.correctAnswerIndex) {
       return 'bg-green-500/80 border-green-500 text-white animate-pulse';
@@ -51,7 +38,7 @@ export default function QuestionCard({
     if (index === selectedAnswerIndex && !isCorrect) {
       return 'bg-red-500/80 border-red-500 text-white';
     }
-    return 'bg-secondary/20 border-secondary/30 text-muted-foreground opacity-50';
+    return 'bg-white/5 border-white/10 text-muted-foreground opacity-50';
   };
 
   const getIcon = (index: number) => {
@@ -63,8 +50,7 @@ export default function QuestionCard({
 
   return (
     <Card className={cn(
-        "w-full max-w-3xl bg-card/60 backdrop-blur-lg shadow-2xl transition-all",
-        getTopicColorClass()
+        "w-full max-w-3xl glass-card transition-all"
       )}>
       <CardHeader>
         <CardDescription className="text-primary font-bold">
@@ -81,7 +67,7 @@ export default function QuestionCard({
               key={index}
               onClick={() => onAnswer(index)}
               className={cn(
-                'justify-start text-left h-auto py-3 px-4 rounded-lg transition-all duration-300 text-base flex items-center gap-4 whitespace-normal',
+                'justify-start text-left h-auto py-4 px-5 rounded-lg transition-all duration-300 text-base flex items-center gap-4 whitespace-normal',
                 getButtonClass(index)
               )}
               disabled={selectedAnswerIndex !== null}
@@ -96,13 +82,13 @@ export default function QuestionCard({
         {selectedAnswerIndex !== null && (
           <div className="mt-6 space-y-4">
             {question.explanation && (
-                <div className="p-4 bg-muted/50 rounded-lg border border-border">
+                <div className="p-4 bg-black/20 rounded-lg border border-white/10">
                     <h4 className="font-bold text-lg">Explicación</h4>
                     <p className="text-muted-foreground mt-2">{question.explanation}</p>
                 </div>
             )}
              {isCorrect === false && (
-              <Button onClick={onNext} className="w-full" size="lg">
+              <Button onClick={onNext} className="w-full" size="lg" variant="destructive">
                 Siguiente Pregunta {nextQuestionTimer !== null ? `(${nextQuestionTimer})` : ''} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             )}

@@ -19,7 +19,7 @@ const chartConfig: ChartConfig = {
 export default function DataCharts() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <Card className="bg-card/60 backdrop-blur-lg border-primary/20">
+      <Card className="glass-card">
         <CardHeader>
           <CardTitle>Estudios por Año</CardTitle>
           <CardDescription>Número de publicaciones de biociencias de la NASA publicadas anualmente.</CardDescription>
@@ -36,7 +36,7 @@ export default function DataCharts() {
           </ChartContainer>
         </CardContent>
       </Card>
-      <Card className="bg-card/60 backdrop-blur-lg border-primary/20">
+      <Card className="glass-card">
         <CardHeader>
           <CardTitle>Tipos de Organismos Estudiados</CardTitle>
           <CardDescription>Distribución de la investigación en diferentes formas de vida.</CardDescription>

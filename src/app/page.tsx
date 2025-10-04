@@ -27,7 +27,7 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
     },
   },
 };
@@ -69,7 +69,7 @@ export default function GalacticMap() {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter glow">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
           Mapa Galáctico
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
@@ -85,7 +85,7 @@ export default function GalacticMap() {
       >
         {topics.map((topic) => (
           <motion.div key={topic.slug} variants={itemVariants}>
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 h-full flex flex-col overflow-hidden group">
+            <Card className="glass-card hover:border-primary/50 transition-all duration-300 h-full flex flex-col overflow-hidden group">
               <CardHeader className="p-0">
                 {topic.image && (
                    <div className="aspect-video overflow-hidden">
@@ -118,7 +118,7 @@ export default function GalacticMap() {
                 </div>
               </div>
               <CardFooter>
-                <Button asChild className="w-full bg-primary/80 hover:bg-primary text-primary-foreground font-bold group-hover:shadow-[0_0_20px_hsl(var(--primary))] transition-shadow duration-300">
+                <Button asChild className="w-full">
                   <Link href={`/article/${topic.slug}`}>
                     Iniciar Misión <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -129,7 +129,7 @@ export default function GalacticMap() {
         ))}
          {specialMissions.map((mission) => (
           <motion.div key={mission.slug} variants={itemVariants}>
-            <Card className="bg-card/50 backdrop-blur-sm border-accent/20 hover:border-accent/50 transition-all duration-300 h-full flex flex-col overflow-hidden group">
+            <Card className="glass-card border-accent/20 hover:border-accent/50 transition-all duration-300 h-full flex flex-col overflow-hidden group">
               <CardHeader className="p-0">
                 {mission.image && (
                    <div className="aspect-video overflow-hidden">
@@ -149,7 +149,7 @@ export default function GalacticMap() {
                 <CardDescription className="mt-2 flex-grow">{mission.description}</CardDescription>
               </div>
               <CardFooter>
-                <Button asChild className="w-full bg-accent/80 hover:bg-accent text-accent-foreground font-bold group-hover:shadow-[0_0_20px_hsl(var(--accent))] transition-shadow duration-300">
+                <Button asChild className="w-full" variant="secondary">
                   <Link href={mission.slug}>
                     Iniciar Misión <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>

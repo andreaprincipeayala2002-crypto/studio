@@ -8,6 +8,7 @@ import { summarizeSpaceBiologyPublication } from '@/ai/flows/summarize-space-bio
 import { generateQuizQuestions } from '@/ai/flows/generate-quiz-questions';
 import { Wand2, BrainCircuit, Loader2 } from 'lucide-react';
 import { Input } from '../ui/input';
+import { cn } from '@/lib/utils';
 
 const sampleText = "En el entorno de microgravedad del espacio, el cuerpo humano sufre una serie de adaptaciones fisiológicas. Una de las más significativas es el desplazamiento cefálico de fluidos, donde los fluidos corporales se mueven desde las extremidades inferiores hacia la cabeza. Esta redistribución afecta al sistema cardiovascular, provocando una disminución del volumen sanguíneo y una condición conocida como anemia espacial. La densidad ósea también disminuye a un ritmo acelerado, especialmente en los huesos que soportan peso, debido a la falta de carga mecánica. Para contrarrestar estos efectos, los astronautas de la Estación Espacial Internacional (ISS) siguen un riguroso régimen de ejercicios, que incluye tanto entrenamiento aeróbico como de resistencia. Además, la investigación sobre el Síndrome Neuro-ocular Asociado al Espacio (SANS) investiga los cambios en la visión y la estructura del ojo que experimentan algunos astronautas, que se cree que están relacionados con los cambios en la presión intracraneal.";
 
@@ -54,7 +55,7 @@ export default function AiTools() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-      <Card className="bg-card/60 backdrop-blur-lg border-accent/20">
+      <Card className="glass-card">
         <CardHeader>
           <CardTitle className="flex items-center gap-2"><Wand2 className="text-accent" /> Resumidor de Publicaciones por IA</CardTitle>
           <CardDescription>Pega texto de una publicación de la NASA para obtener un resumen conciso.</CardDescription>
@@ -65,14 +66,14 @@ export default function AiTools() {
             value={textToSummarize}
             onChange={(e) => setTextToSummarize(e.target.value)}
             rows={8}
-            className="mb-4 bg-background/50"
+            className="mb-4 bg-black/20"
           />
           <Button onClick={handleSummarize} disabled={isSummarizing}>
             {isSummarizing ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Wand2 className="mr-2 h-4 w-4" />}
             Resumir
           </Button>
           {summary && (
-            <div className="mt-4 p-4 bg-muted/50 rounded-lg border border-border">
+            <div className="mt-4 p-4 bg-black/20 rounded-lg border border-white/10">
               <h4 className="font-bold text-lg">Resumen:</h4>
               <p className="text-muted-foreground mt-2 whitespace-pre-wrap">{summary}</p>
             </div>
@@ -80,22 +81,22 @@ export default function AiTools() {
         </CardContent>
       </Card>
       
-      <Card className="bg-card/60 backdrop-blur-lg border-accent/20">
+      <Card className="glass-card">
         <CardHeader>
             <CardTitle className="flex items-center gap-2"><BrainCircuit className="text-accent"/> Generador de Cuestionarios por IA</CardTitle>
             <CardDescription>Genera preguntas de cuestionario a partir de un tema y un texto de contexto.</CardDescription>
         </CardHeader>
         <CardContent>
             <div className="space-y-4">
-                <Input placeholder="Tema del Cuestionario" value={quizTopic} onChange={e => setQuizTopic(e.target.value)} className="bg-background/50" />
-                <Textarea placeholder="Contexto para el cuestionario..." value={quizContext} onChange={e => setQuizContext(e.target.value)} rows={5} className="bg-background/50" />
+                <Input placeholder="Tema del Cuestionario" value={quizTopic} onChange={e => setQuizTopic(e.target.value)} className="bg-black/20" />
+                <Textarea placeholder="Contexto para el cuestionario..." value={quizContext} onChange={e => setQuizContext(e.target.value)} rows={5} className="bg-black/20" />
                 <Button onClick={handleGenerateQuiz} disabled={isGenerating}>
                     {isGenerating ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <BrainCircuit className="mr-2 h-4 w-4" />}
                     Generar Cuestionario
                 </Button>
             </div>
             {generatedQuiz && (
-                <div className="mt-4 p-4 bg-muted/50 rounded-lg border border-border">
+                <div className="mt-4 p-4 bg-black/20 rounded-lg border border-white/10">
                     <h4 className="font-bold text-lg">Preguntas Generadas:</h4>
                     <ul className="space-y-4 mt-2">
                         {generatedQuiz.map((q: any, i: number) => (

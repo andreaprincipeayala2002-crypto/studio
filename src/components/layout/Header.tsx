@@ -15,12 +15,12 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/30 backdrop-blur-lg">
       <div className="container flex h-16 items-center">
-        <div className="mr-4 flex">
+        <div className="mr-8 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Rocket className="h-6 w-6 text-primary" />
-            <span className="font-bold text-lg glow">BioQuest</span>
+            <span className="font-bold text-lg">BioQuest</span>
           </Link>
         </div>
         <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -30,7 +30,7 @@ export default function Header() {
               href={link.href}
               className={cn(
                 'transition-colors hover:text-primary',
-                pathname === link.href ? 'text-primary' : 'text-muted-foreground'
+                pathname === link.href ? 'text-primary-foreground font-semibold' : 'text-muted-foreground'
               )}
             >
               {link.label}

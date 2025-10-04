@@ -85,3 +85,60 @@
 .glow {
   text-shadow: 0 0 8px hsl(var(--primary)), 0 0 20px hsl(var(--accent));
 }
+
+#mission-gliese-581g {
+  width:100vw;
+  height: calc(100vh - 4rem); /* Adjust for header height */
+  background-image: url('https://images.unsplash.com/photo-1506443432602-ac2dcd7e20de?w=1080');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  color: #0ff;
+  padding:60px;
+}
+
+#mission-gliese-581g .panel {
+  background: rgba(0, 20, 40, 0.85);
+  border: 2px solid #0ff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 0 20px #0ff;
+}
+
+#mission-gliese-581g h1, #mission-gliese-581g h2 {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+#mission-gliese-581g .option {
+  background: #022;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #0ff;
+  color: #0ff;
+  transition: background 0.3s;
+}
+
+#mission-gliese-581g .option:hover {
+  background: #044;
+}
+
+#mission-gliese-581g .back-link {
+  margin-top: 20px;
+  display: inline-block;
+  color: #0ff;
+  text-decoration: none;
+  border: 1px solid #0ff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#mission-gliese-581g .back-link:hover {
+  background: #044;
+}

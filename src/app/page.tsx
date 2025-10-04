@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -27,6 +27,19 @@ const topics = [
     description: 'Discover the world of microorganisms in space.',
     image: PlaceHolderImages.find(img => img.id === 'micro-bio-planet'),
   },
+];
+
+const specialMissions = [
+  {
+    slug: '/mission/gliese-581g',
+    title: 'Misión: Gliese-581g',
+    description: 'Analiza la atmósfera de un exoplaneta en busca de biofirmas.',
+    image: {
+        imageUrl: 'https://images.unsplash.com/photo-1506443432602-ac2dcd7e20de?w=1080',
+        description: 'A rocky exoplanet',
+        imageHint: 'rocky exoplanet'
+    }
+  }
 ];
 
 const containerVariants = {
@@ -99,6 +112,37 @@ export default function GalacticMap() {
                 <Button asChild className="w-full bg-primary/80 hover:bg-primary text-primary-foreground font-bold group-hover:shadow-[0_0_20px_hsl(var(--primary))] transition-shadow duration-300">
                   <Link href={`/quiz?topic=${topic.slug}`}>
                     Start Mission <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          </motion.div>
+        ))}
+         {specialMissions.map((mission) => (
+          <motion.div key={mission.slug} variants={itemVariants}>
+            <Card className="bg-card/50 backdrop-blur-sm border-accent/20 hover:border-accent/50 transition-all duration-300 h-full flex flex-col overflow-hidden group">
+              <CardHeader className="p-0">
+                {mission.image && (
+                   <div className="aspect-video overflow-hidden">
+                    <Image
+                      src={mission.image.imageUrl}
+                      alt={mission.image.description}
+                      data-ai-hint={mission.image.imageHint}
+                      width={600}
+                      height={400}
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                    />
+                   </div>
+                )}
+              </CardHeader>
+              <div className="p-6 flex flex-col flex-grow">
+                <CardTitle className="text-2xl font-bold text-accent-foreground glow">{mission.title}</CardTitle>
+                <CardDescription className="mt-2 flex-grow">{mission.description}</CardDescription>
+              </div>
+              <CardFooter>
+                <Button asChild className="w-full bg-accent/80 hover:bg-accent text-accent-foreground font-bold group-hover:shadow-[0_0_20px_hsl(var(--accent))] transition-shadow duration-300">
+                  <Link href={mission.slug}>
+                    Iniciar Misión Especial <Star className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </CardFooter>

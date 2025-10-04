@@ -2,7 +2,7 @@ import { Topic, topics } from '@/lib/quiz-data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { BookOpen, Lightbulb, ExternalLink, ArrowRight } from 'lucide-react';
+import { BookOpen, Lightbulb, ExternalLink } from 'lucide-react';
 
 interface ArticleFooterProps {
   topic: Topic;
@@ -19,7 +19,7 @@ export default function ArticleFooter({ topic }: ArticleFooterProps) {
                     <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                             <Lightbulb className="text-primary" />
-                            Questions to Ponder
+                            Preguntas para Reflexionar
                         </CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -36,7 +36,7 @@ export default function ArticleFooter({ topic }: ArticleFooterProps) {
                     <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                             <BookOpen className="text-primary" />
-                            Related Topics
+                            Temas Relacionados
                         </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
@@ -54,7 +54,7 @@ export default function ArticleFooter({ topic }: ArticleFooterProps) {
              <div className="mt-8 text-center">
                 <Button variant="link" asChild>
                     <a href={topic.sourceUrl} target="_blank" rel="noopener noreferrer">
-                        Read Original NASA Publication <ExternalLink className="ml-2 h-4 w-4" />
+                        Leer publicación original de la NASA <ExternalLink className="ml-2 h-4 w-4" />
                     </a>
                 </Button>
             </div>

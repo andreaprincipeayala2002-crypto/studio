@@ -4,9 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Star, CheckCircle, HelpCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle, HelpCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { topics } from '@/lib/quiz-data';
 import { useState, useEffect } from 'react';
 
@@ -71,10 +70,10 @@ export default function GalacticMap() {
         className="text-center mb-12"
       >
         <h1 className="text-4xl md:text-6xl font-bold tracking-tighter glow">
-          Galactic Map
+          Mapa Galáctico
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-          Welcome to BioQuest. Select a cosmic destination to begin your mission and test your knowledge of space biology.
+          Bienvenido a BioQuest. Selecciona un destino cósmico para comenzar tu misión y poner a prueba tus conocimientos de biología espacial.
         </p>
       </motion.div>
 
@@ -121,7 +120,7 @@ export default function GalacticMap() {
               <CardFooter>
                 <Button asChild className="w-full bg-primary/80 hover:bg-primary text-primary-foreground font-bold group-hover:shadow-[0_0_20px_hsl(var(--primary))] transition-shadow duration-300">
                   <Link href={`/article/${topic.slug}`}>
-                    Start Mission <ArrowRight className="ml-2 h-4 w-4" />
+                    Iniciar Misión <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </CardFooter>
@@ -152,7 +151,7 @@ export default function GalacticMap() {
               <CardFooter>
                 <Button asChild className="w-full bg-accent/80 hover:bg-accent text-accent-foreground font-bold group-hover:shadow-[0_0_20px_hsl(var(--accent))] transition-shadow duration-300">
                   <Link href={mission.slug}>
-                    Iniciar Misión Especial <Star className="ml-2 h-4 w-4" />
+                    Iniciar Misión <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </CardFooter>

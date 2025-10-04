@@ -34,6 +34,22 @@ export default function QuizClient() {
     }
   }, [topic, router]);
 
+  useEffect(() => {
+    const body = document.body;
+    if (topic?.image?.imageUrl) {
+      body.style.backgroundImage = `url('${topic.image.imageUrl}')`;
+      body.style.backgroundSize = 'cover';
+      body.style.backgroundPosition = 'center';
+      body.style.backgroundAttachment = 'fixed';
+    }
+    return () => {
+        body.style.backgroundImage = '';
+        body.style.backgroundSize = '';
+        body.style.backgroundPosition = '';
+        body.style.backgroundAttachment = '';
+    }
+  }, [topic]);
+
   const handleAnswer = (answerIndex: number) => {
     if (selectedAnswerIndex !== null) return; 
 
@@ -55,7 +71,6 @@ export default function QuizClient() {
       } else {
         setQuizFinished(true);
         setShowRocket(true);
-        // Save score to localStorage
         if (topic) {
           localStorage.setItem(`quiz-score-${topic.slug}`, JSON.stringify({ score: correct ? score + 1 : score, total: questions.length }));
         }
@@ -84,13 +99,13 @@ export default function QuizClient() {
   if (!topic || questions.length === 0) {
     return (
       <div className="flex items-center justify-center min-h-[calc(100vh-4rem)]">
-        <p className="text-xl text-muted-foreground">Loading questions...</p>
+        <p className="text-xl text-muted-foreground">Cargando preguntas...</p>
       </div>
     );
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
+    <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] relative z-10">
       <AnimatePresence mode="wait">
         {!quizFinished ? (
           <motion.div

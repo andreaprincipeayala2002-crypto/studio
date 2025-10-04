@@ -6,8 +6,8 @@ import { cn } from '@/lib/utils';
 import { Rocket, BrainCircuit } from 'lucide-react';
 
 const navLinks = [
-  { href: '/', label: 'Galactic Map', icon: Rocket },
-  { href: '/dashboard', label: 'Knowledge Engine', icon: BrainCircuit },
+  { href: '/', label: 'Mapa Galáctico', icon: Rocket },
+  { href: '/dashboard', label: 'Motor de Conocimiento', icon: BrainCircuit },
 ];
 
 export default function Header() {

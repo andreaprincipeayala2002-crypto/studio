@@ -7,12 +7,12 @@ import { ChartContainer, ChartTooltipContent, ChartConfig } from '@/components/u
 
 const chartConfig: ChartConfig = {
     studies: {
-      label: "Studies",
+      label: "Estudios",
       color: "hsl(var(--primary))",
     },
-    human: { label: 'Human', color: 'hsl(var(--chart-1))' },
-    plant: { label: 'Plant', color: 'hsl(var(--chart-2))' },
-    microorganism: { label: 'Microorganism', color: 'hsl(var(--chart-3))' },
+    human: { label: 'Humano', color: 'hsl(var(--chart-1))' },
+    plant: { label: 'Planta', color: 'hsl(var(--chart-2))' },
+    microorganism: { label: 'Microorganismo', color: 'hsl(var(--chart-3))' },
     animal: { label: 'Animal', color: 'hsl(var(--chart-4))' },
 };
 
@@ -21,8 +21,8 @@ export default function DataCharts() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <Card className="bg-card/60 backdrop-blur-lg border-primary/20">
         <CardHeader>
-          <CardTitle>Studies Per Year</CardTitle>
-          <CardDescription>Number of NASA biosciences publications released annually.</CardDescription>
+          <CardTitle>Estudios por Año</CardTitle>
+          <CardDescription>Número de publicaciones de biociencias de la NASA publicadas anualmente.</CardDescription>
         </CardHeader>
         <CardContent>
           <ChartContainer config={chartConfig} className="h-[300px] w-full">
@@ -38,8 +38,8 @@ export default function DataCharts() {
       </Card>
       <Card className="bg-card/60 backdrop-blur-lg border-primary/20">
         <CardHeader>
-          <CardTitle>Organism Types Studied</CardTitle>
-          <CardDescription>Distribution of research across different life forms.</CardDescription>
+          <CardTitle>Tipos de Organismos Estudiados</CardTitle>
+          <CardDescription>Distribución de la investigación en diferentes formas de vida.</CardDescription>
         </CardHeader>
         <CardContent className="flex items-center justify-center">
             <ChartContainer config={chartConfig} className="h-[300px] w-full">

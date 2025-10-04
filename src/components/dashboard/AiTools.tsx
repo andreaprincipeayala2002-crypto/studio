@@ -9,14 +9,14 @@ import { generateQuizQuestions } from '@/ai/flows/generate-quiz-questions';
 import { Wand2, BrainCircuit, Loader2 } from 'lucide-react';
 import { Input } from '../ui/input';
 
-const sampleText = "In the microgravity environment of space, the human body undergoes a range of physiological adaptations. One of the most significant is the cephalad fluid shift, where bodily fluids move from the lower extremities towards the head. This redistribution affects the cardiovascular system, leading to a decrease in blood volume and a condition known as space anemia. Bone density also decreases at an accelerated rate, particularly in weight-bearing bones, due to the lack of mechanical loading. To counteract these effects, astronauts on the International Space Station (ISS) adhere to a rigorous exercise regimen, including both aerobic and resistance training. Furthermore, research into Space-Associated Neuro-ocular Syndrome (SANS) investigates the changes in vision and the structure of the eye experienced by some astronauts, believed to be linked to shifts in intracranial pressure.";
+const sampleText = "En el entorno de microgravedad del espacio, el cuerpo humano sufre una serie de adaptaciones fisiológicas. Una de las más significativas es el desplazamiento cefálico de fluidos, donde los fluidos corporales se mueven desde las extremidades inferiores hacia la cabeza. Esta redistribución afecta al sistema cardiovascular, provocando una disminución del volumen sanguíneo y una condición conocida como anemia espacial. La densidad ósea también disminuye a un ritmo acelerado, especialmente en los huesos que soportan peso, debido a la falta de carga mecánica. Para contrarrestar estos efectos, los astronautas de la Estación Espacial Internacional (ISS) siguen un riguroso régimen de ejercicios, que incluye tanto entrenamiento aeróbico como de resistencia. Además, la investigación sobre el Síndrome Neuro-ocular Asociado al Espacio (SANS) investiga los cambios en la visión y la estructura del ojo que experimentan algunos astronautas, que se cree que están relacionados con los cambios en la presión intracraneal.";
 
 export default function AiTools() {
   const [summary, setSummary] = useState('');
   const [isSummarizing, setIsSummarizing] = useState(false);
   const [textToSummarize, setTextToSummarize] = useState(sampleText);
   
-  const [quizTopic, setQuizTopic] = useState('Space Anemia');
+  const [quizTopic, setQuizTopic] = useState('Anemia Espacial');
   const [quizContext, setQuizContext] = useState(sampleText);
   const [generatedQuiz, setGeneratedQuiz] = useState<any>(null);
   const [isGenerating, setIsGenerating] = useState(false);
@@ -29,7 +29,7 @@ export default function AiTools() {
       setSummary(result.summary);
     } catch (error) {
       console.error(error);
-      setSummary('Failed to generate summary. Please try again.');
+      setSummary('No se pudo generar el resumen. Por favor, inténtalo de nuevo.');
     } finally {
       setIsSummarizing(false);
     }
@@ -56,12 +56,12 @@ export default function AiTools() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
       <Card className="bg-card/60 backdrop-blur-lg border-accent/20">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2"><Wand2 className="text-accent" /> AI Publication Summarizer</CardTitle>
-          <CardDescription>Paste text from a NASA publication to get a concise summary.</CardDescription>
+          <CardTitle className="flex items-center gap-2"><Wand2 className="text-accent" /> Resumidor de Publicaciones por IA</CardTitle>
+          <CardDescription>Pega texto de una publicación de la NASA para obtener un resumen conciso.</CardDescription>
         </CardHeader>
         <CardContent>
           <Textarea
-            placeholder="Paste text here..."
+            placeholder="Pega el texto aquí..."
             value={textToSummarize}
             onChange={(e) => setTextToSummarize(e.target.value)}
             rows={8}
@@ -69,11 +69,11 @@ export default function AiTools() {
           />
           <Button onClick={handleSummarize} disabled={isSummarizing}>
             {isSummarizing ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Wand2 className="mr-2 h-4 w-4" />}
-            Summarize
+            Resumir
           </Button>
           {summary && (
             <div className="mt-4 p-4 bg-muted/50 rounded-lg border border-border">
-              <h4 className="font-bold text-lg">Summary:</h4>
+              <h4 className="font-bold text-lg">Resumen:</h4>
               <p className="text-muted-foreground mt-2 whitespace-pre-wrap">{summary}</p>
             </div>
           )}
@@ -82,21 +82,21 @@ export default function AiTools() {
       
       <Card className="bg-card/60 backdrop-blur-lg border-accent/20">
         <CardHeader>
-            <CardTitle className="flex items-center gap-2"><BrainCircuit className="text-accent"/> AI Quiz Generator</CardTitle>
-            <CardDescription>Generate quiz questions from a topic and context text.</CardDescription>
+            <CardTitle className="flex items-center gap-2"><BrainCircuit className="text-accent"/> Generador de Cuestionarios por IA</CardTitle>
+            <CardDescription>Genera preguntas de cuestionario a partir de un tema y un texto de contexto.</CardDescription>
         </CardHeader>
         <CardContent>
             <div className="space-y-4">
-                <Input placeholder="Quiz Topic" value={quizTopic} onChange={e => setQuizTopic(e.target.value)} className="bg-background/50" />
-                <Textarea placeholder="Context for quiz..." value={quizContext} onChange={e => setQuizContext(e.target.value)} rows={5} className="bg-background/50" />
+                <Input placeholder="Tema del Cuestionario" value={quizTopic} onChange={e => setQuizTopic(e.target.value)} className="bg-background/50" />
+                <Textarea placeholder="Contexto para el cuestionario..." value={quizContext} onChange={e => setQuizContext(e.target.value)} rows={5} className="bg-background/50" />
                 <Button onClick={handleGenerateQuiz} disabled={isGenerating}>
                     {isGenerating ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <BrainCircuit className="mr-2 h-4 w-4" />}
-                    Generate Quiz
+                    Generar Cuestionario
                 </Button>
             </div>
             {generatedQuiz && (
                 <div className="mt-4 p-4 bg-muted/50 rounded-lg border border-border">
-                    <h4 className="font-bold text-lg">Generated Questions:</h4>
+                    <h4 className="font-bold text-lg">Preguntas Generadas:</h4>
                     <ul className="space-y-4 mt-2">
                         {generatedQuiz.map((q: any, i: number) => (
                             <li key={i}>

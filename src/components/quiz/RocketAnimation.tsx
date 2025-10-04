@@ -10,8 +10,8 @@ interface RocketAnimationProps {
 export default function RocketAnimation({ onAnimationComplete }: RocketAnimationProps) {
   return (
     <div className="flex flex-col items-center justify-center gap-4">
-        <h2 className="text-3xl font-bold text-center text-primary-foreground glow">Mission Success!</h2>
-        <p className="text-muted-foreground text-lg">Calculating results...</p>
+        <h2 className="text-3xl font-bold text-center text-primary-foreground glow">¡Misión Cumplida!</h2>
+        <p className="text-muted-foreground text-lg">Calculando resultados...</p>
         <motion.div
             initial={{ y: 0, opacity: 1 }}
             animate={{ y: -500, opacity: 0 }}

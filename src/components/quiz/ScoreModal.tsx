@@ -9,7 +9,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-import { Award, RotateCw } from 'lucide-react';
+import { Award, RotateCw, Map } from 'lucide-react';
 
 interface ScoreModalProps {
   isOpen: boolean;
@@ -34,26 +34,27 @@ export default function ScoreModal({
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 text-2xl font-bold">
             <Award className="h-8 w-8 text-primary" />
-            Mission Complete!
+            ¡Misión Cumplida!
           </DialogTitle>
           <DialogDescription>
-            You have completed your space biology assessment. Here are your results.
+            Has completado tu evaluación de biología espacial. Aquí están tus resultados.
           </DialogDescription>
         </DialogHeader>
         <div className="py-4 text-center">
-            <p className="text-lg text-muted-foreground">You scored</p>
+            <p className="text-lg text-muted-foreground">Obtuviste</p>
             <p className="text-6xl font-bold text-primary-foreground my-2">
                 {score} / {totalQuestions}
             </p>
             <p className="text-2xl font-semibold text-accent">{percentage}%</p>
         </div>
-        <DialogFooter>
-          <Button variant="outline" onClick={onGoHome} className="w-full sm:w-auto">
-            Return to Map
+        <DialogFooter className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <Button variant="outline" onClick={onGoHome}>
+            <Map className="mr-2 h-4 w-4" />
+            Volver al Mapa
           </Button>
-          <Button onClick={onRestart} className="w-full sm:w-auto">
+          <Button onClick={onRestart}>
             <RotateCw className="mr-2 h-4 w-4" />
-            Retry Mission
+            Reintentar Misión
           </Button>
         </DialogFooter>
       </DialogContent>

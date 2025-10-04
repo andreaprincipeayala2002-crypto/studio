@@ -46,7 +46,7 @@ export default function QuestionCard({
     <Card className="w-full max-w-3xl bg-card/60 backdrop-blur-lg border-primary/20 shadow-2xl shadow-primary/10">
       <CardHeader>
         <CardDescription className="text-primary font-bold">
-          Question {questionNumber} / {totalQuestions}
+          Pregunta {questionNumber} / {totalQuestions}
         </CardDescription>
         <CardTitle className="text-2xl md:text-3xl font-bold leading-tight">
           {question.question}
@@ -72,7 +72,7 @@ export default function QuestionCard({
         </div>
         {selectedAnswerIndex !== null && question.explanation && (
             <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-border">
-                <h4 className="font-bold text-lg">Explanation</h4>
+                <h4 className="font-bold text-lg">Explicación</h4>
                 <p className="text-muted-foreground mt-2">{question.explanation}</p>
             </div>
         )}

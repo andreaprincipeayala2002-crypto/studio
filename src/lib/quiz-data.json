@@ -598,7 +598,7 @@
     },
     {
       "slug": "space-farming-nutrition",
-      "title": "Agricultura Espacial y Nutrición Avanzada",
+      "title": "Los vuelos espaciales alteran las interacciones entre la microbiota intestinal y el huésped",
       "description": "Cultivos hidropónicos, aeropónicos y su impacto en la dieta de los astronautas.",
       "longDescription": "La agricultura espacial va más allá de 'Veggie'. Sistemas avanzados como el APH (Advanced Plant Habitat) permiten un control casi total sobre el entorno de crecimiento. Se investigan técnicas como la aeroponía (cultivo en niebla de nutrientes) e hidroponía (cultivo en agua). Estos métodos no requieren suelo, ahorran agua y permiten cosechas rápidas y densas. Los cultivos candidatos incluyen patatas, soja, trigo y pimientos, que ofrecen un alto valor calórico y nutricional. Un desafío clave es la polinización en microgravedad, que a menudo requiere intervención manual, y garantizar que los alimentos cultivados en el espacio contengan todos los micronutrientes necesarios, algo que puede verse afectado por el estrés de las plantas.",
       "publicationDate": "12 de Febrero, 2025",
@@ -1607,5 +1607,6 @@
   ]
 }
 
+    
     
     

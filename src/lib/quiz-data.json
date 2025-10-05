@@ -233,26 +233,26 @@
       ],
       "questions": [
         {
-          "question": "¿Cuál es el enfoque principal del estudio?",
+          "question": "¿Cuál es el enfoque principal del estudio sobre miRNAs y senescencia?",
           "options": [
             "El efecto de la radiación en el ADN.",
-            "Cómo la microgravedad afecta a los miRNAs y la senescencia celular.",
-            "El crecimiento de plantas en el espacio.",
-            "La psicología de los astronautas en misiones largas."
+            "Cómo la microgravedad afecta a los miRNAs y acelera el envejecimiento celular.",
+            "El crecimiento de bacterias en el espacio.",
+            "La psicología de los astronautas."
           ],
           "correctAnswerIndex": 1,
-          "explanation": "El estudio se centra en analizar cómo la microgravedad afecta a los miRNAs y su relación con el envejecimiento de las células (senescencia celular)."
+          "explanation": "El estudio se centra en analizar cómo la microgravedad afecta a los miRNAs y su relación con la senescencia celular (envejecimiento de las células)."
         },
         {
-          "question": "¿Qué tipo de células se utilizaron en la metodología del estudio?",
+          "question": "¿Qué tipo de células se utilizaron en el estudio?",
           "options": [
             "Células musculares de ratón",
             "Neuronas humanas",
             "Células endoteliales humanas (de vasos sanguíneos)",
-            "Células de la piel"
+            "Células de la piel de astronautas"
           ],
           "correctAnswerIndex": 2,
-          "explanation": "La metodología especifica que se usaron células endoteliales humanas, que son las que recubren los vasos sanguíneos."
+          "explanation": "La metodología especifica que se usaron células endoteliales humanas, que son las que recubren el interior de los vasos sanguíneos."
         },
         {
           "question": "¿Cuántos miRNAs se encontraron significativamente alterados por la microgravedad simulada?",
@@ -266,29 +266,29 @@
           "explanation": "El estudio identificó un total de 26 miRNAs que cambiaron su expresión de manera significativa: 15 aumentaron y 11 disminuyeron."
         },
         {
-          "question": "El aumento de la β-galactosidasa es un marcador de...",
+          "question": "El aumento del marcador β-galactosidasa indica...",
           "options": [
             "División celular rápida",
-            "Envejecimiento celular (senescencia)",
+            "Aceleración de la senescencia (envejecimiento) celular",
             "Reparación celular exitosa",
-            "Producción de energía"
+            "Aumento de la producción de energía"
           ],
           "correctAnswerIndex": 1,
-          "explanation": "La β-galactosidasa es un biomarcador clave utilizado para identificar células senescentes, es decir, células que han envejecido y han dejado de dividirse."
+          "explanation": "La β-galactosidasa es un biomarcador clave utilizado para identificar células senescentes, es decir, células que han envejecido y han detenido su ciclo de división."
         },
         {
-          "question": "¿Cuál de las siguientes proteínas, relacionada con la detención del ciclo celular, aumentó significativamente?",
+          "question": "¿Cuál de las siguientes proteínas, que detienen el ciclo celular, se incrementó en el estudio?",
           "options": [
-            "Colágeno",
+            "Colágeno y Elastina",
             "Hemoglobina",
             "p21 y p16",
-            "Actina"
+            "Actina y Miosina"
           ],
           "correctAnswerIndex": 2,
-          "explanation": "Las proteínas p21 y p16 son supresores de tumores que detienen el ciclo celular, y su incremento es una característica distintiva de la senescencia celular."
+          "explanation": "Las proteínas p21 y p16 son supresores de tumores que actúan como 'frenos' del ciclo celular, y su incremento es una característica distintiva de la senescencia."
         },
         {
-          "question": "¿Qué vía molecular clave se encontró persistentemente activada?",
+          "question": "¿Qué vía molecular clave se encontró persistentemente activada, contribuyendo a la senescencia?",
           "options": [
             "La vía de la glucólisis",
             "La vía p53",
@@ -296,55 +296,55 @@
             "La vía del mTOR"
           ],
           "correctAnswerIndex": 1,
-          "explanation": "La activación persistente de la vía p53 es uno de los mecanismos moleculares identificados que conduce a la senescencia celular en respuesta al estrés de la microgravedad."
+          "explanation": "La activación persistente de la vía p53 es uno de los mecanismos moleculares identificados que conduce a la senescencia celular en respuesta al estrés inducido por la microgravedad."
         },
         {
-          "question": "¿Cuál es una de las principales implicaciones de este estudio para la salud espacial?",
+          "question": "¿Cuál es una de las implicaciones del estudio para la salud espacial?",
           "options": [
             "Permite diseñar trajes espaciales más ligeros.",
             "No tiene ninguna implicación práctica.",
             "Sugiere que los astronautas no envejecen en el espacio.",
-            "Explica las bases moleculares del envejecimiento acelerado y sugiere dianas para contramedidas."
+            "Identifica biomarcadores y dianas para desarrollar contramedidas contra el envejecimiento acelerado."
           ],
           "correctAnswerIndex": 3,
-          "explanation": "El estudio es significativo porque ayuda a entender por qué ocurre el envejecimiento acelerado y abre la puerta a desarrollar formas de prevenirlo o tratarlo."
+          "explanation": "El estudio es significativo porque ayuda a entender las causas moleculares del envejecimiento acelerado y abre la puerta al desarrollo de formas de prevenirlo o tratarlo en misiones largas."
         },
         {
           "question": "¿Cuál es una de las limitaciones mencionadas en el estudio?",
           "options": [
             "Se usaron demasiados tipos de células.",
             "El estudio duró demasiado tiempo.",
-            "Se realizó en células y con microgravedad simulada, no en astronautas.",
-            "Los resultados no fueron claros."
+            "Se realizó en células y con microgravedad simulada, no en organismos completos en el espacio real.",
+            "Los resultados no fueron concluyentes."
           ],
           "correctAnswerIndex": 2,
-          "explanation": "El resumen indica claramente que una limitación es que los experimentos se hicieron en cultivos celulares usando simulación (clinorrotación), no en un organismo completo en el espacio real."
+          "explanation": "El resumen indica claramente que una limitación importante es que los experimentos se hicieron en cultivos celulares usando simulación (clinorrotación), no en un organismo completo en el espacio."
         },
         {
-          "question": "Según la conclusión general, ¿qué induce la microgravedad?",
+          "question": "Según la conclusión general, ¿qué induce la microgravedad a nivel molecular?",
           "options": [
-            "Rejuvenecimiento celular",
-            "Cambios en miRNAs que activan la senescencia celular",
-            "Un aumento en la masa muscular",
-            "Una mejora en la reparación del ADN"
+            "Un rejuvenecimiento de las células.",
+            "Cambios en la expresión de miRNAs que activan programas de senescencia celular.",
+            "Un aumento significativo en la masa muscular.",
+            "Una mejora en los mecanismos de reparación del ADN."
           ],
           "correctAnswerIndex": 1,
-          "explanation": "La conclusión resume que la microgravedad causa cambios en la expresión de miRNAs, lo que a su vez activa programas de envejecimiento celular a nivel molecular."
+          "explanation": "La conclusión resume que la microgravedad causa cambios en la expresión de miRNAs, lo que a su vez activa programas de envejecimiento celular, acelerando este proceso a nivel molecular."
         },
         {
-          "question": "¿Qué perspectiva futura NO se menciona en el resumen?",
+          "question": "¿Qué perspectiva futura NO se menciona en el resumen del artículo?",
           "options": [
-            "Validación en astronautas reales",
-            "Estudiar la posibilidad de vida en otros planetas",
-            "Investigación de la reversibilidad de los efectos",
-            "Desarrollo de intervenciones preventivas"
+            "Validación de los hallazgos en astronautas reales.",
+            "Estudiar la posibilidad de vida en otros planetas.",
+            "Investigación sobre si los efectos son reversibles.",
+            "Desarrollo de intervenciones preventivas."
           ],
           "correctAnswerIndex": 1,
-          "explanation": "Las perspectivas futuras mencionadas se centran en validar los hallazgos en humanos, estudiar otros tipos de células, investigar la reversibilidad y desarrollar contramedidas. No se menciona la búsqueda de vida extraterrestre."
+          "explanation": "Las perspectivas futuras se centran en validar los hallazgos en humanos, estudiar otros tipos de células, la reversibilidad y desarrollar contramedidas. No se menciona la búsqueda de vida extraterrestre."
         }
       ]
     }
   ]
 }
-
+    
     

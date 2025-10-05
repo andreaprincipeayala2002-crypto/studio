@@ -3,12 +3,11 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
-import { Rocket, BrainCircuit, Trophy } from 'lucide-react';
+import { Rocket, BrainCircuit } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Galactic Map', icon: Rocket },
   { href: '/dashboard', label: 'Knowledge Engine', icon: BrainCircuit },
-  { href: '/leaderboard', label: 'Leaderboard', icon: Trophy },
 ];
 
 export default function Header() {

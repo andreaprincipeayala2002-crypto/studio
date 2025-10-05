@@ -81,8 +81,14 @@ export default function ScoreModal({
         {allCorrect && (
             <div className="p-4 bg-green-500/20 text-green-300 rounded-lg text-center">
                 <p className="font-bold">¡Felicidades! Te has ganado un libro por tu conocimiento excepcional.</p>
+                {/* 
+                  Para cambiar el archivo del libro:
+                  1. Crea una carpeta llamada 'public' en la raíz de tu proyecto si no existe.
+                  2. Sube tu archivo PDF a esa carpeta (ej: 'libro-bioespacial.pdf').
+                  3. El enlace será simplemente '/libro-bioespacial.pdf'.
+                */}
                 <Button asChild variant="link" className="text-white mt-2">
-                    <a href="https://ntrs.nasa.gov/api/citations/20205008392/downloads/Space%20Biology%20Program%20Decadal%20Survey%20Briefing%20to%20the%20National%20Academies.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/libro-bioespacial.pdf" target="_blank" rel="noopener noreferrer">
                         <BookDown className="mr-2 h-4 w-4" />
                         Descargar Libro
                     </a>

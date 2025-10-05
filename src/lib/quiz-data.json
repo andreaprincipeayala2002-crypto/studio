@@ -472,127 +472,127 @@
     },
     {
       "slug": "dna-radiation-effects",
-      "title": "La microgravedad espacial altera la división de las células madre neuronales: implicaciones para la investigación del cáncer cerebral en la Tierra y en el espacio",
-      "description": "Analiza cómo la radiación espacial afecta el material genético y los mecanismos de defensa celular.",
-      "longDescription": "Los astronautas están expuestos a niveles de radiación mucho más altos que en la Tierra, principalmente a través de los rayos cósmicos galácticos (GCR) y los eventos de partículas solares (SPE). Esta radiación puede causar roturas de doble cadena en el ADN, el tipo de daño más peligroso. Las células tienen mecanismos de reparación, como la recombinación homóloga (HR) y la unión de extremos no homólogos (NHEJ), pero la exposición crónica y de alta energía puede abrumar estos sistemas, llevando a mutaciones, cáncer o muerte celular. Comprender estos procesos es crucial para desarrollar blindajes y contramedidas biológicas para proteger a los astronautas en misiones de larga duración, como las de Marte.",
+      "title": "Desafíos Nutricionales en Misiones Espaciales",
+      "description": "Explora los requerimientos y estrategias nutricionales para mantener la salud de los astronautas en el espacio.",
+      "longDescription": "📌 Contexto del Estudio\nRevisión comprehensiva sobre los desafíos nutricionales en misiones espaciales prolongadas y las estrategias para mantener la salud de los astronautas mediante la nutrición.\n\n🎯 Objetivo Principal\nEvaluar los requerimientos nutricionales específicos para misiones de larga duración y proponer estrategias dietéticas optimizadas.\n\n📊 Hallazgos Principales\nFactores que Afectan la Nutrición en el Espacio\n1. Ambiente Espacial\nMicrogravedad: afecta absorción y metabolismo de nutrientes\nRadiación: incrementa necesidades de antioxidantes\nEstrés oxidativo: mayor producción de radicales libres\nCambios en microbiota intestinal\n\n2. Factores Psicológicos\nEstrés crónico del confinamiento\nAlteraciones del sueño\nMonotonía dietética\nAnsiedad y depresión\n\n3. Limitaciones Logísticas\nEstabilidad de alimentos durante almacenamiento prolongado\nPeso y volumen limitados\nPreparación en condiciones de microgravedad\nDisponibilidad de alimentos frescos\n\n🥗 Requerimientos Nutricionales Específicos\nMacronutrientes\nProteínas: 1.2-1.7 g/kg/día (mayor que en Tierra)\nCarbohidratos: 50-55% del total energético\nGrasas: 25-30% del total energético\nFibra: 25-35 g/día\n\nMicronutrientes Críticos\nAntioxidantes (Aumentados)\nVitamina C: 100-200 mg/día\nVitamina E: 20-30 mg/día\nSelenio: 70-100 μg/día\nCarotenoides: 5-10 mg/día\n\nPara Salud Ósea\nCalcio: 1200-1500 mg/día\nVitamina D: 25-50 μg/día\nMagnesio: 350-400 mg/día\nVitamina K: 90-120 μg/día\n\nOtros Esenciales\nHierro: 10-15 mg/día (monitorizar niveles)\nZinc: 15-20 mg/día\nÁcido fólico: 400-600 μg/día\nVitamina B12: 2.5-5 μg/día\n\n💊 Estrategias Nutricionales Propuestas\n1. Alimentos Fortificados\nDesarrollo de alimentos enriquecidos con nutrientes críticos\nBarras nutricionales personalizadas\nBebidas funcionales con mezclas específicas\n\n2. Sistemas de Producción de Alimentos\nCultivo de vegetales frescos en el espacio\nSistemas hidropónicos y aeropónicos\nProducción de microalgas (espirulina, chlorella)\nCultivo de hongos comestibles\n\n3. Suplementación Dirigida\nAntioxidantes para contrarrestar la radiación\nPrebióticos y probióticos para salud intestinal\nÁcidos grasos omega-3 para inflamación\nAminoácidos específicos para masa muscular\n\n🔬 Tecnologías Alimentarias Innovadoras\nProcesamiento y Conservación\nAlimentos liofilizados de alta calidad nutricional\nPelículas comestibles para preservación\nEmpaques inteligentes que monitorean frescura\nSistemas de cocina adaptados a microgravedad\n\nPersonalización\nPerfiles nutricionales individuales\nAdaptación a preferencias culturales\nAjuste según actividad y fase de misión\nConsideración de genética individual\n\n⚠️ Desafíos Identificados\nProblemas No Resueltos\nPérdida de masa ósea a pesar de suplementación\nAlteraciones del gusto y olfato en microgravedad\nVariabilidad individual en requerimientos\nInteracciones nutriente-fármaco\n\nLimitaciones Actuales\nVida útil limitada de alimentos frescos\nEficiencia energética de sistemas de cultivo\nAceptabilidad de alimentos innovadores\nCosto y logística de reabastecimiento\n\n🚀 Recomendaciones para Misiones Futuras\nCorto Plazo (1-3 años)\nOptimizar formulaciones de alimentos existentes\nDesarrollar protocolos de suplementación\nMejorar sistemas de almacenamiento\n\nMediano Plazo (3-10 años)\nImplementar sistemas de cultivo básico\nDesarrollar alimentos funcionales avanzados\nEstablecer monitoreo nutricional en tiempo real\n\nLargo Plazo (>10 años)\nSistemas agrícolas autosustentables\nProducción integral de alimentos en destino\nTecnologías de procesamiento in situ\n\n💡 Conclusiones Clave\nLa nutrición es componente crítico para el éxito de misiones prolongadas\nSe requieren enfoques personalizados basados en características individuales\nLa combinación de estrategias (dieta, suplementos, cultivo) es necesaria\nLa investigación continua es esencial para misiones a Marte y más allá\nLos avances tienen aplicaciones terrestres en nutrición clínica\n\n🌍 Aplicaciones Terrestres\nLos desarrollos en nutrición espacial benefician:\n\nPoblaciones en áreas remotas\nPacientes con necesidades nutricionales especiales\nSituaciones de desastre y emergencia\nInvestigación en conservación de alimentos",
       "publicationDate": "10 de Febrero, 2025",
       "sourceUrl": "https://www.nasa.gov/mission/space-station/research-explorer/search-results/?topic=14",
-      "imageId": "neural-cells",
-      "relatedTopics": ["human-biology-space", "immune-system-space"],
+      "imageId": "space-farm",
+      "relatedTopics": ["human-biology-space", "immune-system-space", "space-farming-nutrition"],
       "reflectionQuestions": [
         "¿Qué tipo de blindaje crees que sería más efectivo: físico (materiales) o biológico (fármacos)?",
         "Si ocurriera una mutación en un astronauta, ¿cómo podría afectar a futuras generaciones si esa persona tuviera hijos después de la misión?"
       ],
       "questions": [
         {
-          "question": "¿Cuál es el tipo de daño en el ADN considerado más peligroso causado por la radiación cósmica?",
+          "question": "¿Cuál de estos factores ambientales espaciales incrementa la necesidad de antioxidantes?",
           "options": [
-            "Mutaciones puntuales",
-            "Roturas de una sola cadena",
-            "Roturas de doble cadena (DSB)",
-            "Dímeros de timina"
+            "La microgravedad",
+            "La radiación",
+            "El silencio del espacio",
+            "La vista de la Tierra"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "La exposición a niveles más altos de radiación en el espacio aumenta el estrés oxidativo en el cuerpo, lo que requiere una mayor ingesta de antioxidantes como las vitaminas C y E para neutralizar los radicales libres."
+        },
+        {
+          "question": "¿Cómo son los requerimientos de proteína para un astronauta en comparación con una persona en la Tierra?",
+          "options": [
+            "Son menores (0.8 g/kg/día)",
+            "Son iguales (1.0 g/kg/día)",
+            "Son mayores (1.2-1.7 g/kg/día)",
+            "Los astronautas no necesitan proteínas"
           ],
           "correctAnswerIndex": 2,
-          "explanation": "Las roturas de doble cadena (Double-Strand Breaks) son las más difíciles de reparar correctamente y pueden llevar a reorganizaciones cromosómicas, mutaciones o muerte celular."
+          "explanation": "Los astronautas necesitan una mayor ingesta de proteínas para ayudar a contrarrestar la pérdida de masa muscular y ósea que ocurre en microgravedad."
         },
         {
-          "question": "NHEJ y HR son dos mecanismos principales para:",
+          "question": "Para mantener la salud ósea, ¿qué dos micronutrientes son especialmente críticos en el espacio?",
           "options": [
-            "Producir energía en la célula",
-            "Reparar el ADN dañado",
-            "Regular el ciclo celular",
-            "Comunicarse entre células"
-          ],
-          "correctAnswerIndex": 1,
-          "explanation": "La Unión de Extremos No Homólogos (NHEJ) y la Recombinación Homóloga (HR) son las dos vías principales que utilizan las células para reparar las peligrosas roturas de doble cadena del ADN."
-        },
-        {
-          "question": "¿Qué son los GCR mencionados en el texto?",
-          "options": [
-            "Un tipo de alimento para astronautas",
-            "Generadores Celulares de Reserva",
-            "Rayos cósmicos galácticos",
-            "Controles de Gravedad Reducida"
+            "Hierro y Zinc",
+            "Vitamina C y Vitamina B12",
+            "Calcio y Vitamina D",
+            "Sodio y Potasio"
           ],
           "correctAnswerIndex": 2,
-          "explanation": "GCR son las siglas de Galactic Cosmic Rays (Rayos Cósmicos Galácticos), una fuente constante de radiación de alta energía fuera de la magnetosfera terrestre."
+          "explanation": "La microgravedad acelera la pérdida de densidad ósea, por lo que una ingesta elevada de Calcio (el bloque de construcción del hueso) y Vitamina D (esencial para la absorción de calcio) es crucial."
         },
         {
-          "question": "Una consecuencia a largo plazo de un daño extenso en el ADN por radiación puede ser:",
+          "question": "La espirulina y la chlorella son ejemplos de...",
           "options": [
-            "Mejora de la vista",
-            "Un mayor riesgo de cáncer",
-            "Aumento de la masa muscular",
-            "Crecimiento acelerado del cabello"
+            "Tipos de rocas marcianas",
+            "Microalgas que se pueden cultivar para obtener alimentos",
+            "Constelaciones lejanas",
+            "Nuevos fármacos para el mareo espacial"
           ],
           "correctAnswerIndex": 1,
-          "explanation": "Si los mecanismos de reparación del ADN fallan o cometen errores, las mutaciones pueden acumularse, lo que aumenta significativamente el riesgo de desarrollar cáncer."
+          "explanation": "Estas microalgas son candidatas prometedoras para la producción de alimentos en el espacio porque crecen rápidamente, son muy nutritivas y eficientes en el uso de recursos."
         },
         {
-          "question": "¿Por qué la radiación es una preocupación mayor para una misión a Marte que para una en la EEI?",
+          "question": "¿Cuál de las siguientes es una estrategia propuesta para combatir la 'monotonía dietética'?",
           "options": [
-            "Marte tiene más radiación que el Sol",
-            "La EEI está completamente protegida por materiales avanzados",
-            "La misión a Marte es más larga y se realiza fuera de la protección de la magnetosfera terrestre",
-            "Los trajes espaciales para Marte son menos protectores"
+            "Comer siempre lo mismo para acostumbrarse",
+            "Implementar sistemas de cultivo para tener vegetales frescos",
+            "Eliminar todas las especias",
+            "Comer solo barritas nutricionales"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "La capacidad de cultivar y consumir alimentos frescos y variados, como ensaladas o pimientos, es una estrategia clave para combatir la fatiga del menú y mejorar el bienestar psicológico de la tripulación."
+        },
+        {
+          "question": "¿Qué es un alimento 'liofilizado'?",
+          "options": [
+            "Un alimento frito en aceite de oliva",
+            "Un alimento que ha sido deshidratado mediante congelación al vacío, preservando su estructura y nutrientes",
+            "Un alimento líquido en un tubo",
+            "Un alimento modificado genéticamente"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "La liofilización, o secado por congelación, es una técnica clave para la comida espacial, ya que elimina el agua, reduce drásticamente el peso y permite que los alimentos se conserven durante años sin refrigeración."
+        },
+        {
+          "question": "¿Cuál es un desafío aún no resuelto en la nutrición espacial?",
+          "options": [
+            "Cómo abrir un paquete de comida en microgravedad",
+            "La alteración del gusto y el olfato que experimentan los astronautas",
+            "La falta total de carbohidratos en la dieta",
+            "La imposibilidad de beber agua"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "Muchos astronautas reportan que su sentido del gusto y el olfato cambian en el espacio, a menudo haciendo que la comida parezca sosa, lo cual es un desafío para garantizar una ingesta calórica adecuada."
+        },
+        {
+          "question": "Los prebióticos y probióticos se usan como suplemento para mejorar...",
+          "options": [
+            "La agudeza visual",
+            "La fuerza muscular del brazo",
+            "La salud de la microbiota intestinal",
+            "La capacidad pulmonar"
           ],
           "correctAnswerIndex": 2,
-          "explanation": "Una misión a Marte implica un viaje mucho más largo y pasar tiempo fuera de la magnetosfera de la Tierra, que desvía gran parte de la radiación cósmica que sí alcanza la EEI."
+          "explanation": "Estos suplementos están dirigidos a mantener una comunidad saludable de microbios en el intestino, lo que es crucial para la digestión y la función inmune."
         },
         {
-          "question": "¿Qué es una contramedida biológica contra la radiación?",
+          "question": "Según las recomendaciones, ¿qué estrategia corresponde al 'Largo Plazo' (>10 años)?",
           "options": [
-            "Un escudo de plomo más grueso en la nave",
-            "Un fármaco que ayude a las células a reparar el ADN más eficientemente",
-            "Hacer ejercicio todos los días",
-            "Comer más verduras"
-          ],
-          "correctAnswerIndex": 1,
-          "explanation": "A diferencia de un blindaje físico, una contramedida biológica sería una sustancia (como un fármaco o un suplemento) que protege las células desde dentro o mejora sus capacidades de reparación."
-        },
-        {
-          "question": "Los Eventos de Partículas Solares (SPE) son una fuente de radiación...",
-          "options": [
-            "Constante y predecible",
-            "Intensa pero esporádica, asociada a erupciones solares",
-            "Débil e inofensiva",
-            "Que solo afecta a las plantas"
-          ],
-          "correctAnswerIndex": 1,
-          "explanation": "Los SPE son explosiones de radiación de alta energía provenientes del Sol. Son eventos agudos y difíciles de predecir que suponen un grave riesgo para los astronautas."
-        },
-        {
-          "question": "¿Qué podría suceder si los mecanismos de reparación del ADN se ven 'abrumados'?",
-          "options": [
-            "Las células se vuelven inmortales",
-            "Se acumulan errores (mutaciones) o la célula puede morir (apoptosis)",
-            "Las células se dividen más rápido",
-            "Se activan superpoderes"
-          ],
-          "correctAnswerIndex": 1,
-          "explanation": "Cuando el daño supera la capacidad de reparación, la célula puede optar por morir para evitar problemas (apoptosis) o sobrevivir con mutaciones, lo que puede llevar a enfermedades como el cáncer."
-        },
-        {
-          "question": "La recombinación homóloga (HR) es un mecanismo de reparación que es...",
-          "options": [
-            "Rápido pero propenso a errores",
-            "Lento pero muy preciso",
-            "Solo funciona en bacterias",
-            "El único mecanismo de reparación existente"
-          ],
-          "correctAnswerIndex": 1,
-          "explanation": "La recombinación homóloga utiliza una copia intacta del cromosoma como plantilla para reparar el daño, lo que la hace muy precisa pero más lenta que la vía NHEJ, que es más rápida pero puede introducir errores."
-        },
-        {
-          "question": "El principal objetivo de estudiar el daño del ADN en el espacio es:",
-          "options": [
-            "Para crear humanos mutantes",
-            "Para entender cómo empezó la vida",
-            "Para desarrollar estrategias que garanticen la seguridad de los astronautas",
-            "Para encontrar nuevas fuentes de energía"
+            "Optimizar las formulaciones de alimentos existentes",
+            "Desarrollar alimentos funcionales avanzados",
+            "Establecer sistemas agrícolas autosustentables en el destino (ej. Marte)",
+            "Mejorar los sistemas de almacenamiento"
           ],
           "correctAnswerIndex": 2,
-          "explanation": "La principal motivación de esta investigación es proteger la salud de los astronautas, permitiendo misiones espaciales de larga duración de forma segura."
+          "explanation": "Para la colonización a largo plazo, la dependencia de los reabastecimientos desde la Tierra no es sostenible. La meta es crear ecosistemas agrícolas que puedan sostener a la tripulación de forma independiente."
+        },
+        {
+          "question": "¿Qué aplicación terrestre se beneficia de la investigación en nutrición espacial?",
+          "options": [
+            "La alta cocina de restaurantes de lujo",
+            "La alimentación para atletas de élite",
+            "La nutrición para poblaciones en áreas remotas o situaciones de desastre",
+            "Las dietas para perder peso"
+          ],
+          "correctAnswerIndex": 2,
+          "explanation": "Las tecnologías para crear alimentos nutritivos y de larga duración, así como los suplementos para condiciones extremas, tienen aplicaciones directas en la ayuda humanitaria y la alimentación de poblaciones en lugares de difícil acceso."
         }
       ]
     },
@@ -718,7 +718,7 @@
             "Generan menos residuos"
           ],
           "correctAnswerIndex": 1,
-          "explanation": "El suelo es pesado y voluminoso. Eliminar la necesidad de transportarlo desde la Tierra supone un ahorro inmenso en el coste y la complejidad de las misiones."
+          "explanation": "El suelo es pesado y voluminoso. Eliminar la necesidad de transportarlo desde la Tierra supone un ahorro immenso en el coste y la complejidad de las misiones."
         }
       ]
     },

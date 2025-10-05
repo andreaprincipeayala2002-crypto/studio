@@ -29,6 +29,60 @@
       "description": "A lab mouse used in a scientific experiment, representing animal studies.",
       "imageUrl": "https://images.unsplash.com/photo-1593529467220-9d721ceb9a78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYWIlMjBtb3VzZXxlbnwwfHx8fDE3NTk2MTEzMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "lab mouse"
+    },
+    {
+      "id": "heart-scan",
+      "description": "A medical scan showing a heart, representing cardiovascular studies.",
+      "imageUrl": "https://images.unsplash.com/photo-1621598218987-15a35017e2f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoZWFydCUyMHNjYW58ZW58MHx8fHwxNzU5NjExMzQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "heart scan"
+    },
+    {
+      "id": "dna-radiation",
+      "description": "Artistic representation of DNA strands being affected by radiation.",
+      "imageUrl": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1080",
+      "imageHint": "DNA radiation"
+    },
+    {
+      "id": "space-farm",
+      "description": "Futuristic concept of a farm inside a space station.",
+      "imageUrl": "https://images.unsplash.com/photo-1611856912365-4f36956e5223?w=1080",
+      "imageHint": "space farm"
+    },
+    {
+      "id": "tardigrade",
+      "description": "Microscopic view of a tardigrade, also known as a water bear.",
+      "imageUrl": "https://images.unsplash.com/photo-1622023534509-1c50404656ef?w=1080",
+      "imageHint": "tardigrade microscopic"
+    },
+    {
+      "id": "vestibular-system",
+      "description": "Illustration of the human inner ear and vestibular system.",
+      "imageUrl": "https://images.unsplash.com/photo-1588665306994-525492a55928?w=1080",
+      "imageHint": "inner ear"
+    },
+    {
+      "id": "immune-cells",
+      "description": "Microscopic image of immune cells in the bloodstream.",
+      "imageUrl": "https://images.unsplash.com/photo-1578500346336-c95a58f45a0e?w=1080",
+      "imageHint": "immune cells"
+    },
+    {
+      "id": "bone-density",
+      "description": "X-ray image showing bone structure, representing bone density.",
+      "imageUrl": "https://images.unsplash.com/photo-1626778103592-8086a0753f80?w=1080",
+      "imageHint": "bone x-ray"
+    },
+    {
+      "id": "psychology-space",
+      "description": "Silhouette of a person looking out a window into space, representing psychology.",
+      "imageUrl": "https://images.unsplash.com/photo-1518065330232-c6832168345f?w=1080",
+      "imageHint": "space window"
+    },
+    {
+      "id": "gut-microbiome",
+      "description": "Artistic rendering of bacteria and microbes in the gut.",
+      "imageUrl": "https://images.unsplash.com/photo-1631049354756-3665317498b9?w=1080",
+      "imageHint": "gut bacteria"
     }
   ]
 }

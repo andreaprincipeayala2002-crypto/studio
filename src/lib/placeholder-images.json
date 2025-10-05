@@ -25,10 +25,10 @@
       "imageHint": "blue planet"
     },
     {
-      "id": "lab-mouse",
-      "description": "A lab mouse used in a scientific experiment, representing animal studies.",
-      "imageUrl": "https://images.unsplash.com/photo-1593529467220-9d721ceb9a78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYWIlMjBtb3VzZXxlbnwwfHx8fDE3NTk2MTEzMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "lab mouse"
+      "id": "astronaut-lab",
+      "description": "An astronaut working in a lab onboard a space station.",
+      "imageUrl": "https://images.unsplash.com/photo-1614728263952-84ea256ec346?w=1080",
+      "imageHint": "astronaut lab"
     },
     {
       "id": "heart-scan",
@@ -83,6 +83,18 @@
       "description": "Artistic rendering of bacteria and microbes in the gut.",
       "imageUrl": "https://images.unsplash.com/photo-1631049354756-3665317498b9?w=1080",
       "imageHint": "gut bacteria"
+    },
+    {
+      "id": "lab-mouse",
+      "description": "A lab mouse used in a scientific experiment, representing animal studies.",
+      "imageUrl": "https://images.unsplash.com/photo-1593529467220-9d721ceb9a78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYWIlMjBtb3VzZXxlbnwwfHx8fDE3NTk2MTEzMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lab mouse"
+    },
+    {
+      "id": "neural-cells",
+      "description": "An artistic or microscopic representation of neural stem cells or brain neurons.",
+      "imageUrl": "https://images.unsplash.com/photo-1530032127221-1b04dbb23947?w=1080",
+      "imageHint": "neural cells"
     }
   ]
 }

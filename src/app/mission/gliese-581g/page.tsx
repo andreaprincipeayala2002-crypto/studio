@@ -18,6 +18,7 @@ const missionSteps = [
   {
     type: 'info',
     title: 'Fase 1: Efectos Fisiológicos Documentados',
+    icon: HeartPulse,
     points: [
       {
         title: 'Redistribución de Fluidos',
@@ -66,6 +67,7 @@ const missionSteps = [
    {
     type: 'info',
     title: 'Fase 3: Brechas de Conocimiento',
+    icon: BrainCircuit,
     points: [
         {
             title: 'Mecanismos y Diferencias Individuales',
@@ -115,6 +117,7 @@ export default function MissionGliese581gPage() {
   };
   
   const getIcon = (IconComponent: React.ElementType, props: any = {}) => {
+    if (!IconComponent) return null;
     return <IconComponent {...props} />;
   }
 
@@ -147,7 +150,7 @@ export default function MissionGliese581gPage() {
                 {getIcon(currentStep.icon, {className: "h-10 w-10 text-primary"})}
               </div>
               <CardTitle className="text-3xl font-bold glow">{currentStep.title}</CardTitle>
-              {currentStep.type !== 'info' && <CardDescription className="text-lg mt-2">{currentStep.text}</CardDescription>}
+              {currentStep.type !== 'info' && 'text' in currentStep && <CardDescription className="text-lg mt-2">{currentStep.text}</CardDescription>}
             </CardHeader>
             <CardContent>
               {currentStep.type === 'info' && 'points' in currentStep && (

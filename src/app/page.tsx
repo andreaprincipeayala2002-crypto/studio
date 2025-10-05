@@ -10,19 +10,6 @@ import { motion } from 'framer-motion';
 import { topics } from '@/lib/quiz-data';
 import { useState, useEffect } from 'react';
 
-const specialMissions = [
-  {
-    slug: '/mission/trappist-1e',
-    title: 'Misión: TRAPPIST-1e',
-    description: 'Usa el espectrógrafo del JWST para encontrar signos de vida.',
-    image: {
-        imageUrl: 'https://images.unsplash.com/photo-1632429649633-16a307038e68?w=1080',
-        description: 'The TRAPPIST-1 system of exoplanets',
-        imageHint: 'exoplanet system'
-    }
-  }
-];
-
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -128,40 +115,10 @@ export default function GalacticMap() {
             </Card>
           </motion.div>
         ))}
-         {specialMissions.map((mission) => (
-          <motion.div key={mission.slug} variants={itemVariants}>
-            <Card className="apple-glass border-accent/20 hover:border-accent/50 transition-all duration-300 h-full flex flex-col overflow-hidden group">
-              <CardHeader className="p-0">
-                {mission.image && (
-                   <div className="aspect-video overflow-hidden">
-                    <Image
-                      src={mission.image.imageUrl}
-                      alt={mission.image.description}
-                      data-ai-hint={mission.image.imageHint}
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
-                    />
-                   </div>
-                )}
-              </CardHeader>
-              <div className="p-6 flex flex-col flex-grow">
-                <CardTitle className="text-2xl font-bold text-accent-foreground glow">{mission.title}</CardTitle>
-                <CardDescription className="mt-2 flex-grow">{mission.description}</CardDescription>
-              </div>
-              <CardFooter>
-                <Button asChild className="w-full" variant={'secondary'}>
-                  <Link href={mission.slug}>
-                    Iniciar Misión <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardFooter>
-            </Card>
-          </motion.div>
-        ))}
       </motion.div>
     </div>
   );
 }
 
     
+  

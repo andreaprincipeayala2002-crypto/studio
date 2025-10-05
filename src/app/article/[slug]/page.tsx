@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowRight, BookOpen, Calendar, Lightbulb, Tag } from 'lucide-react';
 import ArticleFooter from '@/components/article/ArticleFooter';
-import LabSimulation from '@/components/article/LabSimulation';
 
 export async function generateStaticParams() {
   return topics.map((topic) => ({
@@ -52,7 +51,6 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             <p className="lead text-xl text-muted-foreground">{topic.longDescription}</p>
         </div>
 
-        {topic.slug === 'human-biology-space' && <LabSimulation />}
         
         <div className="my-12 text-center">
             <Button asChild size="lg" className="bg-accent/90 hover:bg-accent text-accent-foreground font-bold shadow-lg shadow-accent/20 hover:shadow-accent/40 transition-all duration-300">

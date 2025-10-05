@@ -346,12 +346,12 @@
     },
     {
       "slug": "efectos-cardiovasculares",
-      "title": "Efectos de los vuelos espaciales a bordo de la Estación Espacial Internacional sobre el ciclo estral del ratón y la expresión de genes ováricos",
+      "title": "Efectos Cardiovasculares y Contramedidas",
       "description": "Un análisis de los efectos de los vuelos espaciales en el sistema cardiovascular y las contramedidas.",
       "longDescription": "Este artículo de revisión sintetiza el conocimiento actual sobre los efectos de los vuelos espaciales en el sistema cardiovascular y las estrategias desarrolladas para mitigarlos.\n\n🔍 Objetivo Principal\nRevisar comprensivamente los cambios cardiovasculares inducidos por la microgravedad y evaluar la efectividad de las contramedidas existentes.\n\n📊 Hallazgos Principales\nEfectos Fisiológicos Documentados\n1. Redistribución de Fluidos\nDesplazamiento cephalal (hacia la cabeza) de aproximadamente 2 litros de fluidos\nDisminución del volumen plasmático (10-15%) en las primeras 24-48 horas\nAlteración del balance hidroelectrolítico\n\n2. Cambios Cardíacos\nReducción de la masa cardíaca (atrofia por descarga)\nDisminución del volumen del ventrículo izquierdo\nAlteraciones en la función diastólica\nModificaciones en la geometría cardíaca\n\n3. Adaptaciones Vasculares\nDisminución de la compliance arterial\nAlteración de la función endotelial\nReducción de la reactividad vascular\nCambios en la estructura de vasos sanguíneos\n\n4. Regulación Neurohumoral\nSupresión del sistema renina-angiotensina-aldosterona\nAlteraciones en la secreción de péptido natriurético\nModificaciones en la actividad del sistema nervioso simpático\n\n💊 Contramedidas Evaluadas\nEstrategias Actuales\n1. Ejercicio Físico\nEjercicio aeróbico: 30-60 minutos/día\nEjercicio de resistencia: 3-5 días/semana\nDispositivos especializados: CEVIS, ARED\nEfectividad: Mitiga pero no previene completamente la atrofia\n\n2. Manipulación de Fluidos\nRestricción de sal antes del vuelo\nSuplementación hídrica pre-reingreso\nUso de trajes de lower body negative pressure (LBNP)\nManejo farmacológico en casos específicos\n\n3. Estrategias Nutricionales\nSuplementos antioxidantes\nÁcidos grasos omega-3\nOptimización del balance electrolítico\nControl de la ingesta proteica\n\n🎯 Problemas No Resueltos\nBrechas de Conocimiento\nMecanismos moleculares específicos de la adaptación cardiovascular\nDiferencias individuales en la respuesta a la microgravedad\nEfectos de exposiciones prolongadas (>6 meses)\nInteracciones con otros factores del espacio (radiación, estrés)\n\nLimitaciones de las Contramedidas Actuales\nEfectividad parcial en la prevención de la atrofia\nAlta variabilidad interindividual en la respuesta\nComplejidad logística de implementación\nEfectos secundarios no deseados\n\n🚀 Implicaciones para Misiones Futuras\nMisiones de Larga Duración\nNecesidad de contramedidas más efectivas\nDesarrollo de sistemas de monitorización integrados\nEstrategias personalizadas según características individuales\nConsideración de factores psicológicos y su impacto cardiovascular\n\nSalud Post-vuelo\nPeríodos de recuperación variables (semanas a meses)\nRiesgo residual de disfunción cardiovascular\nNecesidad de protocolos de rehabilitación estandarizados\nSeguimiento a largo plazo de astronautas retirados\n\n🔬 Direcciones Futuras de Investigación\nÁreas Prioritarias\nMecanismos moleculares de la adaptación cardiovascular\nBiomarcadores de susceptibilidad individual\nTecnologías avanzadas de contramedida\nIntegración de múltiples sistemas (cardiovascular, musculoesquelético, etc.)\nEfectos de la radiación espacial en el sistema cardiovascular\n\nEnfoques Innovadores\nMedicina personalizada para astronautas\nTecnologías de monitorización continua\nTerapias farmacológicas dirigidas\nEstrategias de pre-acondicionamiento\n\n💡 Conclusiones Clave\nLa microgravedad produce cambios cardiovasculares complejos y multifacéticos\nLas contramedidas actuales son parcialmente efectivas pero requieren optimización\nSe necesitan enfoques integrados que consideren múltiples sistemas\nLa investigación continua es esencial para misiones de exploración futuras\nLos hallazgos tienen relevancia para la medicina terrestre, particularly en condiciones de inmovilización y envejecimiento\n\n🌍 Relevancia Clínica Terrestre\nLos conocimientos generados tienen aplicaciones en:\nRehabilitación de pacientes encamados\nMedicina geriátrica y procesos de envejecimiento\nComprensión de la fisiología de la descarga cardiovascular\nDesarrollo de estrategias contra la atrofia por desuso",
       "publicationDate": "05 de Febrero, 2025",
       "sourceUrl": "https://www.nasa.gov/mission/space-station/research-explorer/search-results/?topic=14",
-      "imageId": "astronaut-lab",
+      "imageId": "heart-scan",
       "relatedTopics": ["human-biology-space", "microbiology-space"],
       "reflectionQuestions": [
         "¿Por qué el ejercicio por sí solo no es suficiente para prevenir todos los cambios cardiovasculares en el espacio?",
@@ -485,114 +485,114 @@
       ],
       "questions": [
         {
-          "question": "¿Cuál de estos factores ambientales espaciales incrementa la necesidad de antioxidantes?",
+          "question": "¿Cuál de estos factores ambientales espaciales incrementa la necesidad de antioxidantes en los astronautas?",
           "options": [
             "La microgravedad",
             "La radiación",
             "El silencio del espacio",
-            "La vista de la Tierra"
+            "La vista de la Tierra desde la ventana"
           ],
           "correctAnswerIndex": 1,
-          "explanation": "La exposición a niveles más altos de radiación en el espacio aumenta el estrés oxidativo en el cuerpo, lo que requiere una mayor ingesta de antioxidantes como las vitaminas C y E para neutralizar los radicales libres."
+          "explanation": "La exposición a mayores niveles de radiación cósmica aumenta el estrés oxidativo, lo que requiere una mayor ingesta de antioxidantes como las vitaminas C y E para neutralizar los radicales libres."
         },
         {
           "question": "¿Cómo son los requerimientos de proteína para un astronauta en comparación con una persona en la Tierra?",
           "options": [
-            "Son menores (0.8 g/kg/día)",
-            "Son iguales (1.0 g/kg/día)",
-            "Son mayores (1.2-1.7 g/kg/día)",
-            "Los astronautas no necesitan proteínas"
+            "Son significativamente menores",
+            "Son exactamente los mismos",
+            "Son mayores, entre 1.2 y 1.7 g/kg/día",
+            "Los astronautas siguen una dieta sin proteínas"
           ],
           "correctAnswerIndex": 2,
-          "explanation": "Los astronautas necesitan una mayor ingesta de proteínas para ayudar a contrarrestar la pérdida de masa muscular y ósea que ocurre en microgravedad."
+          "explanation": "Para contrarrestar la pérdida de masa muscular y ósea, los astronautas necesitan una ingesta de proteínas superior a la recomendada en la Tierra."
         },
         {
-          "question": "Para mantener la salud ósea, ¿qué dos micronutrientes son especialmente críticos en el espacio?",
+          "question": "Para la salud ósea en el espacio, ¿qué dos micronutrientes son especialmente críticos?",
           "options": [
             "Hierro y Zinc",
-            "Vitamina C y Vitamina B12",
+            "Vitamina C y Sodio",
             "Calcio y Vitamina D",
-            "Sodio y Potasio"
+            "Potasio y Magnesio"
           ],
           "correctAnswerIndex": 2,
-          "explanation": "La microgravedad acelera la pérdida de densidad ósea, por lo que una ingesta elevada de Calcio (el bloque de construcción del hueso) y Vitamina D (esencial para la absorción de calcio) es crucial."
+          "explanation": "La microgravedad acelera la pérdida de densidad ósea, por lo que es crucial una alta ingesta de Calcio (componente del hueso) y Vitamina D (para la absorción del Calcio)."
         },
         {
-          "question": "La espirulina y la chlorella son ejemplos de...",
+          "question": "La espirulina y la chlorella son ejemplos de:",
           "options": [
-            "Tipos de rocas marcianas",
-            "Microalgas que se pueden cultivar para obtener alimentos",
-            "Constelaciones lejanas",
-            "Nuevos fármacos para el mareo espacial"
+            "Nuevos planetas descubiertos",
+            "Microalgas que se pueden cultivar como fuente de alimento",
+            "Componentes de la nave espacial",
+            "Fármacos para el mareo espacial"
           ],
           "correctAnswerIndex": 1,
-          "explanation": "Estas microalgas son candidatas prometedoras para la producción de alimentos en el espacio porque crecen rápidamente, son muy nutritivas y eficientes en el uso de recursos."
+          "explanation": "Estas microalgas son candidatas prometedoras para la producción de alimentos en el espacio debido a su rápido crecimiento, alta densidad nutricional y eficiencia de recursos."
         },
         {
-          "question": "¿Cuál de las siguientes es una estrategia propuesta para combatir la 'monotonía dietética'?",
+          "question": "¿Cuál es una estrategia propuesta para combatir la 'monotonía dietética'?",
           "options": [
-            "Comer siempre lo mismo para acostumbrarse",
-            "Implementar sistemas de cultivo para tener vegetales frescos",
-            "Eliminar todas las especias",
-            "Comer solo barritas nutricionales"
+            "Comer el mismo alimento todos los días para acostumbrarse",
+            "Cultivar vegetales frescos en el espacio",
+            "Eliminar todas las especias de la dieta",
+            "Consumir únicamente barritas energéticas"
           ],
           "correctAnswerIndex": 1,
-          "explanation": "La capacidad de cultivar y consumir alimentos frescos y variados, como ensaladas o pimientos, es una estrategia clave para combatir la fatiga del menú y mejorar el bienestar psicológico de la tripulación."
+          "explanation": "La capacidad de cultivar y consumir alimentos frescos y variados es una estrategia clave para mejorar el bienestar psicológico y combatir la fatiga del menú en misiones largas."
         },
         {
-          "question": "¿Qué es un alimento 'liofilizado'?",
+          "question": "Un alimento 'liofilizado' es aquel que ha sido:",
           "options": [
-            "Un alimento frito en aceite de oliva",
-            "Un alimento que ha sido deshidratado mediante congelación al vacío, preservando su estructura y nutrientes",
-            "Un alimento líquido en un tubo",
-            "Un alimento modificado genéticamente"
+            "Hervido a altas temperaturas",
+            "Congelado y luego deshidratado al vacío",
+            "Mezclado con conservantes artificiales",
+            "Convertido en líquido"
           ],
           "correctAnswerIndex": 1,
-          "explanation": "La liofilización, o secado por congelación, es una técnica clave para la comida espacial, ya que elimina el agua, reduce drásticamente el peso y permite que los alimentos se conserven durante años sin refrigeración."
+          "explanation": "La liofilización o secado por congelación es un método de conservación que elimina el agua de los alimentos, reduciendo su peso y permitiendo un almacenamiento prolongado sin refrigeración."
         },
         {
-          "question": "¿Cuál es un desafío aún no resuelto en la nutrición espacial?",
+          "question": "¿Cuál es un desafío aún no resuelto en la nutrición espacial mencionado en el texto?",
           "options": [
-            "Cómo abrir un paquete de comida en microgravedad",
+            "La falta total de alimentos",
             "La alteración del gusto y el olfato que experimentan los astronautas",
-            "La falta total de carbohidratos en la dieta",
-            "La imposibilidad de beber agua"
+            "La imposibilidad de calentar la comida",
+            "El exceso de fibra en la dieta"
           ],
           "correctAnswerIndex": 1,
-          "explanation": "Muchos astronautas reportan que su sentido del gusto y el olfato cambian en el espacio, a menudo haciendo que la comida parezca sosa, lo cual es un desafío para garantizar una ingesta calórica adecuada."
+          "explanation": "Muchos astronautas reportan cambios en la percepción del sabor y el olor, lo que puede hacer que la comida parezca insípida y afectar su ingesta calórica."
         },
         {
-          "question": "Los prebióticos y probióticos se usan como suplemento para mejorar...",
+          "question": "Los prebióticos y probióticos se utilizan como suplementos para mejorar principalmente:",
           "options": [
             "La agudeza visual",
-            "La fuerza muscular del brazo",
             "La salud de la microbiota intestinal",
+            "La fuerza de los brazos",
             "La capacidad pulmonar"
           ],
-          "correctAnswerIndex": 2,
-          "explanation": "Estos suplementos están dirigidos a mantener una comunidad saludable de microbios en el intestino, lo que es crucial para la digestión y la función inmune."
+          "correctAnswerIndex": 1,
+          "explanation": "Estos suplementos están diseñados para mantener una comunidad microbiana saludable en el intestino, lo cual es crucial para la digestión, la función inmune y la salud general."
         },
         {
-          "question": "Según las recomendaciones, ¿qué estrategia corresponde al 'Largo Plazo' (>10 años)?",
+          "question": "Según las recomendaciones para misiones futuras, ¿qué estrategia corresponde al 'Largo Plazo' (>10 años)?",
           "options": [
             "Optimizar las formulaciones de alimentos existentes",
-            "Desarrollar alimentos funcionales avanzados",
-            "Establecer sistemas agrícolas autosustentables en el destino (ej. Marte)",
-            "Mejorar los sistemas de almacenamiento"
+            "Implementar sistemas de cultivo básico",
+            "Establecer sistemas agrícolas autosustentables en el destino",
+            "Mejorar los empaques de los alimentos"
           ],
           "correctAnswerIndex": 2,
-          "explanation": "Para la colonización a largo plazo, la dependencia de los reabastecimientos desde la Tierra no es sostenible. La meta es crear ecosistemas agrícolas que puedan sostener a la tripulación de forma independiente."
+          "explanation": "Para la colonización a largo plazo, como en Marte, la meta es lograr la autosuficiencia alimentaria mediante la creación de ecosistemas agrícolas que puedan sostener a la tripulación sin depender de reabastecimientos."
         },
         {
-          "question": "¿Qué aplicación terrestre se beneficia de la investigación en nutrición espacial?",
+          "question": "¿Qué aplicación terrestre se beneficia directamente de la investigación en nutrición espacial?",
           "options": [
-            "La alta cocina de restaurantes de lujo",
-            "La alimentación para atletas de élite",
+            "La industria de la moda",
+            "La alta cocina",
             "La nutrición para poblaciones en áreas remotas o situaciones de desastre",
-            "Las dietas para perder peso"
+            "El desarrollo de nuevos videojuegos"
           ],
           "correctAnswerIndex": 2,
-          "explanation": "Las tecnologías para crear alimentos nutritivos y de larga duración, así como los suplementos para condiciones extremas, tienen aplicaciones directas en la ayuda humanitaria y la alimentación de poblaciones en lugares de difícil acceso."
+          "explanation": "Las tecnologías para crear alimentos nutritivos de larga duración y estables tienen aplicaciones directas en la ayuda humanitaria, la alimentación militar y el apoyo a poblaciones en lugares de difícil acceso."
         }
       ]
     },
@@ -1477,8 +1477,135 @@
           "explanation": "Las muestras fecales proporcionan una instantánea directa y no invasiva de la composición de la comunidad microbiana que habita en el tracto gastrointestinal."
         }
       ]
+    },
+    {
+      "slug": "Efectos-de-los-vuelos-espaciales",
+      "title": "Efectos de los vuelos espaciales a bordo de la Estación Espacial Internacional sobre el ciclo estral del ratón y la expresión de genes ováricos",
+      "description": "Un análisis de los efectos de los vuelos espaciales en el sistema cardiovascular y las contramedidas.",
+      "longDescription": "Este artículo de revisión sintetiza el conocimiento actual sobre los efectos de los vuelos espaciales en el sistema cardiovascular y las estrategias desarrolladas para mitigarlos.\n\n🔍 Objetivo Principal\nRevisar comprensivamente los cambios cardiovasculares inducidos por la microgravedad y evaluar la efectividad de las contramedidas existentes.\n\n📊 Hallazgos Principales\nEfectos Fisiológicos Documentados\n1. Redistribución de Fluidos\nDesplazamiento cephalal (hacia la cabeza) de aproximadamente 2 litros de fluidos\nDisminución del volumen plasmático (10-15%) en las primeras 24-48 horas\nAlteración del balance hidroelectrolítico\n\n2. Cambios Cardíacos\nReducción de la masa cardíaca (atrofia por descarga)\nDisminución del volumen del ventrículo izquierdo\nAlteraciones en la función diastólica\nModificaciones en la geometría cardíaca\n\n3. Adaptaciones Vasculares\nDisminución de la compliance arterial\nAlteración de la función endotelial\nReducción de la reactividad vascular\nCambios en la estructura de vasos sanguíneos\n\n4. Regulación Neurohumoral\nSupresión del sistema renina-angiotensina-aldosterona\nAlteraciones en la secreción de péptido natriurético\nModificaciones en la actividad del sistema nervioso simpático\n\n💊 Contramedidas Evaluadas\nEstrategias Actuales\n1. Ejercicio Físico\nEjercicio aeróbico: 30-60 minutos/día\nEjercicio de resistencia: 3-5 días/semana\nDispositivos especializados: CEVIS, ARED\nEfectividad: Mitiga pero no previene completamente la atrofia\n\n2. Manipulación de Fluidos\nRestricción de sal antes del vuelo\nSuplementación hídrica pre-reingreso\nUso de trajes de lower body negative pressure (LBNP)\nManejo farmacológico en casos específicos\n\n3. Estrategias Nutricionales\nSuplementos antioxidantes\nÁcidos grasos omega-3\nOptimización del balance electrolítico\nControl de la ingesta proteica\n\n🎯 Problemas No Resueltos\nBrechas de Conocimiento\nMecanismos moleculares específicos de la adaptación cardiovascular\nDiferencias individuales en la respuesta a la microgravedad\nEfectos de exposiciones prolongadas (>6 meses)\nInteracciones con otros factores del espacio (radiación, estrés)\n\nLimitaciones de las Contramedidas Actuales\nEfectividad parcial en la prevención de la atrofia\nAlta variabilidad interindividual en la respuesta\nComplejidad logística de implementación\nEfectos secundarios no deseados\n\n🚀 Implicaciones para Misiones Futuras\nMisiones de Larga Duración\nNecesidad de contramedidas más efectivas\nDesarrollo de sistemas de monitorización integrados\nEstrategias personalizadas según características individuales\nConsideración de factores psicológicos y su impacto cardiovascular\n\nSalud Post-vuelo\nPeríodos de recuperación variables (semanas a meses)\nRiesgo residual de disfunción cardiovascular\nNecesidad de protocolos de rehabilitación estandarizados\nSeguimiento a largo plazo de astronautas retirados\n\n🔬 Direcciones Futuras de Investigación\nÁreas Prioritarias\nMecanismos moleculares de la adaptación cardiovascular\nBiomarcadores de susceptibilidad individual\nTecnologías avanzadas de contramedida\nIntegración de múltiples sistemas (cardiovascular, musculoesquelético, etc.)\nEfectos de la radiación espacial en el sistema cardiovascular\n\nEnfoques Innovadores\nMedicina personalizada para astronautas\nTecnologías de monitorización continua\nTerapias farmacológicas dirigidas\nEstrategias de pre-acondicionamiento\n\n💡 Conclusiones Clave\nLa microgravedad produce cambios cardiovasculares complejos y multifacéticos\nLas contramedidas actuales son parcialmente efectivas pero requieren optimización\nSe necesitan enfoques integrados que consideren múltiples sistemas\nLa investigación continua es esencial para misiones de exploración futuras\nLos hallazgos tienen relevancia para la medicina terrestre, particularly en condiciones de inmovilización y envejecimiento\n\n🌍 Relevancia Clínica Terrestre\nLos conocimientos generados tienen aplicaciones en:\nRehabilitación de pacientes encamados\nMedicina geriátrica y procesos de envejecimiento\nComprensión de la fisiología de la descarga cardiovascular\nDesarrollo de estrategias contra la atrofia por desuso",
+      "publicationDate": "05 de Febrero, 2025",
+      "sourceUrl": "https://www.nasa.gov/mission/space-station/research-explorer/search-results/?topic=14",
+      "imageId": "astronaut-lab",
+      "relatedTopics": ["human-biology-space", "microbiology-space"],
+      "reflectionQuestions": [
+        "¿Por qué el ejercicio por sí solo no es suficiente para prevenir todos los cambios cardiovasculares en el espacio?",
+        "¿Cómo podrían los hallazgos sobre la salud cardiovascular en el espacio ayudar a tratar a pacientes con insuficiencia cardíaca en la Tierra?"
+      ],
+      "questions": [
+        {
+          "question": "¿Cuál es uno de los efectos inmediatos de la microgravedad en los fluidos corporales?",
+          "options": [
+            "Un desplazamiento de fluidos hacia las piernas.",
+            "Un aumento del volumen plasmático.",
+            "Un desplazamiento de fluidos hacia la cabeza.",
+            "No hay cambios en la distribución de fluidos."
+          ],
+          "correctAnswerIndex": 2,
+          "explanation": "Uno de los primeros y más notables efectos es el desplazamiento de aproximadamente 2 litros de fluidos hacia la parte superior del cuerpo y la cabeza (desplazamiento cefálico)."
+        },
+        {
+          "question": "¿Qué le sucede a la masa del corazón durante los vuelos espaciales?",
+          "options": [
+            "Aumenta significativamente (hipertrofia).",
+            "Se reduce debido a la menor carga de trabajo (atrofia por descarga).",
+            "Permanece sin cambios.",
+            "Se transforma en tejido graso."
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "El corazón no tiene que bombear sangre contra la gravedad, lo que reduce su carga de trabajo y conduce a una reducción de su masa, un fenómeno conocido como atrofia por descarga."
+        },
+        {
+          "question": "¿Cuál es la contramedida más fundamental y efectiva para combatir la atrofia muscular y cardíaca en el espacio?",
+          "options": [
+            "Suplementos nutricionales con omega-3.",
+            "Una combinación de ejercicio aeróbico y de resistencia.",
+            "Uso de trajes de presión negativa (LBNP).",
+            "Meditación y técnicas de relajación."
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "El ejercicio físico riguroso, utilizando dispositivos especializados como ARED y CEVIS, es la principal estrategia para mitigar la atrofia cardíaca y muscular, aunque no la previene por completo."
+        },
+        {
+          "question": "¿Qué significa 'disminución de la compliance arterial'?",
+          "options": [
+            "Las arterias se vuelven más elásticas y flexibles.",
+            "Las arterias se vuelven más rígidas y menos capaces de expandirse.",
+            "El flujo sanguíneo en las arterias se detiene.",
+            "Las arterias transportan más oxígeno."
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "La 'compliance' o distensibilidad arterial se refiere a la capacidad de los vasos sanguíneos para estirarse en respuesta a la presión. Una disminución significa que las arterias se vuelven más rígidas."
+        },
+        {
+          "question": "El sistema renina-angiotensina-aldosterona, que regula la presión arterial y el balance de fluidos, tiende a...",
+          "options": [
+            "Activarse excesivamente.",
+            "Suprimirse durante el vuelo espacial.",
+            "Funcionar de manera intermitente.",
+            "No verse afectado por la microgravedad."
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "Debido al desplazamiento de fluidos hacia la cabeza, el cuerpo percibe un 'exceso' de volumen, lo que lleva a la supresión de este sistema para promover la excreción de sodio y agua."
+        },
+        {
+          "question": "Además del ejercicio, ¿qué estrategia se utiliza para manejar la distribución de fluidos antes de regresar a la Tierra?",
+          "options": [
+            "Ayuno completo durante 24 horas.",
+            "Suplementación hídrica (beber grandes cantidades de agua y sal).",
+            "Dormir en posición vertical.",
+            "Consumir únicamente alimentos deshidratados."
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "La suplementación hídrica antes del reingreso ayuda a reexpandir el volumen plasmático y preparar el sistema cardiovascular para el regreso a la gravedad terrestre."
+        },
+        {
+          "question": "¿Cuál es una de las principales 'brechas de conocimiento' mencionadas en el artículo?",
+          "options": [
+            "Se desconoce si el corazón humano tiene cuatro cámaras.",
+            "Los mecanismos moleculares específicos y las diferencias individuales en la respuesta.",
+            "No se sabe cómo medir la presión arterial en el espacio.",
+            "Se ignora el color de la sangre en microgravedad."
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "El artículo destaca que, aunque se conocen los efectos generales, los mecanismos moleculares precisos y por qué cada astronauta responde de manera diferente siguen siendo áreas clave de investigación."
+        },
+        {
+          "question": "Los dispositivos 'CEVIS' y 'ARED' mencionados en el artículo son:",
+          "options": [
+            "Sistemas de navegación de la nave espacial.",
+            "Equipos de comunicación con la Tierra.",
+            "Dispositivos especializados para el ejercicio físico en la EEI.",
+            "Instrumentos para analizar muestras de sangre."
+          ],
+          "correctAnswerIndex": 2,
+          "explanation": "CEVIS (Cycle Ergometer with Vibration Isolation System) y ARED (Advanced Resistive Exercise Device) son equipos crueles a bordo de la EEI para que los astronautas realicen ejercicio aeróbico y de resistencia."
+        },
+        {
+          "question": "¿Qué implicación tienen los hallazgos de la fisiología espacial para la medicina en la Tierra?",
+          "options": [
+            "No tienen ninguna relevancia para la medicina terrestre.",
+            "Ayudan a desarrollar nuevos tipos de naves espaciales.",
+            "Son aplicables a la rehabilitación de pacientes encamados y a la medicina geriátrica.",
+            "Sirven para crear dietas para atletas de alto rendimiento."
+          ],
+          "correctAnswerIndex": 2,
+          "explanation": "El estudio de la atrofia por descarga en el espacio ofrece un modelo acelerado de lo que ocurre en pacientes inmovilizados o durante el proceso de envejecimiento, ayudando a desarrollar mejores terapias en la Tierra."
+        },
+        {
+          "question": "Según las conclusiones, ¿cuál es el estado de las contramedidas actuales?",
+          "options": [
+            "Son 100% efectivas y resuelven todos los problemas.",
+            "Son completamente inútiles y no tienen efecto.",
+            "Son parcialmente efectivas pero requieren optimización y un enfoque integrado.",
+            "No se han probado contramedidas hasta la fecha."
+          ],
+          "correctAnswerIndex": 2,
+          "explanation": "Una conclusión clave es que, aunque las contramedidas como el ejercicio son vitales, solo mitigan parcialmente los efectos y necesitan ser mejoradas y combinadas con otras estrategias."
+        }
+      ]
     }
   ]
 }
 
+    
     

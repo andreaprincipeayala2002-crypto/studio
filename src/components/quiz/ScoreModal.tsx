@@ -10,9 +10,10 @@ import {
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { Award, RotateCw, Map, XCircle, CheckCircle, Rocket } from 'lucide-react';
+import { Award, RotateCw, Map, XCircle, CheckCircle, Rocket, BookDown } from 'lucide-react';
 import type { AnswerRecord } from './QuizClient';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 
 // Custom SVG for Asteroid as lucide-react does not have one.
@@ -43,6 +44,7 @@ interface ScoreModalProps {
   onGoHome: () => void;
   answerHistory: AnswerRecord[];
   missionSuccess: boolean;
+  allCorrect: boolean;
 }
 
 export default function ScoreModal({
@@ -53,6 +55,7 @@ export default function ScoreModal({
   onGoHome,
   answerHistory,
   missionSuccess,
+  allCorrect,
 }: ScoreModalProps) {
   if (!isOpen) return null;
 
@@ -75,6 +78,18 @@ export default function ScoreModal({
           </DialogDescription>
         </DialogHeader>
         
+        {allCorrect && (
+            <div className="p-4 bg-green-500/20 text-green-300 rounded-lg text-center">
+                <p className="font-bold">¡Felicidades! Te has ganado un libro por tu conocimiento excepcional.</p>
+                <Button asChild variant="link" className="text-white mt-2">
+                    <a href="https://ntrs.nasa.gov/api/citations/20205008392/downloads/Space%20Biology%20Program%20Decadal%20Survey%20Briefing%20to%20the%20National%20Academies.pdf" target="_blank" rel="noopener noreferrer">
+                        <BookDown className="mr-2 h-4 w-4" />
+                        Descargar Libro
+                    </a>
+                </Button>
+            </div>
+        )}
+
         <div className="my-4">
             <h3 className="font-bold text-xl mb-2 flex items-center gap-2">
                 <Award />

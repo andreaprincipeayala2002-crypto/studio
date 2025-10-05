@@ -93,7 +93,9 @@ export default function QuizClient() {
       setQuizFinished(true);
       setShowAnimation(true);
       if (topic) {
-        localStorage.setItem(`quiz-score-${topic.slug}`, JSON.stringify({ score: score, total: questions.length }));
+        // The score state is not updated immediately, so we check score + 1 if the last answer was correct
+        const finalScore = isCorrect ? score + 1 : score;
+        localStorage.setItem(`quiz-score-${topic.slug}`, JSON.stringify({ score: finalScore, total: questions.length }));
       }
     }
   };
@@ -166,6 +168,7 @@ export default function QuizClient() {
 
   const scorePercentage = questions.length > 0 ? (score / questions.length) * 100 : 0;
   const missionSuccess = scorePercentage >= 50;
+  const allCorrect = score === questions.length && questions.length > 0;
 
   return (
     <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] relative z-10">
@@ -222,6 +225,7 @@ export default function QuizClient() {
         onGoHome={handleGoHome}
         answerHistory={answerHistory}
         missionSuccess={missionSuccess}
+        allCorrect={allCorrect}
       />
     </div>
   );

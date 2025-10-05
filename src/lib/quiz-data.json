@@ -597,136 +597,10 @@
       ]
     },
     {
-      "slug": "space-farming-nutrition",
-      "title": "Spaceflight alters gut microbiota-host interactions",
-      "description": "Synthesis of the latest findings on the adaptation of the human body to microgravity.",
-      "longDescription": "📌 General Context\nUpdated review of the latest advances in understanding how microgravity affects human physiological systems, incorporating recent findings from space missions and terrestrial studies.\n\n🎯 Main Focus\nSynthesis of recent evidence on the molecular and physiological mechanisms of adaptation to microgravity, with emphasis on applications for future exploration missions.\n\n📊 Recent Key Findings\nCardiovascular System - New Evidence\nStructural Changes\nCardiac remodeling: Reduction of ventricular mass by 8-12%\n\nAlterations in vascular geometry: Redistribution of wall stress\n\nMyocardial adaptations: Changes in the expression of contractile proteins\n\nEndothelial Function\nEarly dysfunction: Detectable in the first 2 weeks\n\nAlteration in the production of nitric oxide\n\nChanges in the expression of adhesion molecules\n\nModification of the vasodilator response\n\nMusculoskeletal System - Advances\nSkeletal Muscle\nSelective atrophy: Greater in antigravity muscles\n\nChange in fiber type: Transition towards fast fibers\n\nMetabolic alteration: Decreased oxidative capacity\n\nModification of signaling pathways: mTOR and ubiquitin-proteasome\n\nBone Tissue\nAccelerated bone loss: 1-2% per month in the lumbar spine\n\nAlteration of remodeling balance: Increased resorption vs. formation\n\nChanges in biochemical markers: CTX, P1NP, osteocalcin\n\nModification of microarchitecture: Deterioration of bone trabeculae\n\nNeurological System - Recent Findings\nSensorimotor Function\nRapid but incomplete vestibular adaptation\n\nAlteration of sensory integration: Visual-vestibular conflict\n\nModification of motor control: Adapted movement strategies\n\nChanges in proprioception: Constant recalibration\n\nCognitive Function\nSlight alterations in executive functions\n\nModification of sleep-wake patterns\n\nChanges in emotional processing\n\nNeuroplasticity adaptation\n\n🔬 Identified Molecular Mechanisms\nCell Signaling\nHippo pathway: Regulation of cell growth and organogenesis\n\nYAP/TAZ transcription factors: Key mechanical sensors\n\nExtracellular signal-regulated kinases\n\nModification of the actin cytoskeleton\n\nGene Expression\nTissue-specific transcriptomic profiles\n\nEpigenetic modification: DNA methylation, histone modification\n\nRegulation by miRNAs: Multiple targets identified\n\nChanges in alternative splicing\n\nOxidative Stress\nPersistent redox imbalance\n\nModification of antioxidant defenses\n\nAlteration of DNA repair systems\n\nAccumulation of macromolecular damage\n\n💊 Countermeasures in Development\nAdvanced Exercise\nCombined protocols: Aerobic + resistance + balance\n\nHigh-intensity interval training\n\nArtificial axial load exercises\n\nWhole-body vibration systems\n\nNutritional Interventions\nSpecific antioxidants: N-acetylcysteine, astaxanthin\n\nLong-chain omega-3 fatty acids\n\nPolyphenols and phytochemicals\n\nOptimized vitamin D supplementation\n\nEmerging Technologies\nNeuromuscular compression suits\n\nFunctional electrical stimulation\n\nAdvanced lower body negative pressure suits\n\nArtificial gravity systems\n\n📈 Monitoring and Diagnosis\nNovel Biomarkers\nCirculating miRNAs as early indicators\n\nSpecific metabolites in biological fluids\n\nCellular stress proteins\n\nMarkers of vascular integrity\n\nMonitoring Technologies\nLatest generation wearable devices\n\nPortable imaging (compact ultrasound)\n\nReal-time analysis of physiological parameters\n\nIntegrated telemedicine platforms\n\n🚀 Implications for Future Missions\nArtemis Missions (Moon)\nIntermittent exposures to partial gravity\n\nFrequent cycles of adaptation and readaptation\n\nCombined effects with lunar radiation\n\nCountermeasure strategies specific to reduced gravity\n\nMars Missions\nProlonged exposure (2-3 years) to microgravity\n\nCumulative effects with cosmic radiation\n\nResource limitations for countermeasures\n\nNeed for medical and rehabilitation autonomy\n\n⚠️ Critical Knowledge Gaps\nPriority Research Areas\nMechanisms of radiation damage and synergy with microgravity\n\nIndividual variability in susceptibility and adaptation\n\nTemporal limits of safe exposure\n\nEffects on less studied systems (lymphatic, endocrine)\n\nLong-term post-mission recovery\n\nTechnological Challenges\nMore accurate terrestrial simulation of microgravity\n\nPredictive models of individual risk\n\nIntegrated multi-system countermeasures\n\nAutonomous medical systems for distant missions\n\n💡 Main Conclusions\nAdaptation to microgravity involves complex changes at multiple levels\n\nThere is great inter-individual variability in physiological responses\n\nCurrent countermeasures are insufficient for long-duration missions\n\nPersonalized approaches based on individual characteristics are required\n\nIntegrated research is essential for the success of exploration\n\n🌍 Relevance to Terrestrial Medicine\nFindings in space physiology have applications in:\n\nAging and sarcopenia\n\nOsteoporosis and bone diseases\n\nRehabilitation for prolonged immobilization\n\nMedicine of chronic conditions from disuse",
-      "publicationDate": "February 12, 2025",
-      "sourceUrl": "https://www.nasa.gov/mission/space-station/research-explorer/search-results/?topic=20",
-      "imageId": "astronaut-lab",
-      "relatedTopics": ["plant-science-space", "gut-microbiome-space"],
-      "reflectionQuestions": [
-        "What ethical challenges might arise from genetically modifying plants to make them more suitable for space?",
-        "How could space farming technology help solve food scarcity problems on Earth?"
-      ],
-      "questions": [
-        {
-          "question": "What is one of the recent findings about the structural changes of the heart in microgravity?",
-          "options": [
-            "A 20% increase in ventricular mass",
-            "An 8-12% reduction in ventricular mass",
-            "No change in cardiac mass",
-            "Calcification of the heart valves"
-          ],
-          "correctAnswerIndex": 1,
-          "explanation": "The text indicates that one of the recent findings in the cardiovascular system is an 8-12% reduction in ventricular mass due to cardiac remodeling."
-        },
-        {
-          "question": "In skeletal muscle, atrophy is more selective in:",
-          "options": [
-            "Arm muscles",
-            "Facial muscles",
-            "Antigravity muscles (legs, back)",
-            "All muscles equally"
-          ],
-          "correctAnswerIndex": 2,
-          "explanation": "Muscle atrophy is greater in the muscles that normally work against gravity on Earth, such as those in the legs and spine."
-        },
-        {
-          "question": "The 'Hippo' signaling pathway and the 'YAP/TAZ' transcription factors are important because they act as:",
-          "options": [
-            "Energy sources for the cell",
-            "Key mechanical sensors that detect the lack of load",
-            "Cellular waste disposal systems",
-            "Regulators of body temperature"
-          ],
-          "correctAnswerIndex": 1,
-          "explanation": "The Hippo pathway and YAP/TAZ factors are molecular mechanisms that act as mechanical sensors, playing a crucial role in how cells detect and respond to physical forces (or lack thereof)."
-        },
-        {
-          "question": "What type of nutritional intervention is being developed to combat oxidative stress?",
-          "options": [
-            "A high-sugar diet",
-            "Increased salt consumption",
-            "Specific antioxidants like N-acetylcysteine",
-            "Complete elimination of fats"
-          ],
-          "correctAnswerIndex": 2,
-          "explanation": "To counteract the increase in oxidative stress, the use of specific and potent antioxidants such as N-acetylcysteine and astaxanthin is being investigated."
-        },
-        {
-          "question": "Besides exercise and nutrition, what emerging technology is mentioned as a countermeasure?",
-          "options": [
-            "Virtual reality helmets",
-            "Artificial gravity systems",
-            "Smart clothing that measures mood",
-            "Relaxing music"
-          ],
-          "correctAnswerIndex": 1,
-          "explanation": "Artificial gravity systems, such as short-radius centrifuges, are a promising emerging technology to simulate gravity and mitigate the physiological effects of microgravity."
-        },
-        {
-          "question": "What are circulating miRNAs mentioned as novel biomarkers?",
-          "options": [
-            "Small monitoring ships",
-            "Viruses that circulate in the blood",
-            "Molecules in the blood that can indicate physiological changes early",
-            "A type of blood cell"
-          ],
-          "correctAnswerIndex": 2,
-          "explanation": "MicroRNAs (miRNAs) circulating in the blood can reflect changes at the tissue level, making them excellent candidates to act as early biomarkers of adaptation to space."
-        },
-        {
-          "question": "For missions to Mars, what is one of the main concerns mentioned?",
-          "options": [
-            "The boredom of the astronauts",
-            "The lack of communication with Earth",
-            "The cumulative effects of microgravity and cosmic radiation over 2-3 years",
-            "The possibility of encountering hostile extraterrestrial life"
-          ],
-          "correctAnswerIndex": 2,
-          "explanation": "A mission to Mars involves a very prolonged exposure, which raises concerns about the combined and cumulative effects of microgravity and deep space radiation on the human body."
-        },
-        {
-          "question": "A 'critical knowledge gap' is to understand the synergy between microgravity and:",
-          "options": [
-            "The astronauts' diet",
-            "Sleep cycles",
-            "Radiation damage",
-            "Physical exercise"
-          ],
-          "correctAnswerIndex": 2,
-          "explanation": "Understanding how microgravity and radiation interact to affect the body is one of the priority areas of research, as their combined effects can be worse than the sum of their parts."
-        },
-        {
-          "question": "Research in space physiology has relevance to terrestrial medicine in the area of:",
-          "options": [
-            "Cosmetic surgery",
-            "Tropical infectious diseases",
-            "Aging, sarcopenia, and osteoporosis",
-            "Dentistry"
-          ],
-          "correctAnswerIndex": 2,
-          "explanation": "The disuse of muscles and bones in space is an accelerated model of aging, sarcopenia (muscle loss), and osteoporosis, so the findings can be directly applied to these conditions on Earth."
-        },
-        {
-          "question": "What conclusion is drawn about current countermeasures for long-duration missions?",
-          "options": [
-            "They are perfect and need no changes",
-            "They are completely ineffective",
-            "They are insufficient and require personalized and integrated approaches",
-            "No countermeasures have been investigated"
-          ],
-          "correctAnswerIndex": 2,
-          "explanation": "A main conclusion of the article is that current countermeasures, although useful, are not sufficient to ensure health on very long missions, and more research is needed to create integrated and personalized strategies."
-        }
-      ]
-    },
-    {
       "slug": "Efectos-de-los-vuelos-espaciales",
       "title": "Effects of spaceflight aboard the International Space Station on the mouse estrous cycle and ovarian gene expression",
       "description": "An analysis of the effects of spaceflight on the cardiovascular system and countermeasures.",
-      "longDescription": "This review article synthesizes the current knowledge on the effects of spaceflight on the cardiovascular system and the strategies developed to mitigate them.\n\n🔍 Main Objective\nTo comprehensively review the cardiovascular changes induced by microgravity and evaluate the effectiveness of existing countermeasures.\n\n📊 Main Findings\nDocumented Physiological Effects\n1. Fluid Redistribution\nCephalad shift (towards the head) of approximately 2 liters of fluids\nDecrease in plasma volume (10-15%) in the first 24-48 hours\nAlteration of the hydro-electrolyte balance\n\n2. Cardiac Changes\nReduction of cardiac mass (unloading atrophy)\nDecrease in left ventricular volume\nAlterations in diastolic function\nModifications in cardiac geometry\n\n3. Vascular Adaptations\nDecrease in arterial compliance\nAlteration of endothelial function\nReduction of vascular reactivity\nChanges in the structure of blood vessels\n\n4. Neurohumoral Regulation\nSuppression of the renin-angiotensin-aldosterone system\nAlterations in the secretion of natriuretic peptide\nModifications in the activity of the sympathetic nervous system\n\n💊 Evaluated Countermeasures\nCurrent Strategies\n1. Physical Exercise\nAerobic exercise: 30-60 minutes/day\nResistance exercise: 3-5 days/week\nSpecialized devices: CEVIS, ARED\nEffectiveness: Mitigates but does not completely prevent atrophy\n\n2. Fluid Manipulation\nSalt restriction before flight\nPre-re-entry fluid supplementation\nUse of lower body negative pressure (LBNP) suits\nPharmacological management in specific cases\n\n3. Nutritional Strategies\nAntioxidant supplements\nOmega-3 fatty acids\nOptimization of electrolyte balance\nControl of protein intake\n\n🎯 Unresolved Problems\nKnowledge Gaps\nSpecific molecular mechanisms of cardiovascular adaptation\nIndividual differences in response to microgravity\nEffects of prolonged exposures (>6 months)\nInteractions with other space factors (radiation, stress)\n\nLimitations of Current Countermeasures\nPartial effectiveness in preventing atrophy\nHigh inter-individual variability in response\nLogistical complexity of implementation\nUnwanted side effects\n\n🚀 Implications for Future Missions\nLong-Duration Missions\nNeed for more effective countermeasures\nDevelopment of integrated monitoring systems\nPersonalized strategies according to individual characteristics\nConsideration of psychological factors and their cardiovascular impact\n\nPost-flight Health\nVariable recovery periods (weeks to months)\nResidual risk of cardiovascular dysfunction\nNeed for standardized rehabilitation protocols\nLong-term follow-up of retired astronauts\n\n🔬 Future Research Directions\nPriority Areas\nMolecular mechanisms of cardiovascular adaptation\nBiomarkers of individual susceptibility\nAdvanced countermeasure technologies\nIntegration of multiple systems (cardiovascular, musculoskeletal, etc.)\nEffects of space radiation on the cardiovascular system\n\nInnovative Approaches\nPersonalized medicine for astronauts\nContinuous monitoring technologies\nTargeted pharmacological therapies\nPre-conditioning strategies\n\n💡 Key Conclusions\nMicrogravity produces complex and multifaceted cardiovascular changes\nCurrent countermeasures are partially effective but require optimization\nIntegrated approaches that consider multiple systems are needed\nContinuous research is essential for future exploration missions\nThe findings have relevance for terrestrial medicine, particularly in conditions of immobilization and aging\n\n🌍 Terrestrial Clinical Relevance\nThe knowledge generated has applications in:\nRehabilitation of bedridden patients\nGeriatric medicine and aging processes\nUnderstanding the physiology of cardiovascular unloading\nDevelopment of strategies against disuse atrophy",
+      "longDescription": "This review article synthesizes the current knowledge on the effects of spaceflight on the cardiovascular system and the strategies developed to mitigate them.\n\n🔍 Main Objective\nTo comprehensively review the cardiovascular changes induced by microgravity and to evaluate the effectiveness of existing countermeasures.\n\n📊 Main Findings\nDocumented Physiological Effects\n1. Fluid Redistribution\nCephalad shift (towards the head) of approximately 2 liters of fluids\nDecrease in plasma volume (10-15%) in the first 24-48 hours\nAlteration of the hydro-electrolyte balance\n\n2. Cardiac Changes\nReduction of cardiac mass (unloading atrophy)\nDecrease in left ventricular volume\nAlterations in diastolic function\nModifications in cardiac geometry\n\n3. Vascular Adaptations\nDecrease in arterial compliance\nAlteration of endothelial function\nReduction of vascular reactivity\nChanges in the structure of blood vessels\n\n4. Neurohumoral Regulation\nSuppression of the renin-angiotensin-aldosterone system\nAlterations in the secretion of natriuretic peptide\nModifications in the activity of the sympathetic nervous system\n\n💊 Evaluated Countermeasures\nCurrent Strategies\n1. Physical Exercise\nAerobic exercise: 30-60 minutes/day\nResistance exercise: 3-5 days/week\nSpecialized devices: CEVIS, ARED\nEffectiveness: Mitigates but does not completely prevent atrophy\n\n2. Fluid Manipulation\nSalt restriction before flight\nPre-re-entry fluid supplementation\nUse of lower body negative pressure (LBNP) suits\nPharmacological management in specific cases\n\n3. Nutritional Strategies\nAntioxidant supplements\nOmega-3 fatty acids\nOptimization of electrolyte balance\nControl of protein intake\n\n🎯 Unresolved Problems\nKnowledge Gaps\nSpecific molecular mechanisms of cardiovascular adaptation\nIndividual differences in response to microgravity\nEffects of prolonged exposures (>6 months)\nInteractions with other space factors (radiation, stress)\n\nLimitations of Current Countermeasures\nPartial effectiveness in preventing atrophy\nHigh inter-individual variability in response\nLogistical complexity of implementation\nUnwanted side effects\n\n🚀 Implications for Future Missions\nLong-Duration Missions\nNeed for more effective countermeasures\nDevelopment of integrated monitoring systems\nPersonalized strategies according to individual characteristics\nConsideration of psychological factors and their cardiovascular impact\n\nPost-flight Health\nVariable recovery periods (weeks to months)\nResidual risk of cardiovascular dysfunction\nNeed for standardized rehabilitation protocols\nLong-term follow-up of retired astronauts\n\n🔬 Future Research Directions\nPriority Areas\nMolecular mechanisms of cardiovascular adaptation\nBiomarkers of individual susceptibility\nAdvanced countermeasure technologies\nIntegration of multiple systems (cardiovascular, musculoskeletal, etc.)\nEffects of space radiation on the cardiovascular system\n\nInnovative Approaches\nPersonalized medicine for astronauts\nContinuous monitoring technologies\nTargeted pharmacological therapies\nPre-conditioning strategies\n\n💡 Key Conclusions\nMicrogravity produces complex and multifaceted cardiovascular changes\nCurrent countermeasures are partially effective but require optimization\nIntegrated approaches that consider multiple systems are needed\nContinuous research is essential for future exploration missions\nThe findings have relevance for terrestrial medicine, particularly in conditions of immobilization and aging\n\n🌍 Terrestrial Clinical Relevance\nThe knowledge generated has applications in:\nRehabilitation of bedridden patients\nGeriatric medicine and aging processes\nUnderstanding the physiology of cardiovascular unloading\nDevelopment of strategies against disuse atrophy",
       "publicationDate": "February 05, 2025",
       "sourceUrl": "https://www.nasa.gov/mission/space-station/research-explorer/search-results/?topic=14",
       "imageId": "astronaut-lab",
@@ -850,3 +724,5 @@
     }
   ]
 }
+
+    

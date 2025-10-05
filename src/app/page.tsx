@@ -13,7 +13,7 @@ const specialMissions = [
   {
     slug: '/mission/gliese-581g',
     title: 'Efectos de los vuelos espaciales a bordo de la Estación Espacial Internacional sobre el ciclo estral del ratón y la expresión de genes ováricos',
-    description: 'Analiza la atmósfera de un exoplaneta en busca de biofirmas.',
+    description: 'Analiza los efectos cardiovasculares en una simulación de misión espacial.',
     image: {
         imageUrl: 'https://images.unsplash.com/photo-1506443432602-ac2dcd7e20de?w=1080',
         description: 'A rocky exoplanet',
@@ -159,7 +159,7 @@ export default function GalacticMap() {
                 <CardDescription className="mt-2 flex-grow">{mission.description}</CardDescription>
               </div>
               <CardFooter>
-                <Button asChild className="w-full" variant="secondary">
+                <Button asChild className="w-full" variant={mission.slug === '/mission/gliese-581g' ? 'default' : 'secondary'}>
                   <Link href={mission.slug}>
                     Iniciar Misión <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>

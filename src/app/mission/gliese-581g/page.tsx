@@ -41,25 +41,27 @@ const missionSteps = [
     buttonText: 'Evaluar Contramedidas',
   },
   {
-    type: 'info',
-    title: 'Fase 2: Contramedidas Evaluadas',
-     points: [
+    type: 'question',
+    title: 'Fase 2: Evaluar Contramedidas',
+    text: 'Las contramedidas son cruciales. Según los datos, ¿cuál es la principal estrategia utilizada para mitigar, aunque no prevenir completamente, la atrofia cardíaca en el espacio?',
+    icon: Activity,
+    options: [
       {
-        title: 'Ejercicio Físico',
-        icon: Activity,
-        items: [
-          'Combinación de ejercicio aeróbico y de resistencia.',
-          'Uso de dispositivos especializados como CEVIS y ARED.',
-          'Mitiga pero no previene completamente la atrofia.',
-        ],
+        text: 'Suplementos nutricionales con omega-3 y antioxidantes.',
+        isCorrect: false,
+        feedback: 'Incorrecto. Aunque la nutrición es importante, no es la principal estrategia contra la atrofia cardíaca por descarga.',
       },
       {
-        title: 'Manipulación de Fluidos y Nutrición',
-        icon: FlaskConical,
-        items: ['Suplementación hídrica antes del reingreso.', 'Uso de antioxidantes y omega-3.'],
+        text: 'Una combinación de ejercicio aeróbico y de resistencia.',
+        isCorrect: true,
+        feedback: '¡Correcto! El ejercicio físico riguroso es la contramedida más fundamental y efectiva para combatir la atrofia muscular y cardíaca en microgravedad.',
+      },
+      {
+        text: 'Uso de trajes de presión negativa para la parte inferior del cuerpo (LBNP).',
+        isCorrect: false,
+        feedback: 'Incorrecto. Los trajes LBNP se usan principalmente para la redistribución de fluidos, no como la principal defensa contra la atrofia cardíaca.',
       },
     ],
-    buttonText: 'Identificar Problemas No Resueltos',
   },
    {
     type: 'info',
@@ -93,18 +95,39 @@ const missionSteps = [
   },
 ];
 
+type Option = {
+  text: string;
+  isCorrect: boolean;
+  feedback: string;
+};
+
 export default function MissionGliese581gPage() {
   const [stepIndex, setStepIndex] = useState(0);
+  const [feedback, setFeedback] = useState<{ text: string; correct: boolean } | null>(null);
+  const [selectedOption, setSelectedOption] = useState<number | null>(null);
 
   const currentStep = missionSteps[stepIndex];
 
   const handleNextStep = () => {
     setStepIndex(prev => Math.min(prev + 1, missionSteps.length - 1));
+    setFeedback(null);
+    setSelectedOption(null);
   };
   
   const getIcon = (IconComponent: React.ElementType, props: any = {}) => {
     return <IconComponent {...props} />;
   }
+
+  const handleOptionSelect = (option: Option, index: number) => {
+    setSelectedOption(index);
+    setFeedback({ text: option.feedback, correct: option.isCorrect });
+
+    if (option.isCorrect) {
+      setTimeout(() => {
+        handleNextStep();
+      }, 2500);
+    }
+  };
 
 
   return (
@@ -145,6 +168,32 @@ export default function MissionGliese581gPage() {
                 </div>
               )}
 
+              {currentStep.type === 'question' && 'options' in currentStep && (
+                <div className="space-y-4">
+                  {(currentStep.options as Option[]).map((option, index) => (
+                    <Button
+                      key={index}
+                      variant="outline"
+                      size="lg"
+                      className={`w-full justify-start text-left h-auto py-3 ${selectedOption === index ? (option.isCorrect ? 'border-green-500' : 'border-red-500') : ''}`}
+                      onClick={() => handleOptionSelect(option, index)}
+                      disabled={selectedOption !== null}
+                    >
+                      {option.text}
+                    </Button>
+                  ))}
+                  {feedback && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className={`mt-4 p-4 rounded-lg text-center ${feedback.correct ? 'bg-green-500/20 text-green-300' : 'bg-red-500/20 text-red-300'}`}
+                    >
+                      {feedback.text}
+                    </motion.div>
+                  )}
+                </div>
+              )}
+
               <div className="mt-8">
                 {currentStep.type === 'final' ? (
                      <Button asChild size="lg" className="w-full">
@@ -153,7 +202,7 @@ export default function MissionGliese581gPage() {
                         </Link>
                     </Button>
                 ) : (
-                    'buttonText' in currentStep && (
+                    currentStep.type !== 'question' && 'buttonText' in currentStep && (
                         <Button onClick={handleNextStep} size="lg" className="w-full">
                             {currentStep.buttonText} <ChevronRight className="ml-2" />
                         </Button>

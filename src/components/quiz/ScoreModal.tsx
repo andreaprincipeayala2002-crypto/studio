@@ -88,7 +88,7 @@ export default function ScoreModal({
                   3. El enlace será simplemente '/libro-bioespacial.pdf'.
                 */}
                 <Button asChild variant="link" className="text-white mt-2">
-                    <a href="/libro-bioespacial.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="https://mawil.us/wp-content/uploads/2021/09/principios-basicos-de-medicina-interna.pdf" target="_blank" rel="noopener noreferrer">
                         <BookDown className="mr-2 h-4 w-4" />
                         Descargar Libro
                     </a>

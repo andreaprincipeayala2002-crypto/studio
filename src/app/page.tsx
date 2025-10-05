@@ -12,7 +12,7 @@ import { useState, useEffect } from 'react';
 const specialMissions = [
   {
     slug: '/mission/gliese-581g',
-    title: 'Misión: Gliese-581g',
+    title: 'Efectos de los vuelos espaciales a bordo de la Estación Espacial Internacional sobre el ciclo estral del ratón y la expresión de genes ováricos',
     description: 'Analiza la atmósfera de un exoplaneta en busca de biofirmas.',
     image: {
         imageUrl: 'https://images.unsplash.com/photo-1506443432602-ac2dcd7e20de?w=1080',

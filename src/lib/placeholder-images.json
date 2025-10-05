@@ -79,7 +79,7 @@
       "imageHint": "space window"
     },
     {
-      "id": "gut-microbiome",
+      "id": "gut-microbiome-old",
       "description": "Artistic rendering of bacteria and microbes in the gut.",
       "imageUrl": "https://images.unsplash.com/photo-1631049354756-3665317498b9?w=1080",
       "imageHint": "gut bacteria"
@@ -101,6 +101,12 @@
       "description": "Artistic representation of a DNA strand, illustrating gene expression and cellular processes.",
       "imageUrl": "https://images.unsplash.com/photo-1533735380053-eb8d0759b24a?w=1080",
       "imageHint": "dna art"
+    },
+    {
+      "id": "gut-microbiome",
+      "description": "A 3D illustration of Bifidobacterium, a type of gut bacteria.",
+      "imageUrl": "https://media.istockphoto.com/id/1163670497/photo/bifidobacterium-bacterial-strain3d-illustration.jpg?s=1024x1024&w=is&k=20&c=ppNKpluJV1dvs7zW0yqomdD6-LDIvcHfstyP-ZCFpg4=",
+      "imageHint": "gut bacteria"
     }
   ]
 }

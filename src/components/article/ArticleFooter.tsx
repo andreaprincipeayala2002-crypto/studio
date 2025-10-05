@@ -19,7 +19,7 @@ export default function ArticleFooter({ topic }: ArticleFooterProps) {
                     <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                             <Lightbulb className="text-primary" />
-                            Preguntas para Reflexionar
+                            Questions to Ponder
                         </CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -36,7 +36,7 @@ export default function ArticleFooter({ topic }: ArticleFooterProps) {
                     <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                             <BookOpen className="text-primary" />
-                            Temas Relacionados
+                            Related Topics
                         </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
@@ -54,7 +54,7 @@ export default function ArticleFooter({ topic }: ArticleFooterProps) {
              <div className="mt-8 text-center">
                 <Button variant="link" asChild>
                     <a href={topic.sourceUrl} target="_blank" rel="noopener noreferrer">
-                        Leer publicación original de la NASA <ExternalLink className="ml-2 h-4 w-4" />
+                        Read Original NASA Publication <ExternalLink className="ml-2 h-4 w-4" />
                     </a>
                 </Button>
             </div>

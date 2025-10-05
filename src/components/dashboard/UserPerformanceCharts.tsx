@@ -52,7 +52,7 @@ export default function UserPerformanceCharts() {
 
   const chartConfig = {
     score: {
-      label: 'Puntuación',
+      label: 'Score',
       color: 'hsl(var(--primary))',
     },
   };
@@ -75,14 +75,14 @@ export default function UserPerformanceCharts() {
       return (
         <Card className="apple-glass text-center">
             <CardHeader>
-                <CardTitle>Rendimiento de Cuestionarios</CardTitle>
-                <CardDescription>Aún no has completado ningún cuestionario.</CardDescription>
+                <CardTitle>Quiz Performance</CardTitle>
+                <CardDescription>You haven't completed any quizzes yet.</CardDescription>
             </CardHeader>
             <CardContent>
-                <p className="text-stone-300 mb-4">¡Completa tu primer cuestionario para ver tus estadísticas aquí!</p>
+                <p className="text-stone-300 mb-4">Complete your first quiz to see your stats here!</p>
                 <Button asChild>
                     <Link href="/">
-                        Ir al Mapa Galáctico
+                        Go to Galactic Map
                         <ArrowRight className="ml-2"/>
                     </Link>
                 </Button>
@@ -95,8 +95,8 @@ export default function UserPerformanceCharts() {
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <Card className="apple-glass lg:col-span-2">
             <CardHeader>
-            <CardTitle>Rendimiento por Tema</CardTitle>
-            <CardDescription>Tu puntuación en cada cuestionario completado.</CardDescription>
+            <CardTitle>Performance by Topic</CardTitle>
+            <CardDescription>Your score on each completed quiz.</CardDescription>
             </CardHeader>
             <CardContent>
             <ChartContainer config={chartConfig} className="h-[350px] w-full">
@@ -135,9 +135,9 @@ export default function UserPerformanceCharts() {
             <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                     <TrendingDown className="text-amber-400" />
-                    Temas para Reforzar
+                    Topics to Reinforce
                 </CardTitle>
-                <CardDescription>Aquí están los temas con menor puntuación. ¡Una buena oportunidad para repasar!</CardDescription>
+                <CardDescription>Here are the topics with the lowest scores. A good opportunity to review!</CardDescription>
             </CardHeader>
             <CardContent>
                 {topicsToImprove.length > 0 ? (
@@ -150,7 +150,7 @@ export default function UserPerformanceCharts() {
                                 </div>
                                 <Button size="sm" variant="link" asChild className="p-0 h-auto mt-2">
                                     <Link href={`/article/${topic.topic}`}>
-                                        Repasar Artículo <ArrowRight className="ml-1" />
+                                        Review Article <ArrowRight className="ml-1" />
                                     </Link>
                                 </Button>
                             </div>
@@ -158,8 +158,8 @@ export default function UserPerformanceCharts() {
                     </div>
                 ) : (
                     <div className="text-center text-stone-300 py-8">
-                        <p className="font-semibold text-lg">¡Felicidades!</p>
-                        <p>No tienes temas con puntuación baja. ¡Sigue así!</p>
+                        <p className="font-semibold text-lg">Congratulations!</p>
+                        <p>You have no low-scoring topics. Keep it up!</p>
                     </div>
                 )}
             </CardContent>

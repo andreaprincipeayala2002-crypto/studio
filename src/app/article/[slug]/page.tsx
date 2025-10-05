@@ -25,7 +25,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     <div className="container mx-auto max-w-4xl px-4 py-12">
       <article>
         <header className="mb-8">
-          <p className="text-primary font-semibold text-lg mb-2">Artículo de Biología Espacial</p>
+          <p className="text-primary font-semibold text-lg mb-2">Space Biology Article</p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tighter glow mb-4">{topic.title}</h1>
           <div className="flex items-center gap-4 text-muted-foreground">
               <div className="flex items-center gap-2">
@@ -55,7 +55,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         <div className="my-12 text-center">
             <Button asChild size="lg" className="bg-accent/90 hover:bg-accent text-accent-foreground font-bold shadow-lg shadow-accent/20 hover:shadow-accent/40 transition-all duration-300">
                 <Link href={`/quiz?topic=${topic.slug}`}>
-                    Prueba tu conocimiento <ArrowRight className="ml-2 h-5 w-5" />
+                    Test Your Knowledge <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
             </Button>
         </div>

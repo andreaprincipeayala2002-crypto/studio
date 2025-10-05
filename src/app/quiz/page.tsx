@@ -5,8 +5,8 @@ function QuizLoading() {
     return (
         <div className="flex items-center justify-center h-screen">
             <div className="text-center">
-                <p className="text-2xl font-bold">Preparando misión...</p>
-                <p className="text-muted-foreground">Cargando preguntas de biología espacial.</p>
+                <p className="text-2xl font-bold">Preparing mission...</p>
+                <p className="text-muted-foreground">Loading space biology questions.</p>
             </div>
         </div>
     )

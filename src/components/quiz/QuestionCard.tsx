@@ -54,7 +54,7 @@ export default function QuestionCard({
       )}>
       <CardHeader>
         <CardDescription className="text-primary font-bold">
-          Pregunta {questionNumber} / {totalQuestions}
+          Question {questionNumber} / {totalQuestions}
         </CardDescription>
         <CardTitle className="text-2xl md:text-3xl font-bold leading-tight">
           {question.question}
@@ -83,13 +83,13 @@ export default function QuestionCard({
           <div className="mt-6 space-y-4">
             {question.explanation && (
                 <div className="p-4 bg-black/20 rounded-lg border border-white/10">
-                    <h4 className="font-bold text-lg">Explicación</h4>
+                    <h4 className="font-bold text-lg">Explanation</h4>
                     <p className="text-muted-foreground mt-2">{question.explanation}</p>
                 </div>
             )}
              {isCorrect === false && (
               <Button onClick={onNext} className="w-full" size="lg" variant="destructive">
-                Siguiente Pregunta {nextQuestionTimer !== null ? `(${nextQuestionTimer})` : ''} <ArrowRight className="ml-2 h-5 w-5" />
+                Next Question {nextQuestionTimer !== null ? `(${nextQuestionTimer})` : ''} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             )}
           </div>

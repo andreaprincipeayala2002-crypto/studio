@@ -29,10 +29,10 @@ export default function LeaderboardTable({ data }: LeaderboardTableProps) {
       <Table>
         <TableHeader>
           <TableRow className="hover:bg-transparent border-b-white/10">
-            <TableHead className="w-[80px] text-center">Rango</TableHead>
-            <TableHead>Explorador</TableHead>
-            <TableHead className="text-center">Cuestionarios</TableHead>
-            <TableHead className="text-right">Puntuación Total</TableHead>
+            <TableHead className="w-[80px] text-center">Rank</TableHead>
+            <TableHead>Explorer</TableHead>
+            <TableHead className="text-center">Quizzes</TableHead>
+            <TableHead className="text-right">Total Score</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>

@@ -71,26 +71,26 @@ export default function ScoreModal({
             ) : (
                 <AsteroidIcon className="h-8 w-8 text-destructive" />
             )}
-            {missionSuccess ? '¡Misión Exitosa!' : '¡Misión Fallida!'}
+            {missionSuccess ? 'Mission Successful!' : 'Mission Failed!'}
           </DialogTitle>
           <DialogDescription className="text-lg">
-            Tu puntaje final es <span className="font-bold text-primary">{score}</span> de <span className="font-bold">{totalQuestions}</span> ({scorePercentage.toFixed(0)}%).
+            Your final score is <span className="font-bold text-primary">{score}</span> out of <span className="font-bold">{totalQuestions}</span> ({scorePercentage.toFixed(0)}%).
           </DialogDescription>
         </DialogHeader>
         
         {allCorrect && (
             <div className="p-4 bg-green-500/20 text-green-300 rounded-lg text-center">
-                <p className="font-bold">¡Felicidades! Te has ganado un libro por tu conocimiento excepcional.</p>
+                <p className="font-bold">Congratulations! You've earned a book for your exceptional knowledge.</p>
                 {/* 
-                  Para cambiar el archivo del libro:
-                  1. Crea una carpeta llamada 'public' en la raíz de tu proyecto si no existe.
-                  2. Sube tu archivo PDF a esa carpeta (ej: 'libro-bioespacial.pdf').
-                  3. El enlace será simplemente '/libro-bioespacial.pdf'.
+                  To change the book file:
+                  1. Create a 'public' folder in your project root if it doesn't exist.
+                  2. Upload your PDF file to that folder (e.g., 'space-biology-book.pdf').
+                  3. The link will simply be '/space-biology-book.pdf'.
                 */}
                 <Button asChild variant="link" className="text-white mt-2">
                     <a href="https://mawil.us/wp-content/uploads/2021/09/principios-basicos-de-medicina-interna.pdf" target="_blank" rel="noopener noreferrer">
                         <BookDown className="mr-2 h-4 w-4" />
-                        Descargar Libro
+                        Download Book
                     </a>
                 </Button>
             </div>
@@ -99,7 +99,7 @@ export default function ScoreModal({
         <div className="my-4">
             <h3 className="font-bold text-xl mb-2 flex items-center gap-2">
                 <Award />
-                Resumen de la Misión
+                Mission Summary
             </h3>
             <ScrollArea className="h-60 w-full rounded-md border border-white/10 p-4 bg-black/20">
                 <ul className="space-y-4">
@@ -118,11 +118,11 @@ export default function ScoreModal({
                                     "text-sm",
                                     record.isCorrect ? 'text-green-400' : 'text-red-400'
                                 )}>
-                                    Tu respuesta: {record.question.options[record.selectedAnswerIndex]}
+                                    Your answer: {record.question.options[record.selectedAnswerIndex]}
                                 </p>
                                 {!record.isCorrect && (
                                      <p className="text-sm text-green-400">
-                                        Respuesta correcta: {record.question.options[record.question.correctAnswerIndex]}
+                                        Correct answer: {record.question.options[record.question.correctAnswerIndex]}
                                      </p>
                                 )}
                             </div>
@@ -135,11 +135,11 @@ export default function ScoreModal({
         <DialogFooter className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <Button onClick={onRestart} variant="outline">
             <RotateCw className="mr-2 h-4 w-4" />
-            Reiniciar Cuestionario
+            Restart Quiz
           </Button>
           <Button onClick={onGoHome}>
             <Map className="mr-2 h-4 w-4" />
-            Volver al Mapa Galáctico
+            Back to Galactic Map
           </Button>
         </DialogFooter>
       </DialogContent>

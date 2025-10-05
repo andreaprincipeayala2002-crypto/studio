@@ -58,10 +58,10 @@ export default function GalacticMap() {
         className="text-center mb-12"
       >
         <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
-          Mapa Galáctico
+          Galactic Map
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-          Bienvenido a BioQuest. Selecciona un destino cósmico para comenzar tu misión y poner a prueba tus conocimientos de biología espacial.
+          Welcome to BioQuest. Select a cosmic destination to begin your mission and test your knowledge of space biology.
         </p>
       </motion.div>
 
@@ -95,12 +95,12 @@ export default function GalacticMap() {
                   {scores[topic.slug] !== null && scores[topic.slug] !== undefined ? (
                     <div className="flex items-center gap-2 text-green-400">
                       <CheckCircle className="h-5 w-5" />
-                      <span className="font-bold">Puntaje: {scores[topic.slug]} / {topic.questions.length}</span>
+                      <span className="font-bold">Score: {scores[topic.slug]} / {topic.questions.length}</span>
                     </div>
                   ) : (
                     <div className="flex items-center gap-2 text-muted-foreground">
                        <HelpCircle className="h-5 w-5" />
-                      <span>Cuestionario no realizado</span>
+                      <span>Quiz not taken</span>
                     </div>
                   )}
                 </div>
@@ -108,7 +108,7 @@ export default function GalacticMap() {
               <CardFooter>
                 <Button asChild className="w-full">
                   <Link href={`/article/${topic.slug}`}>
-                    Iniciar Misión <ArrowRight className="ml-2 h-4 w-4" />
+                    Start Mission <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </CardFooter>
@@ -119,6 +119,3 @@ export default function GalacticMap() {
     </div>
   );
 }
-
-    
-  

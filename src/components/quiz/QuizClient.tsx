@@ -161,7 +161,7 @@ export default function QuizClient() {
   if (!topic || !currentQuestion) {
     return (
       <div className="flex items-center justify-center min-h-[calc(100vh-4rem)]">
-        <p className="text-xl text-muted-foreground">Cargando preguntas...</p>
+        <p className="text-xl text-muted-foreground">Loading questions...</p>
       </div>
     );
   }

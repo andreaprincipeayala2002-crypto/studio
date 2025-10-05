@@ -16,6 +16,7 @@ export default function ArticleBackground({ imageUrl }: ArticleBackgroundProps) 
 
         if (imageUrl) {
             body.style.background = `
+                linear-gradient(rgba(10, 10, 20, 0.7), rgba(10, 10, 20, 0.9)),
                 radial-gradient(circle at 10% 20%, hsl(var(--primary) / 0.1), transparent 40%),
                 radial-gradient(circle at 90% 80%, hsl(var(--accent) / 0.1), transparent 40%),
                 url('${imageUrl}')

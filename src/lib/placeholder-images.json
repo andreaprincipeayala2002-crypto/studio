@@ -95,6 +95,12 @@
       "description": "An artistic or microscopic representation of neural stem cells or brain neurons.",
       "imageUrl": "https://images.unsplash.com/photo-1530032127221-1b04dbb23947?w=1080",
       "imageHint": "neural cells"
+    },
+    {
+      "id": "dna-gene-expression",
+      "description": "Artistic representation of a DNA strand, illustrating gene expression and cellular processes.",
+      "imageUrl": "https://images.unsplash.com/photo-1533735380053-eb8d0759b24a?w=1080",
+      "imageHint": "dna art"
     }
   ]
 }

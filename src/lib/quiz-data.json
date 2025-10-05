@@ -8,7 +8,7 @@
       "longDescription": "Investigadores estudiaron cómo el vuelo espacial afecta la expresión génica en el tejido cardíaco, enfocándose en genes relacionados con el estrés oxidativo y la regulación del ciclo celular.\n\n🎯 Objetivo del Estudio\nInvestigaron cómo el vuelo espacial afecta la expresión génica en el tejido cardíaco, específicamente enfocándose en genes relacionados con el estrés oxidativo y la regulación del ciclo celular.\n\n🔬 Metodología\n- Modelo Animal: Ratones\n- Duración del Vuelo Espacial: 15 días en el transbordador STS-131\n- Análisis Realizado: PCR cuantitativa de 168 genes seleccionados\n- Tejido Analizado: Ventrículos cardíacos\n\n📊 Resultados Principales\nSe observaron alteraciones significativas en genes clave.\n\nAlteraciones en el Estrés Oxidativo:\n- Nox1: Aumentó 6.6 veces, indicando un incremento en la producción de especies reactivas de oxígeno.\n- Nfe2l2 (Nrf2): Disminuyó 2.4 veces, lo que sugiere una reducción de las defensas antioxidantes.\n- Ptgs2: Disminuyó 3.4 veces, mostrando una alteración en la respuesta inflamatoria.\n\nCambios en el Ciclo Celular:\n- Cdkn1a (p21): Aumentó 6.8 veces, un regulador clave del ciclo celular.\n- Myc: Aumentó 3.9 veces, relacionado con el control de la proliferación celular.\n- Tnf: Disminuyó 9.9 veces, afectando la respuesta inflamatoria.\n\n💡 Conclusiones Clave\n- Estrés Oxidativo Persistente: El vuelo espacial genera un ambiente pro-oxidante en el corazón.\n- Alteración del Ciclo Celular: Los genes reguladores del ciclo celular muestran cambios significativos.\n- Implicaciones para la Salud: Estos cambios podrían explicar la disfunción cardíaca observada en astronautas.\n- Importancia para Misiones Futuras: Crucial para desarrollar contramedidas en misiones espaciales prolongadas.\n\n🚀 Relevancia\nEstos hallazgos son esenciales para proteger la salud cardiovascular de los astronautas, desarrollar estrategias preventivas para misiones a la Luna y Marte, y comprender mejor los mecanismos moleculares de la adaptación cardíaca al entorno espacial.",
       "publicationDate": "01 de Enero, 2025",
       "sourceUrl": "https://www.shutterstock.com/image-photo/tropical-leaves-banner-isolated-on-260nw-2521669583.jpg",
-      "imageId": "human-bio-planet",
+      "imageId": "heart-scan",
       "relatedTopics": ["plant-science-space", "microbiology-space"],
       "reflectionQuestions": [
         "¿Qué estrategias crees que serían más efectivas para prevenir la disfunción cardíaca en el espacio?",
@@ -444,7 +444,7 @@
             "Instrumentos para analizar muestras de sangre."
           ],
           "correctAnswerIndex": 2,
-          "explanation": "CEVIS (Cycle Ergometer with Vibration Isolation System) y ARED (Advanced Resistive Exercise Device) son equipos cruciales a bordo de la EEI para que los astronautas realicen ejercicio aeróbico y de resistencia."
+          "explanation": "CEVIS (Cycle Ergometer with Vibration Isolation System) y ARED (Advanced Resistive Exercise Device) son equipos crueles a bordo de la EEI para que los astronautas realicen ejercicio aeróbico y de resistencia."
         },
         {
           "question": "¿Qué implicación tienen los hallazgos de la fisiología espacial para la medicina en la Tierra?",

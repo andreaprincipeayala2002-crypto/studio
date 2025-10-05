@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Check, Telescope, FlaskConical, AlertTriangle, ChevronRight, Loader2, Award } from 'lucide-react';
+import { ArrowLeft, Check, Telescope, FlaskConical, AlertTriangle, ChevronRight, Loader2, Award, Map } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
@@ -42,7 +42,7 @@ const missionSteps = [
     nextStep: 'Resultados del Análisis',
   },
   {
-    type 'final',
+    type: 'final',
     title: '¡Misión Cumplida!',
     text: '¡Análisis completado! Has detectado una fuerte señal de O₂ y CH₄ en la atmósfera de TRAPPIST-1e. Aunque no es una prueba definitiva de vida, es una de las biofirmas más prometedoras encontradas hasta la fecha. Has enviado los datos a la Tierra para su verificación.',
     buttonText: 'Volver al Mapa Galáctico',
@@ -66,7 +66,7 @@ export default function TrappistMissionPage() {
 
   useEffect(() => {
     let timer: NodeJS.Timeout;
-    if (isLoading && currentStep.type === 'action') {
+    if (isLoading && currentStep.type === 'action' && 'duration' in currentStep) {
       const duration = currentStep.duration || 3000;
       setProgress(0);
       const startTime = Date.now();
@@ -135,12 +135,12 @@ export default function TrappistMissionPage() {
             <CardContent>
               {isLoading && currentStep.type === 'action' && (
                 <div className="text-center space-y-4">
-                  <p className="text-muted-foreground">{currentStep.nextStep}...</p>
+                  <p className="text-muted-foreground">{'nextStep' in currentStep ? currentStep.nextStep : ''}...</p>
                   <Progress value={progress} className="w-full" />
                 </div>
               )}
 
-              {currentStep.type === 'question' && (
+              {currentStep.type === 'question' && 'options' in currentStep && (
                 <div className="space-y-4">
                   {(currentStep.options as Option[]).map((option, index) => (
                     <Button
@@ -166,16 +166,16 @@ export default function TrappistMissionPage() {
                 </div>
               )}
 
-              {!isLoading && (currentStep.type === 'intro' || currentStep.type === 'action') && (
+              {!isLoading && (currentStep.type === 'intro' || (currentStep.type === 'action' && 'actionText' in currentStep)) && (
                 <Button onClick={handleNextStep} size="lg" className="w-full">
-                  {currentStep.actionText || currentStep.buttonText} <ChevronRight className="ml-2" />
+                  {'buttonText' in currentStep ? currentStep.buttonText : ('actionText' in currentStep ? currentStep.actionText : '')} <ChevronRight className="ml-2" />
                 </Button>
               )}
 
               {currentStep.type === 'final' && (
                 <Button asChild size="lg" className="w-full">
                   <Link href="/">
-                    {currentStep.buttonText} <Map className="ml-2" />
+                    {'buttonText' in currentStep && currentStep.buttonText} <Map className="ml-2" />
                   </Link>
                 </Button>
               )}
